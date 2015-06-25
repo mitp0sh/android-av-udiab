@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/scanning_tips" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="18.0dip" android:textColor="#ff3d5562" android:gravity="center" android:id="@id/av_scan_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/common_dark" android:ellipsize="end" android:gravity="center" android:id="@id/av_scan_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/av_tips_title" android:singleLine="true" />
+    </LinearLayout>
+    <com.dianxinos.common.ui.view.PinnedHeaderListView android:layout_gravity="center" android:id="@id/scanresult_listview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:groupIndicator="@null" android:layout_weight="1.0" style="@style/MyWidget.ListView" />
+    <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/bottom_btn" style="@style/MyWidget.PageBottomButtonLayout" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/quick_helper_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="120.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:id="@id/loading" android:layout_width="48.0dip" android:layout_height="48.0dip" android:indeterminateDrawable="@drawable/dx_loading_inside_rotate" />
+    <com.dianxinos.optimizer.ui.FullGridView android:layout_gravity="center_vertical" android:id="@id/items_top_appcenter" android:paddingLeft="6.0dip" android:paddingTop="12.0dip" android:paddingRight="6.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/toolbox_item_bkg" android:horizontalSpacing="4.0dip" android:verticalSpacing="10.0dip" android:numColumns="4" style="@style/MyWidget.GridView" />
+</FrameLayout>

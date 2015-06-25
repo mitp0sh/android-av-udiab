@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:gravity="center_vertical" android:id="@id/tv_enter" android:background="@drawable/paysecurity_list_item_bkg" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="18.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="60.0dip" android:text="@string/claims_deal_history_enter" android:singleLine="true" android:drawableRight="@drawable/arrow_right" />
+    <include layout="@layout/common_divider_settings" />
+    <com.dianxinos.common.ui.view.PinnedHeaderListView android:layout_gravity="center" android:id="@id/deal_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:groupIndicator="@null" style="@style/MyWidget.ListView" />
+    <include android:id="@id/loadmore" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/paysecurity_dealhistory_loadmore" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:gravity="center" android:id="@id/tv_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/claims_deal_history_none" />
+</LinearLayout>

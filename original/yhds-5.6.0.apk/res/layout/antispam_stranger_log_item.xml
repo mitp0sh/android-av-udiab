@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/process_body" android:paddingRight="@dimen/common_list_item_left_padding" android:layout_height="56.0dip" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/number" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/MyWidget.ListViewItemTextTop" />
+    <TextView android:id="@id/date" android:layout_alignBaseline="@id/number" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/MyWidget.ListViewItemTextBottom" />
+    <TextView android:id="@id/district" android:layout_marginBottom="@dimen/common_list_item_two_line_first_top_margin" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/MyWidget.ListViewItemTextBottom" />
+    <TextView android:id="@id/tag" android:layout_below="@id/number" android:layout_alignParentLeft="true" style="@style/Antispam.Tag" />
+    <TextView android:id="@id/type" android:text="@string/antispam_call_log_incoming" android:layout_below="@id/number" android:layout_alignParentLeft="true" style="@style/MyWidget.ListViewItemTextBottom" />
+    <ImageView android:id="@id/report_icon" android:background="@drawable/antispam_report_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/public_number_icon" android:background="@drawable/antispam_report_public_number_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_alignTop="@id/public_number" android:layout_alignParentLeft="true" />
+    <TextView android:ellipsize="end" android:id="@id/public_number" android:layout_marginBottom="@dimen/common_list_item_two_line_first_top_margin" android:maxWidth="251.0dip" android:layout_toRightOf="@id/public_number_icon" android:layout_below="@id/number" style="@style/MyWidget.ListViewItemTextBottom" />
+</RelativeLayout>

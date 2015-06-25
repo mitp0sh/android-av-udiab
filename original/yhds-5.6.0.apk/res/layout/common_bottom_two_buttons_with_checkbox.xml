@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" style="@style/MyWidget.PageBottomButtonLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/left_btn" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/MyWidget.BottomButton.NoCorner" />
+    <include android:id="@id/btn_divider" layout="@layout/common_divider_vertical" />
+    <Button android:id="@id/right_btn" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/MyWidget.BottomButton.NoCorner" />
+    <include android:id="@id/checkbox_divider" layout="@layout/common_divider_vertical" />
+    <FrameLayout android:id="@id/checkbox_panel" android:background="@drawable/common_bottombtn_nocorner" android:layout_width="@dimen/common_action_button_width" android:layout_height="fill_parent">
+        <CheckBox android:layout_gravity="center" android:id="@id/checkbox" android:clickable="false" style="@style/MyWidget.CheckBox.NoText" />
+    </FrameLayout>
+</LinearLayout>

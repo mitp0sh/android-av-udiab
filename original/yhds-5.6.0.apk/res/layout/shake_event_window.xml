@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/event_window_body" android:background="@color/common_yellow" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0dip" android:textColor="@color/shake_event_text_default_color" android:id="@id/event_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="16.0dip" android:text="@string/shake_event_window_default_title" />
+        <ImageView android:id="@id/event_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/shake_event" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:id="@id/shake_clear_result_panel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:paddingLeft="69.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/shake_event_text_default_color" android:id="@id/txt_process" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shake_toast_process_text" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/shake_event_text_default_color" android:id="@id/txt_process_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/memory_layout" android:paddingLeft="69.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/shake_event_text_default_color" android:id="@id/txt_memory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shake_toast_memory_text" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/shake_event_text_default_color" android:id="@id/txt_memory_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="16.0dip" android:textColor="@color/shake_event_text_default_color" android:gravity="center_vertical" android:id="@id/txt_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="12.0dip" android:text="@string/shake_toast_none_message" android:maxLines="5" />
+    </LinearLayout>
+    <ImageView android:id="@id/shake_window_close_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shake_event_close_btn" android:layout_alignParentRight="true" />
+</RelativeLayout>

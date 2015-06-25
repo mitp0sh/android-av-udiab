@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" style="@style/MyWidget.PageBottomButtonLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/left_btn" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/MyWidget.BottomButton.LeftCorner" />
+    <include android:id="@id/btn_divider" layout="@layout/common_divider_vertical" />
+    <Button android:textColor="@color/common_blue" android:id="@id/right_btn" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/MyWidget.BottomButton.RightCorner" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_dialog_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/quick_helper_settings_title" android:layout_width="fill_parent" android:layout_height="@dimen/common_dialog_titlebar_height" android:text="@string/fw_float_window_settings" style="@style/MyWidget.DialogTitleBarText" />
+    <include layout="@layout/common_divider_horizontal_with_margin" />
+    <LinearLayout android:orientation="vertical" android:id="@id/quick_helper_settings_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianxinos.common.ui.view.DxPreference android:id="@id/quick_helper_float_window_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/fw_float_window" app:type="switch" />
+        <include layout="@layout/common_divider_horizontal_with_margin" />
+        <com.dianxinos.common.ui.view.DxPreference android:id="@id/quick_helper_show_only_on_home_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/fw_show_only_on_home" app:type="switch" />
+        <include android:id="@id/quick_helper_drag_effect_divide_line" layout="@layout/common_divider_horizontal_with_margin" />
+        <com.dianxinos.common.ui.view.DxPreference android:id="@id/quick_helper_drag_effect" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/fw_float_window_drag_effect" app:type="switch" />
+        <include layout="@layout/common_divider_horizontal_with_margin" />
+        <com.dianxinos.common.ui.view.DxPreference android:id="@id/quick_helper_protected_list" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/tk_pref_protected_list" app:type="normal" />
+    </LinearLayout>
+</LinearLayout>

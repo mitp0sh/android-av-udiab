@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/setting_titlebar" layout="@layout/main_titlebar" />
+    <com.dianxinos.common.ui.view.DxPreference android:id="@id/antilost_setting_devicename" android:layout_width="fill_parent" android:layout_height="60.0dip" app:name="@string/device_setting_devicename" app:type="none" />
+    <include layout="@layout/common_divider_settings" />
+    <com.dianxinos.common.ui.view.DxPreference android:id="@id/antilost_setting_nodisturbmode" android:layout_width="fill_parent" android:layout_height="60.0dip" app:name="@string/device_setting_nodisturb" app:type="switch" />
+    <include layout="@layout/common_divider_settings" />
+    <com.dianxinos.common.ui.view.DxPreference android:id="@id/antilost_setting_nodisturbtime" android:layout_width="fill_parent" android:layout_height="60.0dip" app:name="@string/device_setting_nodisturbtime" app:type="none" />
+    <include layout="@layout/common_divider_settings" />
+    <com.dianxinos.common.ui.view.DxPreference android:id="@id/antilost_setting_share" android:layout_width="fill_parent" android:layout_height="60.0dip" app:name="@string/device_setting_share" app:type="none" />
+    <include layout="@layout/common_divider_settings" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/setting_removebond" android:text="@string/device_setting_removebond" style="@style/MyWidget.PageHeaderButton.Blue" />
+</LinearLayout>

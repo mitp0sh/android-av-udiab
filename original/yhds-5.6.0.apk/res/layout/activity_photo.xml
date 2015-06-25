@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" android:layout_alignParentTop="true" layout="@layout/main_titlebar" />
+    <android.support.v4.view.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titlebar" />
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titlebar" />
+    <LinearLayout android:gravity="center_vertical" android:background="@android:color/transparent" android:layout_alignParentBottom="true" style="@style/MyWidget.PageBottomButtonLayout">
+        <Button android:textColor="@color/white" android:id="@id/mRecovery" android:background="@color/common_70_percent_transparent" android:layout_width="0.0dip" android:text="@string/tip_recovery" android:layout_weight="1.0" style="@style/MyWidget.BottomButton.NoCorner" />
+        <View android:id="@id/btn_divider" android:background="@color/common_divider_color" android:layout_width="@dimen/common_divider_line_size" android:layout_height="fill_parent" />
+        <Button android:textColor="@color/white" android:id="@id/mDelete" android:background="@color/common_70_percent_transparent" android:layout_width="0.0dip" android:text="@string/tip_delete" android:layout_weight="1.0" style="@style/MyWidget.BottomButton.NoCorner" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/cover_layout" android:background="@drawable/dx_main_screen_bkg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/antispam_text_layout" android:layout_height="36.0dip" style="@style/MyWidget.InfoBarLayout">
+            <TextView android:textSize="@dimen/common_text_size_middle_2" android:textColor="@color/diagnostic_list_header" android:id="@id/antispam_status" android:paddingLeft="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/common_text_size_middle_2" android:id="@id/clear_all_button" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="@string/antispam_clear_all" android:singleLine="true" style="@style/MyWidget.RoundButton.Highlight" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_grey" android:gravity="center_horizontal" android:id="@id/report_button" android:background="@color/common_white" android:paddingTop="26.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/common_page_bottom_button_height" android:layout_alignParentBottom="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/empty_content" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/report_button" android:layout_below="@id/antispam_text_layout">
+            <com.dianxinos.optimizer.ui.DXEmptyView android:id="@id/notify_antispam" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <Button android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/add_button" android:background="@drawable/antispam_report_dialog_btn_bkg" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+        <com.dianxinos.common.ui.view.PinnedHeaderListView android:id="@id/antispam_listview" android:layout_height="fill_parent" android:layout_above="@id/report_button" android:layout_below="@id/antispam_text_layout" style="@style/MyWidget.ListView" />
+        <Button android:id="@id/page_botton_add" android:background="@drawable/page_bottom_add_btn_bkg" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginBottom="-24.0dip" android:layout_above="@id/report_button" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

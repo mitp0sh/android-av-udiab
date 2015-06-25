@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_width="96.0dip" android:layout_height="96.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bkg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/dx_score_bkg_green" android:scaleType="fitCenter" />
+    <ImageView android:id="@id/score_unknown" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/dx_score_unknown" android:scaleType="fitCenter" />
+    <LinearLayout android:gravity="bottom" android:layout_gravity="center" android:id="@id/score" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/digit_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/digit_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/digit_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <ImageView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/dx_score_top" android:scaleType="fitCenter" />
+</FrameLayout>

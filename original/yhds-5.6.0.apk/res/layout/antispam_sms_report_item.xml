@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/process_body" android:paddingBottom="@dimen/common_list_item_two_line_first_top_margin" android:layout_height="76.0dip" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/phone_no" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/isSpam" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/MyWidget.ListViewItemTextTop" />
+    <LinearLayout android:id="@id/action_panel" android:layout_alignParentRight="true" style="@style/MyWidget.ListActionPanel">
+        <include layout="@layout/list_item_checkbox" />
+    </LinearLayout>
+    <TextView android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_toLeftOf="@id/action_panel" android:layout_alignBaseline="@id/sms" style="@style/MyWidget.ListViewItemTextBottom" />
+    <TextView android:textColor="@color/sms_spamtype_and_spamreason_color" android:id="@id/isSpam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_toLeftOf="@id/action_panel" android:layout_alignBaseline="@id/phone_no" style="@style/MyWidget.ListViewItemTextBottom" />
+    <TextView android:textSize="@dimen/common_text_size_middle_2" android:ellipsize="end" android:id="@id/sms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" android:layout_toLeftOf="@id/date" android:layout_below="@id/phone_no" android:layout_alignParentLeft="true" style="@style/MyWidget.ListViewItemTextBottom" />
+</RelativeLayout>

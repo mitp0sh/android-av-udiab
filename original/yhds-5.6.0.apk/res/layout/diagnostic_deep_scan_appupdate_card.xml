@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.ListViewItem.HomeCard"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_deep_scan_card_item_margin" android:layout_marginRight="1.0dip">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/lin_forward" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.BottomButton.NoCorner">
+            <TextView android:textSize="30.0sp" android:textColor="@color/common_yellow" android:id="@id/text_app_total_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/home_scan_card_appupdate_title" style="@style/MyWidget.ListViewItemTextBottom" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/common_list_card_margin_horizontal" android:src="@drawable/home_scan_card_arrow" />
+    </FrameLayout>
+    <View android:layout_marginTop="@dimen/home_deep_scan_card_item_margin" android:layout_marginRight="@dimen/common_list_card_margin_horizontal" style="@style/MyWidget.Divider.Horizontal" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lin_result" android:layout_width="fill_parent" android:layout_height="67.0dip" android:layout_marginTop="@dimen/home_deep_scan_card_item_margin" android:layout_marginRight="@dimen/common_list_card_margin_horizontal" />
+    <View android:layout_marginTop="@dimen/home_deep_scan_card_item_margin" android:layout_marginRight="@dimen/common_list_card_margin_horizontal" style="@style/MyWidget.Divider.Horizontal" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_blue" android:gravity="center" android:id="@id/text_update" android:layout_width="fill_parent" android:layout_height="@dimen/home_deep_scan_card_button_height" android:layout_marginRight="@dimen/common_list_card_margin_horizontal" android:text="@string/home_scan_card_appupdate_content" style="@style/MyWidget.BottomButton.NoCorner" />
+</LinearLayout>

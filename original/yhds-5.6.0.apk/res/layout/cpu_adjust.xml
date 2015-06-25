@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/common_text_size_middle" android:textColor="@color/common_dark" android:gravity="center" android:layout_gravity="center" android:id="@id/notify_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/msg_no_adjust_cpu" android:layout_weight="1.0" />
+    <ScrollView android:id="@id/cpu_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/cpu_header_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/cpu_info_bg1" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                    <RelativeLayout android:layout_gravity="center_horizontal" android:background="@drawable/cpu_info_bg2" android:padding="5.0dip" android:layout_width="180.0dip" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0dip" android:textColor="@color/common_blue" android:id="@id/cpu_title" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/current_cpu_freq" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/cpu_title" android:layout_centerHorizontal="true">
+                            <TextView android:textSize="50.0dip" android:textColor="@color/common_blue" android:gravity="center|left" android:id="@id/cpu_freq_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                            <TextView android:textSize="14.0dip" android:textColor="@color/common_blue" android:gravity="center|left|top" android:id="@id/cpu_freq_current_mhz" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/mhz" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="14.0dip" android:textColor="@color/common_grey" android:id="@id/cpu_scale_current" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="18.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/common_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="30.0dip" android:text="@string/msg_adjust_cpu_scale" />
+            <com.dianxinos.common.ui.view.ScaleAdjustBar android:id="@id/adjust_bar" android:layout_width="fill_parent" android:layout_height="70.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="8.0dip">
+                <include layout="@layout/common_divider_horizontal" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0dip" android:textColor="@color/common_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:text="@string/desc_cpu_adjust" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@id/apply_button" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="24.0dip" android:text="@string/common_finish" style="@style/MyWidget.RoundButton.Highlight" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianxinos.optimizer.module.feedback.view.FeedbackSpinnerFrameView android:id="@id/spinner_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/titlebar_panel_divider">
+        <Button android:id="@id/age_spinner" android:layout_width="fill_parent" android:layout_marginRight="4.0dip" android:text="@string/feedback_age_spinner" android:layout_weight="1.0" style="@style/MyWidget.PickSelectView" />
+        <Button android:id="@id/gender_spinner" android:layout_width="fill_parent" android:layout_marginLeft="4.0dip" android:text="@string/feedback_gender_spinner" android:layout_weight="1.0" style="@style/MyWidget.PickSelectView" />
+    </com.dianxinos.optimizer.module.feedback.view.FeedbackSpinnerFrameView>
+    <com.dianxinos.optimizer.module.feedback.view.NewFeedbackFrameView android:id="@id/feedback_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/spinner_frame">
+        <EditText android:textSize="14.0sp" android:textColor="@color/common_dark" android:textColorHint="@color/common_grey" android:gravity="top" android:id="@id/feedback" android:background="@drawable/text_editor_bkg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="76.0dip" android:hint="@string/feedback_content_hints" android:maxLength="100" />
+        <EditText android:textSize="14.0sp" android:textColor="@color/common_dark" android:textColorHint="@color/common_grey" android:id="@id/contact" android:background="@drawable/text_editor_bkg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:minHeight="34.0dip" android:hint="@string/feedback_contact_hints" android:layout_below="@id/feedback" android:inputType="textEmailAddress" />
+    </com.dianxinos.optimizer.module.feedback.view.NewFeedbackFrameView>
+</RelativeLayout>

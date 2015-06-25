@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/deviceinfo_layout" android:background="@drawable/page_header_system_optimize_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:gravity="left" android:id="@id/batterylevel_icon" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" />
+        <TextView android:gravity="center_vertical" android:id="@id/batterylevel_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="150.0dip">
+            <ImageView android:gravity="right" android:id="@id/signallevel_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <TextView android:gravity="center_vertical" android:id="@id/conn_state" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="70.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/device_image" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/antilost_device_image" />
+        <TextView android:layout_gravity="center" android:id="@id/device_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" />
+        <TextView android:layout_gravity="center" android:id="@id/device_address" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" />
+        <TextView android:layout_gravity="center" android:id="@id/device_distance" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" />
+        <Button android:layout_gravity="center" android:id="@id/button_findme" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:text="@string/antilost_findme" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/distance_seekbar" layout="@layout/antilost_seekbar_layout" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dxopt_logo_shake_clear_toast_bg" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="260.0dip" android:layout_height="140.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0dip" android:textColor="#ff333333" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/shake_toast_title" />
+    <LinearLayout android:id="@id/process_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shake_toast_process_text" />
+        <TextView android:textSize="13.0dip" android:textColor="#ff004f96" android:gravity="center" android:id="@id/txt_process" android:background="@drawable/shake_clear_toast_text_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/memory_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shake_toast_memory_text" />
+        <TextView android:textSize="13.0dip" android:textColor="#ff004f96" android:gravity="center" android:id="@id/txt_memory" android:background="@drawable/shake_clear_toast_text_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/txt_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="0.0dip" android:maxWidth="212.0dip" android:maxHeight="140.0dip" android:text="@string/shake_toast_none_message" android:maxLines="5" android:layout_weight="1.0" />
+</LinearLayout>

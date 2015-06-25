@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/top_divider" layout="@layout/main_screen_list_item" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" style="@style/MyWidget.ListViewItem">
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/rooter_loading" android:layout_width="36.0dip" android:layout_height="36.0dip" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/dx_loading_inside_rotate" android:indeterminateBehavior="repeat" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/common_dark" android:gravity="center" android:id="@id/tv_loading" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" />
+    </LinearLayout>
+</LinearLayout>

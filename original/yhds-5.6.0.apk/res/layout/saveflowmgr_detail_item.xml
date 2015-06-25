@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="false" android:clickable="false" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/icon" style="@style/MyWidget.ListViewItemAppIcon" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:gravity="left" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MyWidget.ListViewItemTextTop" />
+        <TextView android:gravity="center|left" android:id="@id/data_usage" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MyWidget.ListViewItemTextBottom" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="@color/saveflow_text_color" android:gravity="center|right|top" android:layout_gravity="center|right|top" android:id="@id/save_percent" android:visibility="visible" style="@style/MyWidget.ListViewItemTextTop" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/saveflow_text_color" android:gravity="bottom|center|right" android:layout_gravity="bottom|center|right" android:id="@id/saveflow_values" android:visibility="visible" style="@style/MyWidget.ListViewItemTextBottom" />
+    </LinearLayout>
+</LinearLayout>

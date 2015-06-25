@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/common_list_header_bkg_color" android:paddingLeft="@dimen/common_list_item_left_padding" android:paddingTop="6.0dip" android:paddingRight="@dimen/common_list_item_left_padding" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:text="@string/appmanager_pullback_title" style="@style/MyWidget.ListViewItemTextTop" />
+            <TextView android:layout_marginTop="4.0dip" android:text="@string/appmanager_pullback_tips" style="@style/MyWidget.ListViewItemTextBottom" />
+        </LinearLayout>
+        <com.dianxinos.common.ui.view.DXToggleButton android:id="@id/regret_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" app:textOn="@string/common_state_on" app:textOff="@string/common_state_off" />
+    </LinearLayout>
+    <include layout="@layout/common_divider_horizontal" />
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.dianxinos.optimizer.ui.DXEmptyView android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/loaded_content_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:id="@id/info_bar" style="@style/MyWidget.InfoBarLayout" />
+        <com.dianxinos.common.ui.view.PinnedHeaderListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MyWidget.ListView" />
+    </LinearLayout>
+</LinearLayout>

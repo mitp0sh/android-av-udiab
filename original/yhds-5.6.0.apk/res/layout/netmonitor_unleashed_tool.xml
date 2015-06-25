@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dianxinos.optimizer.ui.DxPageTips android:id="@id/monitor_close_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" app:message="@string/netflow_open_monitor_info" app:isImageButton="false" app:buttonText="@string/anti_netflow_open_monitor" />
+    <ScrollView android:id="@id/scroller" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.SettingsPageMargin">
+            <LinearLayout style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/night_escape" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/night_escape" app:summary="@string/night_escape_info" app:type="switch" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/night_escape_settings" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/night_escape_settings" app:summary="@string/night_escape_info_summery" app:type="normal" />
+            </LinearLayout>
+            <LinearLayout style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/large_net_traffic_lock" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/large_net_traffic_lock" app:summary="@string/large_net_traffic_lock_info" app:type="switch" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/large_net_traffic_lock_settings" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/large_net_traffic_lock_settings" app:summary="@string/large_net_traffic_lock_settings_summery" app:type="normal" />
+            </LinearLayout>
+            <LinearLayout style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/netflow_live" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netflow_live" app:summary="@string/netflow_live_info" app:type="switch" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/netflow_live_settings" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netflow_live_settings" app:type="normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

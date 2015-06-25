@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff2f6f9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" android:layout_alignParentTop="true" layout="@layout/main_titlebar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/scan_result_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_bar">
+        <com.dianxinos.optimizer.module.addetect.widget.ScanResultTips android:id="@id/scan_result_tips" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+        <ExpandableListView android:id="@id/lv_all_apps" android:layout_width="fill_parent" android:layout_height="fill_parent" android:groupIndicator="@null" style="@style/MyWidget.ExpandableListView.ForAdDetect" />
+    </LinearLayout>
+</RelativeLayout>

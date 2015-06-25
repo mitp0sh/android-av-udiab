@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/MyWidget.ScrollView">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/bkg_wanted" android:background="@drawable/egg_bkg_repeated" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:minWidth="280.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/egg_title_wanted" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/netflow_egg_title" android:gravity="center_horizontal" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/night_escape" />
+                <RelativeLayout android:background="@drawable/egg_mark" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/icon" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/dxopt_icon" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/common_text_size_middle" android:textColor="@color/netflow_egg_title" android:gravity="center" android:id="@id/message" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/netflow_share_info" />
+                <Button android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/ok_button" android:background="@drawable/egg_share_btn_bkg" android:padding="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/netflow_share_button" />
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout android:id="@id/line_holder" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/egg_container" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

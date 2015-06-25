@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/netflow_notification_up_download" android:id="@id/netflow_yesterday_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/netflow_yesterday_info" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/netflow_notification_desc" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/netflow_yesterday_save" android:layout_weight="0.7" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_red" android:gravity="right" android:id="@id/netflow_yesterday_save" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.3" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/netflow_notification_desc" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/netflow_current_month_save" android:layout_weight="0.7" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_red" android:gravity="right" android:id="@id/netflow_current_month_save" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.3" />
+    </LinearLayout>
+</LinearLayout>

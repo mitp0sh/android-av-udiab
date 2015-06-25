@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/cover_layout" android:background="@drawable/dx_main_screen_bkg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/process_text_all" android:background="@drawable/common_list_header_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="26.0dip">
+            <com.dianxinos.optimizer.ui.DxPageTips android:id="@id/authority_tips_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:message="@string/tk_authority_enable" app:isImageButton="false" app:buttonText="@string/authority_btn_enable" />
+            <TextView android:id="@id/process_status" style="@style/MyWidget.InfoBarLayout" />
+            <FrameLayout android:background="@drawable/ram_progress_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@id/ram_progress" android:background="@drawable/ram_progress_green" android:layout_width="1.0dip" android:layout_height="4.0dip" />
+            </FrameLayout>
+        </LinearLayout>
+        <com.dianxinos.optimizer.ui.DXEmptyView android:id="@id/notify_process" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <com.dianxinos.common.ui.view.PinnedHeaderListView android:id="@id/process_listview" android:paddingBottom="4.0dip" android:layout_height="fill_parent" android:layout_marginBottom="-6.0dip" android:layout_weight="1.0" style="@style/MyWidget.ListView" />
+        <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/stop_process_button" style="@style/MyWidget.PageBottomButtonLayout" />
+    </LinearLayout>
+</FrameLayout>

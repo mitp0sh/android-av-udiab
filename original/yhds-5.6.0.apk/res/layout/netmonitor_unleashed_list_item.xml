@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/net_unleashed_item_body" android:minHeight="@dimen/common_list_item_height" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/net_unleashed_app_icon" style="@style/MyWidget.ListViewItemAppIcon" />
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:ellipsize="end" android:id="@id/net_unleashed_app_name" style="@style/MyWidget.ListViewItemTextTop" />
+        <TextView android:id="@id/net_unleashed_cheat_data" style="@style/MyWidget.ListViewItemTextBottom" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:src="@drawable/arrow_right" />
+</LinearLayout>

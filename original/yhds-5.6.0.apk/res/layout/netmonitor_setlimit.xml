@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <com.dianxinos.optimizer.ui.DxPageTips android:id="@id/page_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" app:message="@string/netmonitor_title_limit" app:hasButton="false" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="@color/common_dark" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/netmonitor_taocan_limit" android:layout_weight="2.0" />
+                <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <EditText android:textSize="16.0dip" android:textColor="@color/common_dark" android:id="@id/monthlimitgprs" android:background="@drawable/text_editor_bkg" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="32.0dip" android:maxLength="6" android:inputType="number" />
+                    <TextView android:textSize="@dimen/common_text_size_middle" android:textColor="@color/common_grey" android:gravity="center_vertical" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/netmonitor_unit_mb" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="@color/common_dark" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/netmonitor_taocan_date" android:layout_weight="2.0" />
+                <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <EditText android:textSize="16.0dip" android:textColor="@color/common_dark" android:id="@id/datelimit" android:background="@drawable/text_editor_bkg" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="32.0dip" android:maxLength="6" android:inputType="number" />
+                    <TextView android:textSize="@dimen/common_text_size_middle" android:textColor="@color/common_grey" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/netmonitor_unit_ri" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_grey" android:gravity="right" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="@string/netmonitor_tips" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@id/limitok" android:text="@string/common_finish" style="@style/MyWidget.PageBottomButtonLayoutNoBackground" />
+</LinearLayout>

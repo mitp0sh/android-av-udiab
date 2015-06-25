@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/update_pullback_item_body" android:background="@android:color/transparent" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/update_pullback_icon" style="@style/MyWidget.ListViewItemAppIcon" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:ellipsize="middle" android:id="@id/update_pullback_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_grey" android:ellipsize="end" android:id="@id/update_pullback_version" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_grey" android:id="@id/update_pullback_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/MyWidget.ListActionPanel">
+        <com.dianxinos.optimizer.ui.DxActionButton android:id="@id/btn_action" app:icon="@drawable/dx_action_regret" app:label="@string/appmanager_pullback" style="@style/MyWidget.ActionButton" />
+    </LinearLayout>
+</LinearLayout>

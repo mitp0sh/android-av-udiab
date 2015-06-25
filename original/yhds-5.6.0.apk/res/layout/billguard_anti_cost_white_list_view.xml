@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_billguard_white_app_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/MyWidget.ListViewItemAppIcon" />
+    <TextView android:id="@id/txt_billguard_white_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_toRightOf="@id/img_billguard_white_app_icon" android:layout_centerVertical="true" style="@style/MyWidget.ListViewItemTextCenter" />
+    <LinearLayout android:layout_alignParentRight="true" style="@style/MyWidget.ListActionPanel">
+        <com.dianxinos.optimizer.ui.DxActionButton android:id="@id/delete" style="@style/MyWidget.ActionButton" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="64.0dip" style="@style/MyWidget.ListViewItem.ForAdDetect"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/app_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip" android:layout_toRightOf="@id/app_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="16.0sp" android:id="@id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextView_AppName_Style" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff6d838f" android:id="@id/app_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:layout_alignParentBottom="true" style="@style/MyWidget.Divider.Horizontal" />
+</RelativeLayout>

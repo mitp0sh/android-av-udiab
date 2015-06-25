@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/antilost_alert_floatwindow_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:prvandroid="http://schemas.android.com/apk/res/cn.opda.a.phonoalbumshoushou">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/antilost_alert_background" android:background="@drawable/antilost_devicealert_background" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/antilost_alert_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip">
+                <ImageView android:id="@id/alert_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/antilost_alert_logo" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/alert_app_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="百度手机卫士提示" android:layout_toRightOf="@id/alert_logo" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/alert_image_nofound" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/antilost_alert_image_nofound" />
+                <ImageView android:layout_gravity="center" android:id="@id/alert_image_flower" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/antilost_alert_image_flower" />
+                <ImageView android:layout_gravity="center" android:id="@id/alert_image_found" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/antilost_alert_image_found" />
+            </FrameLayout>
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/alert_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-50.0dip" android:text="设备001" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <ImageView android:id="@id/alert_tips_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/antilost_alert_tip_image_nofind" />
+                <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/alert_tips_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="超出安全距离" />
+            </FrameLayout>
+            <com.dianxinos.optimizer.module.antilost.layout.AlertSlideBar android:gravity="center" android:layout_gravity="center" android:id="@id/alert_slideBar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="40.0dip" prvandroid:MinVelocityXToUnlock="1500" prvandroid:MinDistanceToUnlock="300" prvandroid:LeftAnimationDuratioin="200" prvandroid:RightAnimationDuratioin="300">
+                <com.dianxinos.optimizer.module.antilost.layout.AlertGradientView android:id="@id/alert_gradientView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gradient_view_margin_left" android:layout_centerVertical="true" prvandroid:StringToShow="@string/antilost_alert_slide_to_unlock" prvandroid:TextSize="@dimen/gradient_text_size" prvandroid:TextColor="@color/gradient_slide_text_color" prvandroid:SlideColor="@color/gradient_text_color" />
+            </com.dianxinos.optimizer.module.antilost.layout.AlertSlideBar>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

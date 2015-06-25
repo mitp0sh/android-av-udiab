@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/fp_color_window_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/main_header_background" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <ImageView android:id="@id/title_bar_back" android:background="@drawable/common_titlebar_bkg_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/titlebar_logo_back" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onBackClick" android:contentDescription="@string/fp_img" />
+        <TextView android:gravity="center" android:id="@id/title_bar_logo" android:layout_width="89.0dip" android:layout_height="30.0dip" android:src="@drawable/fp_ic_logo" android:text="@string/recharge_title" android:layout_centerInParent="true" style="@style/MyWidget.TitleBarText" />
+    </RelativeLayout>
+    <include layout="@layout/fp_layout_order_info" />
+    <LinearLayout android:background="@color/fp_color_tab_bg" android:paddingTop="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/fp_text_size_18" android:gravity="center" android:id="@id/btn_credit_pay" android:background="@drawable/fp_pay_tab" android:layout_width="0.0dip" android:layout_height="46.0dip" android:text="@string/fp_credit_card" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/fp_text_size_18" android:gravity="center" android:id="@id/btn_debit_pay" android:background="@drawable/fp_pay_tab" android:layout_width="0.0dip" android:layout_height="46.0dip" android:text="@string/fp_debit_card" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:paddingLeft="@dimen/fp_dimen_15dp" android:paddingRight="@dimen/fp_dimen_15dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/pay_animator" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/credit_pay" layout="@layout/fp_layout_credit_pay" />
+                <include android:id="@id/debit_pay" layout="@layout/fp_layout_debit_pay" />
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <CheckBox android:textSize="@dimen/fp_text_size_15" android:textColor="@color/fp_black" android:id="@id/fp_protocol" android:clickable="true" android:layout_width="25.0dip" android:layout_height="25.0dip" android:checked="true" android:button="@drawable/fp_bg_checkbox" />
+                <TextView android:textSize="@dimen/fp_text_size_15" android:textColor="@color/fp_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/fp_argree" />
+                <TextView android:textSize="@dimen/fp_text_size_15" android:textColor="@color/fp_color_link" android:id="@id/fp_protocol_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/fp_protocol" />
+            </LinearLayout>
+            <Button android:id="@id/fp_submit_btn" android:layout_marginTop="@dimen/fp_dimen_20dp" android:layout_marginBottom="@dimen/fp_dimen_10dp" android:text="@string/fp_submit_pay" style="@style/MyWidget.RoundButton.Highlight" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/fp_color_text" android:gravity="center" android:id="@id/fp_statement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/fp_statement" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

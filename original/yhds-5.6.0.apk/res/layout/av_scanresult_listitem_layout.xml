@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:clickable="true" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/listitem_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/MyWidget.ListViewItemAppIcon" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/listitem_functionarea" android:layout_toRightOf="@id/listitem_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="16.0dip" android:textColor="@color/common_dark" android:id="@id/listitem_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/list_item_text_maxlength" android:singleLine="true" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/common_red" android:id="@id/listitem_summary" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/listitem_functionarea" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/MyWidget.ListActionPanel">
+        <com.dianxinos.optimizer.ui.DxActionButton android:id="@id/listitem_trust" app:icon="@drawable/dx_action_ignore" app:label="@string/ignore" style="@style/MyWidget.ActionButton" />
+        <com.dianxinos.optimizer.ui.DxActionButton android:id="@id/listitem_uninstallapp" app:icon="@drawable/dx_action_delete" app:label="@string/appmanager_uninstall_action_uninstall" style="@style/MyWidget.ActionButton" />
+        <TextView android:id="@id/listitem_handledtips" android:visibility="gone" android:text="@string/virus_deleted" style="@style/MyWidget.ListActionStatus" />
+    </LinearLayout>
+</RelativeLayout>

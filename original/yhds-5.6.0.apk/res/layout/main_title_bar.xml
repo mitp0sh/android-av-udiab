@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/common_titlebar_bkg" android:layout_width="fill_parent" android:layout_height="@dimen/common_titlebar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/logo" android:layout_width="@dimen/common_titlebar_action_width" android:layout_height="fill_parent" android:src="@drawable/dxopt_logo_titlebar_normal" android:scaleType="center" />
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/title_panel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MyWidget.TitleBarText" />
+        <ImageView android:id="@id/title_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:src="@drawable/title_loading" android:scaleType="center" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/layout_extend" android:visibility="gone" android:layout_width="@dimen/common_titlebar_action_width" android:layout_height="fill_parent">
+        <ImageButton android:id="@id/btn_extend" android:background="@drawable/common_titlebar_bkg_mid" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/dx_titlebar_settings" android:scaleType="center" />
+        <View android:id="@id/btn_extend_tips" android:visibility="gone" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/MyWidget.DotTips" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_settings" android:visibility="invisible" android:layout_width="@dimen/common_titlebar_action_width" android:layout_height="fill_parent">
+        <ImageButton android:id="@id/settings" android:background="@drawable/common_titlebar_bkg_right" android:visibility="gone" android:layout_width="@dimen/common_titlebar_action_width" android:layout_height="fill_parent" android:src="@drawable/dx_titlebar_settings" android:scaleType="center" />
+        <View android:id="@id/setting_tips" android:visibility="gone" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/MyWidget.DotTips" />
+    </RelativeLayout>
+</LinearLayout>

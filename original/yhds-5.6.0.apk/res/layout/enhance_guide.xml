@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/saveflow_help_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="#ff627797" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/enhance_question1" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff717171" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/enhance_answer1" />
+            <View android:background="@color/common_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/common_divider_line_size" android:layout_marginLeft="2.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="2.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff627797" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/enhance_question2" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff717171" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/enhance_answer2" />
+            <View android:background="@color/common_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/common_divider_line_size" android:layout_marginLeft="2.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="2.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff627797" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/enhance_question3" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff717171" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/enhance_answer3" />
+            <View android:background="@color/common_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/common_divider_line_size" android:layout_marginLeft="2.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="2.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

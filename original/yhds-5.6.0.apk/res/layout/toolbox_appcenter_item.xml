@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/app_icon_bg" android:layout_width="51.0dip" android:layout_height="51.0dip" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/app_icon" android:layout_width="@dimen/app_icon_size" android:layout_height="@dimen/app_icon_size" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/download_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/app_icon_bg" android:layout_alignTop="@id/app_icon_bg" />
+    <ProgressBar android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_margin="2.0dip" android:indeterminateOnly="false" android:progressDrawable="@drawable/common_progressbar_main" android:layout_below="@id/app_icon_bg" />
+    <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_dark_selector" android:gravity="center_horizontal" android:id="@id/app_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:singleLine="true" android:layout_below="@id/app_icon_bg" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/app_name" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/page_header_system_optimize_bkg" android:layout_width="fill_parent" android:layout_height="@dimen/common_page_header_height" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianxinos.optimizer.ui.DxScoreView android:id="@id/score_view" android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+    <LinearLayout android:gravity="center|left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/common_text_size_middle" android:textColor="@color/common_white" android:ellipsize="marquee" android:gravity="center|left" android:id="@id/diagnostic_status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="8.0dip" android:maxLines="2" android:singleLine="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/diagnostic_header_second_line" android:gravity="left" android:id="@id/diagnostic_summary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="8.0dip" android:singleLine="true" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="18.0dip">
+            <Button android:id="@id/diagnostic_go" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/device_add_text" android:layout_weight="1.0" style="@style/MyWidget.RoundButton.Green" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

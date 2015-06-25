@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/detail_titlebar" layout="@layout/main_titlebar" />
+    <com.dianxinos.optimizer.ui.DxPageTips android:id="@id/egg_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:isImageButton="false" app:buttonText="@string/netmonitor_net_unleashed_detail_button" />
+    <include layout="@layout/common_divider_horizontal" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/dx_main_screen_bkg" style="@style/MyWidget.ListViewItem">
+        <ImageView android:id="@id/detail_app_icon" style="@style/MyWidget.ListViewItemAppIcon" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/common_text_size_middle" android:textColor="@color/common_dark" android:ellipsize="end" android:layout_gravity="center|left" android:id="@id/detail_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_grey" android:layout_gravity="center|left" android:id="@id/detail_cheat_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_list_item_two_line_second_top_margin" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/detail_apn_switch" android:background="@drawable/common_list_item_bkg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/netflow_apn_on" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/detail_wifi_switch" android:background="@drawable/common_list_item_bkg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/netflow_wifi_on" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/common_divider_horizontal" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/detail_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.dianxinos.optimizer.ui.DXEmptyView android:id="@id/detail_empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/detail_loaded_content_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="horizontal" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_grey" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/netmonitor_net_unleashed_detail_date" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_grey" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="88.0dip" android:text="@string/netmonitor_net_unleashed_detail_total" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_grey" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="214.0dip" android:text="@string/netmonitor_net_unleashed_detail_up" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_grey" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="272.0dip" android:text="@string/netmonitor_net_unleashed_detail_down" android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+            <include layout="@layout/common_divider_horizontal" />
+            <ListView android:id="@id/detail_list" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/MyWidget.ListView" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/detail_bottom_btn" style="@style/MyWidget.PageBottomButtonLayout" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/homeDialogTopLayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/homeDialogCenterLayout" android:background="@drawable/main_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/home_popview_left_margin" android:layout_marginRight="@dimen/home_popview_right_margin">
+        <View android:layout_width="fill_parent" android:layout_height="@dimen/home_popview_firstline_top_margin" />
+        <GridView android:id="@id/home_grid_view" android:layoutAnimation="@anim/safetools_random_wave_scale_anim" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/home_popview_center_left_margin" android:layout_marginRight="@dimen/home_popview_center_right_margin" android:listSelector="@color/home_menu_popview_normal" android:verticalSpacing="@dimen/home_popview_secline_top_margin" android:numColumns="3" />
+        <View android:layout_width="fill_parent" android:layout_height="@dimen/home_popview_center_bottom_margin" />
+    </LinearLayout>
+    <View android:id="@id/homeDialogBottomLayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

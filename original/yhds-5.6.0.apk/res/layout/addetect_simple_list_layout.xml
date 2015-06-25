@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/common_screen_bkg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" android:layout_alignParentTop="true" layout="@layout/main_titlebar" />
+    <RelativeLayout android:id="@id/not_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar">
+        <include android:id="@id/header" android:layout_alignParentTop="true" layout="@layout/common_list_header" />
+        <com.dianxinos.optimizer.module.addetect.widget.DXCustomListView android:id="@id/app_list" android:background="#fff2f4f6" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/report_btn" android:layout_below="@id/header" style="@style/MyWidget.ListView.ForAdDetect" />
+        <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/report_btn" android:visibility="gone" android:layout_alignParentBottom="true" style="@style/MyWidget.PageBottomButtonLayout" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:textColor="#ff3d5562" android:gravity="center" android:id="@id/empty_tv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar" />
+</RelativeLayout>

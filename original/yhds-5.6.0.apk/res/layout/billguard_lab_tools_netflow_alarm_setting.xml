@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_settings_group_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_day_alarm" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/billguard_netflow_tool_pref_day" app:summary="@string/billguard_netflow_tool_pref_day_summary" app:type="switch" />
+    <include layout="@layout/common_divider_settings" />
+    <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_app_alarm" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/billguard_netflow_tool_pref_app" app:summary="@string/billguard_netflow_tool_pref_app_summary" app:type="switch" />
+</LinearLayout>

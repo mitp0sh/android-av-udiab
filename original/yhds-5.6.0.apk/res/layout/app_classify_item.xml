@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="64.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/shortcuttool_shortcut_item_imageview_icon" android:layout_width="@dimen/app_icon_size" android:layout_height="@dimen/app_icon_size" android:layout_marginTop="8.0dip" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_dark" android:gravity="center_horizontal" android:id="@id/shortcuttool_shortcut_item_textview_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/shortcuttool_shortcut_item_imageview_icon" />
+</RelativeLayout>

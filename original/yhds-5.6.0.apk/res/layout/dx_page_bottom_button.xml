@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/common_blue" android:layout_gravity="center_vertical" android:id="@id/button" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/MyWidget.BottomButton.NoCorner" />
+    <include android:id="@id/checkbox_divider" android:visibility="gone" layout="@layout/common_divider_vertical" />
+    <FrameLayout android:id="@id/checkbox_panel" android:background="@drawable/common_bottombtn_nocorner" android:visibility="gone" android:layout_width="@dimen/common_action_button_width" android:layout_height="fill_parent">
+        <CheckBox android:layout_gravity="center" android:id="@id/checkbox" android:focusable="false" android:clickable="false" android:duplicateParentState="true" style="@style/MyWidget.CheckBox.NoText" />
+    </FrameLayout>
+</merge>

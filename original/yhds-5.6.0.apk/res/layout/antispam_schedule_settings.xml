@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MyWidget.SettingsPageMargin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout style="@style/MyWidget.SettingsGroup">
+        <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_schedule_on" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_schedule_on" app:type="switch" />
+    </LinearLayout>
+    <LinearLayout style="@style/MyWidget.SettingsGroup">
+        <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_schedule_date" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_schedule_date" app:type="normal" />
+    </LinearLayout>
+    <LinearLayout style="@style/MyWidget.SettingsGroup">
+        <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_schedule_repeat" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_schedule_repeat" app:type="normal" />
+        <include layout="@layout/common_divider_settings" />
+        <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_schedule_mode" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_schedule_mode" app:type="normal" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_centerVertical="true" style="@style/MyWidget.ListViewItemAppIcon" />
+    <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_blue" android:id="@id/status" android:layout_toLeftOf="@id/action_panel" style="@style/MyWidget.ListViewItemTextTop" />
+    <TextView android:ellipsize="end" android:id="@id/app_name" android:singleLine="true" android:layout_toLeftOf="@id/status" android:layout_toRightOf="@id/icon" style="@style/MyWidget.ListViewItemTextTop" />
+    <TextView android:id="@id/app_version" android:layout_toLeftOf="@id/action_panel" android:layout_toRightOf="@id/icon" android:layout_below="@id/app_name" style="@style/MyWidget.ListViewItemTextBottom" />
+    <RelativeLayout android:id="@id/progress_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/action_panel" android:layout_toRightOf="@id/icon" android:layout_below="@id/status">
+        <ProgressBar android:id="@id/progress" android:layout_marginTop="6.0dip" android:max="100" style="@style/MyWidget.ProgressBarMain" />
+        <TextView android:ellipsize="marquee" android:id="@id/app_download_speed" android:layout_width="wrap_content" android:layout_below="@id/progress" android:layout_alignParentLeft="true" style="@style/MyWidget.ListViewItemTextBottom" />
+        <TextView android:ellipsize="marquee" android:id="@id/app_download_percent" android:layout_width="wrap_content" android:layout_below="@id/progress" android:layout_alignParentRight="true" style="@style/MyWidget.ListViewItemTextBottom" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/action_panel" android:layout_alignParentRight="true" style="@style/MyWidget.ListActionPanel">
+        <com.dianxinos.optimizer.ui.DxActionButton android:id="@id/action_btn" style="@style/MyWidget.ActionButton" />
+    </LinearLayout>
+</RelativeLayout>

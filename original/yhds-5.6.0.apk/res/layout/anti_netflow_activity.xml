@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/netmonitor_mainsettings" layout="@layout/main_titlebar" />
+    <com.dianxinos.optimizer.ui.DxPageTips android:id="@id/monitor_close_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" app:message="@string/anti_netflow_open_monitor_info" app:isImageButton="false" app:buttonText="@string/anti_netflow_open_monitor" />
+    <ScrollView android:id="@id/scroller" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.SettingsPageMargin">
+            <LinearLayout style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/netflow_lockscreen" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netflow_lockscreen" app:type="switch" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/netflow_night" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netflow_night" app:type="switch" />
+            </LinearLayout>
+            <LinearLayout style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/netflow_background" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netflow_background" app:summary="@string/netflow_background_info" app:type="switch" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/netflow_background_trust_list" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netflow_background_trust_list" app:summary="@string/netflow_background_trust_list_info" app:type="normal" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/netflow_background_threshold" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netflow_background_threshold" app:summary="@string/netflow_background_threshold_info" app:type="normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

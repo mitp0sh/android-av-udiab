@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/space_cache_item_body" android:layout_width="fill_parent" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sysappconstrict_list_item_imageview_icon" style="@style/MyWidget.ListViewItemAppIcon" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_blue" android:id="@id/advice_to_keep" android:visibility="gone" android:layout_marginLeft="14.0dip" android:layout_alignParentRight="true" style="@style/MyWidget.ListViewItemTextTop" />
+            <TextView android:id="@id/sysappconstrict_list_item_textview_title" android:layout_toLeftOf="@id/advice_to_keep" android:layout_alignParentLeft="true" style="@style/MyWidget.ListViewItemTextTop" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/sysappconstrict_list_item_textview_size" android:layout_alignParentLeft="true" style="@style/MyWidget.ListViewItemTextBottom" />
+            <TextView android:id="@id/sysappconstrict_list_item_time" android:layout_marginLeft="14.0dip" android:singleLine="true" android:layout_alignParentRight="true" style="@style/MyWidget.ListViewItemTextBottom" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/action_panel" style="@style/MyWidget.ListActionPanel">
+        <com.dianxinos.optimizer.ui.DxActionButton android:id="@id/action_button" style="@style/MyWidget.ActionButton" />
+    </LinearLayout>
+</LinearLayout>

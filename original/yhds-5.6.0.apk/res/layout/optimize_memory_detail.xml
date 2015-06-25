@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <ScrollView android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/common_grey" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/optimize_memory_detail_introduce" />
+            <RelativeLayout android:background="@drawable/common_settings_group_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ff3d5562" android:id="@id/memory_detail_introduce" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="4.0dip" />
+            </RelativeLayout>
+            <TextView android:textColor="@color/common_grey" android:paddingTop="6.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/optimize_memory_detail_settings" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/common_settings_group_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="5.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+                    <TextView android:text="@string/optimize_memory_string_foreground" style="@style/MyWidget.MySeekbarTitleName" />
+                    <TextView android:id="@id/Optimize_memory_detail_foreground" style="@style/MyWidget.MySeekbarTitleSize" />
+                </LinearLayout>
+                <SeekBar android:id="@id/Optimize_memory_detail_seekbar_foreground" style="@style/MyWidget.MySeekbar" />
+                <View android:layout_marginTop="4.0dip" style="@style/MyWidget.Divider.Horizontal" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+                    <TextView android:text="@string/optimize_memory_string_visible" style="@style/MyWidget.MySeekbarTitleName" />
+                    <TextView android:id="@id/Optimize_memory_detail_visible" style="@style/MyWidget.MySeekbarTitleSize" />
+                </LinearLayout>
+                <SeekBar android:id="@id/Optimize_memory_detail_seekbar_visible" style="@style/MyWidget.MySeekbar" />
+                <View android:layout_marginTop="4.0dip" style="@style/MyWidget.Divider.Horizontal" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+                    <TextView android:text="@string/optimize_memory_string_background" style="@style/MyWidget.MySeekbarTitleName" />
+                    <TextView android:id="@id/Optimize_memory_detail_background" style="@style/MyWidget.MySeekbarTitleSize" />
+                </LinearLayout>
+                <SeekBar android:id="@id/Optimize_memory_detail_seekbar_background" style="@style/MyWidget.MySeekbar" />
+                <View android:layout_marginTop="4.0dip" style="@style/MyWidget.Divider.Horizontal" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+                    <TextView android:text="@string/optimize_memory_string_invisible" style="@style/MyWidget.MySeekbarTitleName" />
+                    <TextView android:id="@id/Optimize_memory_detail_invisible" style="@style/MyWidget.MySeekbarTitleSize" />
+                </LinearLayout>
+                <SeekBar android:id="@id/Optimize_memory_detail_seekbar_invisible" style="@style/MyWidget.MySeekbar" />
+                <View android:layout_marginTop="4.0dip" style="@style/MyWidget.Divider.Horizontal" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+                    <TextView android:text="@string/optimize_memory_string_provider" style="@style/MyWidget.MySeekbarTitleName" />
+                    <TextView android:id="@id/Optimize_memory_detail_provider" style="@style/MyWidget.MySeekbarTitleSize" />
+                </LinearLayout>
+                <SeekBar android:id="@id/Optimize_memory_detail_seekbar_provider" style="@style/MyWidget.MySeekbar" />
+                <View android:layout_marginTop="4.0dip" style="@style/MyWidget.Divider.Horizontal" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+                    <TextView android:text="@string/optimize_memory_string_empty" style="@style/MyWidget.MySeekbarTitleName" />
+                    <TextView android:id="@id/Optimize_memory_detail_empty" style="@style/MyWidget.MySeekbarTitleSize" />
+                </LinearLayout>
+                <SeekBar android:id="@id/Optimize_memory_detail_seekbar_empty" style="@style/MyWidget.MySeekbar" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/three_buttons" android:layout_marginTop="5.0dip" layout="@layout/common_bottom_three_buttons" />
+</LinearLayout>

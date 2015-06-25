@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="12.0dip" android:paddingTop="18.0dip" android:paddingRight="12.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/number" android:hint="@string/antispam_add_manually_input_number" android:singleLine="true" android:maxLength="18" android:inputType="phone" style="@style/MyWidget.EditText" />
+    <EditText android:id="@id/remark" android:layout_marginTop="8.0dip" android:hint="@string/antispam_add_manually_input_remark" android:singleLine="true" android:maxLength="8" android:layout_below="@id/number" style="@style/MyWidget.EditText" />
+</RelativeLayout>

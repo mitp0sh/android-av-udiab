@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/common_titlebar_bkg" android:layout_width="fill_parent" android:layout_height="@dimen/common_titlebar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/appssearch_back" android:background="@drawable/common_titlebar_bkg_left" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/titlebar_logo_back" android:scaleType="center" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <RelativeLayout android:id="@id/appssearch_edittext_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <AutoCompleteTextView android:textSize="16.0sp" android:textColor="#ff3d5562" android:id="@id/appssearch_edit" android:background="@drawable/appssearch_widget_bg" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="32.0dip" android:singleLine="true" android:dropDownSelector="@drawable/common_list_item_bkg" android:layout_centerVertical="true" android:dropDownAnchor="@id/appssearch_edittext_layout" android:imeOptions="actionSearch" style="@style/MyWidget.AutoCompletetextView" />
+            <ImageView android:id="@id/appssearch_clear" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/appssearch_clear" android:layout_alignRight="@id/appssearch_edit" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageButton android:id="@id/appssearch_btn" android:background="@drawable/common_titlebar_bkg_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/appssearch_btn" android:scaleType="center" android:minWidth="50.0dip" />
+    </LinearLayout>
+</LinearLayout>

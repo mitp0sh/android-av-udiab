@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="1.0dip" android:descendantFocusability="blocksDescendants" android:layout_height="40.0dip" android:baselineAligned="false" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/app_icon" android:layout_width="0.0dip" android:layout_height="32.0dip" android:layout_marginLeft="@dimen/common_list_item_app_icon_right_margin" android:minWidth="32.0dip" android:layout_weight="0.2" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/netflow_notification_desc" android:ellipsize="end" android:gravity="left" android:id="@id/app_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_weight="0.8" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/netflow_notification_desc" android:gravity="center" android:id="@id/upload_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="0.5" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/netflow_notification_desc" android:gravity="center" android:id="@id/download_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="0.5" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <TextView android:ellipsize="middle" android:id="@id/privacy_total_description" style="@style/MyWidget.InfoBarLayout" />
+    <ScrollView android:id="@id/privacy_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/privacy_browser" layout="@layout/main_screen_list_item" />
+            <include android:id="@id/privacy_browser_divider" layout="@layout/common_divider_horizontal" />
+            <include android:id="@id/privacy_market" layout="@layout/main_screen_list_item" />
+            <include android:id="@id/privacy_market_divider" layout="@layout/common_divider_horizontal" />
+            <include android:id="@id/privacy_account" layout="@layout/main_screen_list_item" />
+            <include android:id="@id/privacy_account_divider" layout="@layout/common_divider_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+    <com.dianxinos.optimizer.ui.DXEmptyView android:id="@id/privacy_list_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:tips="@string/privacy_total_none_description" />
+</LinearLayout>

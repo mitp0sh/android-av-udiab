@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/float_window_body" android:background="@drawable/quick_helper_float_window_bg_right" android:layout_width="wrap_content" android:layout_height="32.0dip">
+        <RelativeLayout android:layout_gravity="center" android:id="@id/float_window_men_body" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.dianxinos.optimizer.ui.CircleProgress android:id="@id/float_window_mem_circle_progress" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerInParent="true" app:maxcircle="100" app:fill="false" app:circleWidth="2.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_white" android:gravity="center" android:id="@id/float_window_mem_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/float_window_logo" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/dxopt_logo_quick_helper_float_window" />
+    </LinearLayout>
+</LinearLayout>

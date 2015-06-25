@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:focusable="false" android:clickable="false" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="@dimen/common_list_header_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/group_header" style="@style/MyWidget.ListHeaderText.Layout" />
+    <TextView android:id="@id/ads_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/MyWidget.TextTips.Green" />
+</RelativeLayout>

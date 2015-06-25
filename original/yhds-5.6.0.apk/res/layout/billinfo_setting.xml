@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_bar" layout="@layout/main_titlebar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/settings_marginBottom" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.SettingsPageMargin">
+            <LinearLayout android:id="@id/setting_update" style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/billinfo_set_smsinfo" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/billinfo_set_smsinfo" app:type="normal" />
+                <include android:id="@id/divider_setting_update" layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/billinfo_set_auto_query" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/billinfo_auto_query" app:summary="@string/billinfo_auto_query_info" app:type="switch" />
+            </LinearLayout>
+            <LinearLayout style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/billinfo_set_help" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/billinfo_set_help" app:summary="@string/billinfo_set_help_summary" app:type="normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

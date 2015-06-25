@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/common_divider_horizontal" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.dianxinos.optimizer.ui.DXEmptyView android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ListView android:id="@id/large_file_list_view" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fastScrollEnabled="true" style="@style/MyWidget.ListView" />
+    </FrameLayout>
+    <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/page_bottom_btn" app:text="@string/common_onekey_clean" app:showCheckbox="true" style="@style/MyWidget.PageBottomButtonLayout" />
+</LinearLayout>

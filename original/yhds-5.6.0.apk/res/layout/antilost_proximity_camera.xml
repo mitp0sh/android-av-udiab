@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/surfaceView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/antilost_camera_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.dianxinos.optimizer.bdpassport.CircularImageView android:layout_gravity="center" android:id="@id/Thumbnail" android:background="@drawable/antilost_camera_picture" android:visibility="visible" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:layout_gravity="center_horizontal" android:id="@id/photo" android:background="@drawable/antilost_proximity_camera_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:layout_gravity="center_horizontal" android:id="@id/switchCamera" android:background="@drawable/antilost_proximity_camera_class" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

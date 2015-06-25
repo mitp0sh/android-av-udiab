@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_1" android:background="@drawable/sevenkey_widget_switch_bkg" android:paddingTop="@dimen/sevenKey_widget_dxhome_switch_margin_top" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageView android:id="@id/img_2" android:background="@drawable/sevenkey_widget_switch_bkg" android:paddingTop="@dimen/sevenKey_widget_dxhome_switch_margin_top" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageView android:id="@id/img_3" android:background="@drawable/sevenkey_widget_switch_bkg" android:paddingTop="@dimen/sevenKey_widget_dxhome_switch_margin_top" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageView android:id="@id/img_4" android:background="@drawable/sevenkey_widget_switch_bkg" android:paddingTop="@dimen/sevenKey_widget_dxhome_switch_margin_top" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageView android:id="@id/img_5" android:background="@drawable/sevenkey_widget_switch_bkg" android:paddingTop="@dimen/sevenKey_widget_dxhome_switch_margin_top" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageView android:id="@id/img_6" android:background="@drawable/sevenkey_widget_switch_bkg" android:paddingTop="@dimen/sevenKey_widget_dxhome_switch_margin_top" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageView android:id="@id/img_7" android:background="@drawable/sevenkey_widget_switch_bkg" android:paddingTop="@dimen/sevenKey_widget_dxhome_switch_margin_top" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</merge>

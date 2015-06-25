@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_body" android:background="@android:color/transparent" android:paddingLeft="0.0dip" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/app_icon" android:layout_marginLeft="@dimen/common_list_item_app_icon_left_margin" style="@style/MyWidget.ListViewItemAppIcon" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:ellipsize="middle" android:id="@id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <ProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:progressDrawable="@drawable/dx_progressbar_orange_rect" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" style="@style/MyWidget.ListActionPanel">
+        <com.dianxinos.optimizer.ui.DxActionButton android:id="@id/btn_action" app:icon="@drawable/dx_action_delete" app:label="@string/appmanager_uninstall_action_uninstall" style="@style/MyWidget.ActionButton" />
+        <TextView android:id="@id/uninstalled_text" android:visibility="gone" android:text="@string/app_uninstalled_text" style="@style/MyWidget.ListActionStatus" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <com.dianxinos.optimizer.ui.DXEmptyView android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/loaded_content_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.dianxinos.optimizer.ui.DxPageTips android:id="@id/authority_tips_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:message="@string/startupmanager_authority_enable" app:isImageButton="false" app:buttonText="@string/authority_btn_enable" />
+            <TextView android:id="@id/info_bar" style="@style/MyWidget.InfoBarLayout" />
+            <com.dianxinos.common.ui.view.PinnedHeaderListView android:id="@id/boot_item_list" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/MyWidget.ListView" />
+        </LinearLayout>
+        <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/startupmanager_list_button_denyAll" android:visibility="invisible" style="@style/MyWidget.PageBottomButtonLayout" />
+    </LinearLayout>
+</LinearLayout>

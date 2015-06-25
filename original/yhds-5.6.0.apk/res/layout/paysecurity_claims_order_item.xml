@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingRight="@dimen/common_list_item_left_padding" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_centerVertical="true" style="@style/MyWidget.ListViewItemAppIcon" />
+    <TextView android:ellipsize="end" android:gravity="center" android:id="@id/app_name" android:singleLine="true" android:layout_toRightOf="@id/icon" style="@style/MyWidget.ListViewItemTextTop" />
+    <TextView android:ellipsize="end" android:gravity="center" android:id="@id/run_time" android:layout_toRightOf="@id/icon" android:layout_below="@id/app_name" style="@style/MyWidget.ListViewItemTextBottom" />
+    <TextView android:ellipsize="end" android:gravity="center" android:id="@id/account" android:layout_alignParentRight="true" style="@style/MyWidget.ListViewItemTextTop" />
+    <TextView android:ellipsize="end" android:gravity="center" android:id="@id/status" android:layout_below="@id/account" android:layout_alignParentRight="true" style="@style/MyWidget.ListViewItemTextBottom" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff8496a0" android:gravity="center" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/claims_apply_order_apply" android:layout_toLeftOf="@id/account" android:layout_alignTop="@id/account" android:layout_alignBottom="@id/account" />
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianxinos.common.ui.view.DontPressWithParentLayout android:gravity="center" android:id="@id/item_check" android:background="@drawable/common_list_item_bkg" android:layout_width="@dimen/common_action_button_width" android:layout_height="@dimen/common_action_button_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:layout_gravity="center" android:id="@id/item_checkbox" android:focusable="false" android:clickable="false" android:duplicateParentState="true" style="@style/MyWidget.CheckBox.NoText" />
+</com.dianxinos.common.ui.view.DontPressWithParentLayout>

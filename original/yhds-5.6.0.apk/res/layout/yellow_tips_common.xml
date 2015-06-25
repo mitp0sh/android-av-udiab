@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/tips" style="@style/MyWidget.DxPageTipsLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tips_message" style="@style/MyWidget.DxPageTipsText" />
+    <include layout="@layout/common_divider_vertical" />
+    <ImageView android:id="@id/tips_button" android:layout_width="60.0dip" android:layout_height="fill_parent" android:src="@drawable/tips_button_common" android:scaleType="centerInside" />
+</LinearLayout>

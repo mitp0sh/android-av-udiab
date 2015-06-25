@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/process_body" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/process_image" style="@style/MyWidget.ListViewItemAppIcon" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/process_name" style="@style/MyWidget.ListViewItemTextTop" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/memory_size" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.6" style="@style/MyWidget.ListViewItemTextBottom" />
+            <TextView android:id="@id/cpu_info" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/app_cpu" android:layout_weight="1.2" style="@style/MyWidget.ListViewItemTextBottom" />
+            <TextView android:textColor="@color/common_blue" android:gravity="right" android:id="@id/suggestion" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/tk_suggestion" android:layout_weight="1.2" style="@style/MyWidget.ListViewItemTextBottom" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/MyWidget.ListActionPanel">
+        <include layout="@layout/list_item_checkbox" />
+    </LinearLayout>
+</LinearLayout>

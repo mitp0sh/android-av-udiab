@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_centerVertical="true" style="@style/MyWidget.ListViewItemAppIcon" />
+    <LinearLayout android:id="@id/action_panel" android:layout_alignParentRight="true" style="@style/MyWidget.ListActionPanel">
+        <com.dianxinos.optimizer.ui.DxActionButton android:id="@id/action_button" style="@style/MyWidget.ActionButton" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_blue" android:id="@id/status" android:layout_toLeftOf="@id/action_panel" style="@style/MyWidget.ListViewItemTextTop" />
+    <TextView android:ellipsize="marquee" android:id="@id/app_name" android:layout_toLeftOf="@id/status" android:layout_toRightOf="@id/icon" style="@style/MyWidget.ListViewItemTextTop" />
+    <RelativeLayout android:id="@id/progress_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/action_panel" android:layout_toRightOf="@id/icon" android:layout_below="@id/status">
+        <ProgressBar android:id="@id/progress" android:layout_marginTop="6.0dip" style="@style/MyWidget.ProgressBarMain" />
+        <TextView android:ellipsize="marquee" android:id="@id/app_download_speed" android:layout_width="wrap_content" android:layout_below="@id/progress" android:layout_alignParentLeft="true" style="@style/MyWidget.ListViewItemTextBottom" />
+        <TextView android:ellipsize="marquee" android:id="@id/app_download_percent" android:layout_width="wrap_content" android:layout_below="@id/progress" android:layout_alignParentRight="true" style="@style/MyWidget.ListViewItemTextBottom" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/app_desc_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/action_panel" android:layout_toRightOf="@id/icon" android:layout_below="@id/app_name">
+        <TextView android:ellipsize="marquee" android:id="@id/app_desc" android:layout_width="fill_parent" style="@style/MyWidget.ListViewItemTextBottom" />
+        <TextView android:ellipsize="marquee" android:id="@id/app_star_tip" android:text="@string/toolbox_app_star_info" android:layout_below="@id/app_desc" style="@style/MyWidget.ListViewItemTextBottom" />
+        <RatingBar android:id="@id/app_star_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="3.0dip" android:isIndicator="true" android:layout_toRightOf="@id/app_star_tip" android:layout_alignTop="@id/app_star_tip" style="@style/MyWidget.RatingBar" />
+    </RelativeLayout>
+</RelativeLayout>

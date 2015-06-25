@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/titlebar">
+        <ImageView android:id="@id/fake_stamp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/paysecurity_fake_bank_stamp" android:scaleType="fitCenter" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/icon" android:layout_width="@dimen/app_icon_size" android:layout_height="@dimen/app_icon_size" android:layout_marginTop="24.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/common_text_size_middle" android:textColor="@color/common_dark" android:id="@id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:singleLine="true" android:layout_below="@id/icon" android:layout_centerHorizontal="true" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:layout_below="@id/app_name">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/common_text_size_middle_2" android:textColor="@color/common_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/detail_paysecurity_explain" />
+                <TextView android:textSize="@dimen/common_text_size_middle_2" android:textColor="@color/common_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/detail_paysecurity_explain1" />
+                <TextView android:textSize="@dimen/common_text_size_middle_2" android:textColor="@color/common_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/detail_paysecurity_explain2" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_grey" android:gravity="center" android:id="@id/danger_notice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:layout_above="@id/btn_panel" />
+    <RelativeLayout android:id="@id/btn_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@id/danger_operate_button_group" android:visibility="visible" layout="@layout/common_bottom_three_buttons_in_paysecurity" />
+    </RelativeLayout>
+</RelativeLayout>

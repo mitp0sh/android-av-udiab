@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/fp_color_window_bg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.fastpay.ui.view.RemoteImageView android:id="@id/bank_icon" android:background="@null" android:layout_width="25.0dip" android:layout_height="25.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/fp_img" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/fp_color_text" android:gravity="center" android:id="@id/item_show_text" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/bank_icon" android:layout_centerVertical="true" />
+</RelativeLayout>

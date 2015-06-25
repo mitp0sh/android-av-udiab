@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_bar" layout="@layout/main_titlebar" />
+    <ScrollView android:id="@id/global_settings_scrollview" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.SettingsPageMargin">
+            <LinearLayout android:id="@id/switch_group1" style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_cost_bill" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/billguard_cost_bill_setting" app:type="normal" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_flow_monitor" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/billguard_flow_monitor_setting" app:type="normal" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_anti_cost_app" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/billguard_anti_cost_app_setting" app:type="normal" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_anti_flow" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/billguard_anti_flow_setting" app:type="normal" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_anti_fraud" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/billguard_anti_fraud_setting" app:type="normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

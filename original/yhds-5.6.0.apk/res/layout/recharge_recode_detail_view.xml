@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <RelativeLayout android:id="@id/number_layout" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginLeft="18.0dip" android:layout_below="@id/titlebar">
+        <TextView android:textSize="16.0sp" android:textColor="@color/recharge_color_a" android:gravity="center" android:id="@id/number_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recharge_number" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/recharge_bill_fail" android:gravity="center" android:id="@id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/number_tip" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff8496a0" android:gravity="center" android:id="@id/location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/number" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@drawable/recharge_divide_line" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" android:layout_below="@id/number_layout" />
+    <RelativeLayout android:id="@id/bill_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="14.0dip" android:layout_below="@id/number_layout">
+        <TextView android:textSize="16.0sp" android:textColor="@color/recharge_color_a" android:gravity="center" android:id="@id/bill_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recharge_bill" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/recharge_color_a" android:gravity="center" android:id="@id/bill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/bill_info" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/money_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="14.0dip" android:layout_below="@id/bill_layout">
+        <TextView android:textSize="16.0sp" android:textColor="@color/recharge_color_a" android:gravity="center" android:id="@id/money_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recharge_into_money" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/recharge_color_a" android:gravity="center" android:id="@id/money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/money_info" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/ture_money_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="14.0dip" android:layout_below="@id/money_layout">
+        <TextView android:textSize="16.0sp" android:textColor="@color/recharge_color_a" android:gravity="center" android:id="@id/ture_money_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recharge_true_money" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/recharge_bill_fail" android:gravity="center" android:id="@id/ture_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/ture_money_info" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/time_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="14.0dip" android:layout_below="@id/ture_money_layout">
+        <TextView android:textSize="16.0sp" android:textColor="@color/recharge_color_a" android:gravity="center" android:id="@id/time_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recharge_time" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/recharge_color_a" android:gravity="center" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/time_info" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/status_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="14.0dip" android:layout_below="@id/time_layout">
+        <TextView android:textSize="16.0sp" android:textColor="@color/recharge_color_a" android:gravity="center" android:id="@id/status_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recharge_status" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/recharge_bill_fail" android:gravity="center" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/status_info" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="45.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="12.0sp" android:textColor="#ff8496a0" android:gravity="center" android:id="@id/tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recharge_tip" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff8496a0" android:gravity="center" android:id="@id/tip_show" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/recharge_tip_show" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff8496a0" android:gravity="center" android:autoLink="phone" android:id="@id/tip_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/recharge_tip_phone" />
+    </LinearLayout>
+    <View android:layout_below="@id/page_header" style="@style/MyWidget.PageHeaderShadow" />
+</RelativeLayout>

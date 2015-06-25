@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianxinos.common.ui.view.AutoScaleImageView android:id="@id/baidu_assist_guide_background_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/baidu_assist_guide" android:scaleType="fitXY" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/baidu_assist_guide_skip_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:src="@drawable/baidu_assist_guide_skip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <View android:id="@id/baidu_assist_guide_fill_view" android:layout_width="fill_parent" android:layout_height="14.0dip" android:layout_alignParentBottom="true" />
+    <ProgressBar android:id="@id/baidu_assist_guide_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="12.0dip" android:layout_above="@id/baidu_assist_guide_fill_view" style="@style/MyWidget.ProgressBarMain" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_blue" android:gravity="left" android:id="@id/baidu_assist_guide_download_status" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_above="@id/baidu_assist_guide_progress" />
+    <ImageView android:id="@id/baidu_assist_guide_download_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:src="@drawable/baidu_assist_guide_immediately_use" android:layout_above="@id/baidu_assist_guide_progress" android:layout_alignParentRight="true" />
+</RelativeLayout>

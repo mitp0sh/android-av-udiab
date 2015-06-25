@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/space_cache_item_body" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/space_cache_item_icon" style="@style/MyWidget.ListViewItemAppIcon" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/space_cache_item_primary" style="@style/MyWidget.ListViewItemTextTop" />
+        <TextView android:id="@id/space_cache_item_summary" style="@style/MyWidget.ListViewItemTextBottom" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/checkbox_panel" style="@style/MyWidget.ListActionPanel">
+        <com.dianxinos.optimizer.ui.DxActionButton android:id="@id/space_cache_item_button" style="@style/MyWidget.ActionButton" />
+        <TextView android:id="@id/space_cache_item_cleaned" android:visibility="gone" android:text="@string/space_cache_item_cleaned" style="@style/MyWidget.ListActionStatus" />
+    </LinearLayout>
+</LinearLayout>

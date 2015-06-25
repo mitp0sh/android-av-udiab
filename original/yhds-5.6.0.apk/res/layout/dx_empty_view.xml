@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/image" android:layout_width="120.0dip" android:layout_height="120.0dip" android:src="@drawable/dxopt_logo_empty_view_ok" />
+        <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_dark" android:gravity="center_horizontal" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" />
+        <Button android:gravity="center" android:id="@id/button" android:visibility="gone" android:layout_width="260.0dip" android:layout_marginLeft="@dimen/common_page_bottom_one_button_margin" android:layout_marginTop="12.0dip" android:layout_marginRight="@dimen/common_page_bottom_one_button_margin" style="@style/MyWidget.RoundButton.Highlight" />
+    </LinearLayout>
+</merge>

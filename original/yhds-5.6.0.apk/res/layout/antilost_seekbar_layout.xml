@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SeekBar android:id="@id/alertdistance_seekBar" android:layout_width="250.0dip" android:layout_height="wrap_content" android:max="100" android:progressDrawable="@drawable/antilost_seekbar_define_style" android:layout_centerInParent="true" />
+        <TextView android:textColor="@color/common_dark" android:id="@id/alertdistance_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_distance_start" android:layout_below="@id/alertdistance_seekBar" android:layout_alignLeft="@id/alertdistance_seekBar" />
+        <TextView android:textColor="@color/common_dark" android:gravity="center" android:id="@id/alertdistance_chose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="85.0dip" android:text="@string/device_distance_start" android:layout_toRightOf="@id/alertdistance_start" android:layout_below="@id/alertdistance_seekBar" />
+        <TextView android:textColor="@color/common_dark" android:id="@id/alertdistance_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_distance_end" android:layout_below="@id/alertdistance_seekBar" android:layout_alignRight="@id/alertdistance_seekBar" />
+    </RelativeLayout>
+</ScrollView>

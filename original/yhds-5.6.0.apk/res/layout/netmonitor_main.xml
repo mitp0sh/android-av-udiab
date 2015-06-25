@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <LinearLayout android:orientation="vertical" android:background="@color/common_titlebar_bkg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/netflow_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <com.dianxinos.optimizer.module.netflowmgr.views.WaveView android:id="@id/wave_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textColor="@color/common_white" android:id="@id/netflow_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/netmonitor_netflow_remain_tip_set" android:alpha="0.3" />
+                <TextView android:textColor="@color/common_white" android:id="@id/netflow_left_number" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:baselineAligned="false">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/netflow_today_layout" android:background="@drawable/netflow_monitor_button_bkg" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="#ff73accb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/netmonitor_today_used_main" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff73accb" android:id="@id/txttodayused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/netflow_monitor_arrow" android:drawablePadding="4.0dip" />
+            </LinearLayout>
+            <include layout="@layout/netflow_divider_vertical" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/netflow_month_layout" android:background="@drawable/netflow_monitor_button_bkg" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="#ff73accb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/netmonitor_month_used_main" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff73accb" android:id="@id/txtmongthused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/netflow_monitor_arrow" android:drawablePadding="4.0dip" />
+            </LinearLayout>
+            <include layout="@layout/netflow_divider_vertical" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/netflow_total_layout" android:background="@drawable/netflow_monitor_button_bkg" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="#ff73accb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/netmonitor_total_main" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff73accb" android:id="@id/txt_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableRight="@drawable/netflow_monitor_arrow" android:drawablePadding="4.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="27.0dip" android:layout_marginBottom="18.0dip">
+            <RelativeLayout android:layout_gravity="center" android:id="@id/query_progressbar_layout" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="27.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_weight="1.0">
+                <Button android:layout_width="fill_parent" android:text="@string/netmonitor_correcting" style="@style/MyWidget.PageHeaderButton.Blue" />
+                <ProgressBar android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="5.0dip" android:indeterminateDrawable="@drawable/netflow_header_banner_progress" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyleLarge" />
+            </RelativeLayout>
+            <Button android:id="@id/btncalibration" android:layout_width="0.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:text="@string/netmonitor_correct" android:layout_weight="1.0" style="@style/MyWidget.PageHeaderButton.Blue" />
+            <include layout="@layout/netflow_divider_vertical" />
+            <RelativeLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="27.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_weight="1.0">
+                <Button android:id="@id/btnNetflowOverlay" android:layout_width="fill_parent" android:text="@string/netmonitor_add_flow" style="@style/MyWidget.PageHeaderButton.Blue" />
+                <ImageView android:id="@id/netflow_over_arrow" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/netflow_over_arrow" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/common_settings_group_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/netflow_save_helper" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netflow_save" app:type="normal" app:iconSrc="@drawable/billguard_saveflow" />
+            <include layout="@layout/common_divider_settings" />
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/netflow_unleash" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_net_unleashed_title" app:type="normal" app:iconSrc="@drawable/billguard_antiflow" />
+            <include layout="@layout/common_divider_settings" />
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/netflow_cjsw" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netflow_cjsw_title" app:type="normal" app:iconSrc="@drawable/billguard_cjsw" />
+            <include layout="@layout/common_divider_settings" />
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/netflow_firewall" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_firewall" app:type="normal" app:iconSrc="@drawable/enhance_netfirewall" />
+            <include layout="@layout/common_divider_settings" />
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/netflow_window_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_flow_window_switch_name" app:type="switch" app:iconSrc="@drawable/billguard_netflow_window_switch" />
+            <include layout="@layout/common_divider_settings" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

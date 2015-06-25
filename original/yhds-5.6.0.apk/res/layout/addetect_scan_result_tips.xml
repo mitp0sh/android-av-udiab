@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/common_titlebar_bkg_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianxinos.optimizer.module.addetect.widget.ScanResultTextView android:id="@id/showresult_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/report_activity_jump_tv_color" android:gravity="center" android:id="@id/report_jump_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="@string/report_activity_jump_text" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

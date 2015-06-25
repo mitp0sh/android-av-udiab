@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="utils_relative_time_values">
+        <item>小时前</item>
+        <item>分钟前</item>
+        <item>秒前</item>
+    </string-array>
+    <string-array name="report_dialog_item">
+        <item>这个应用没有广告</item>
+        <item>广告清除不掉</item>
+    </string-array>
+    <string-array name="report_dialog_item_not_open">
+        <item>这个应用没有广告</item>
+        <item>这个应用无法卸载</item>
+    </string-array>
+    <string-array name="unblock_dialog_item">
+        <item>这个应用无法正常使用</item>
+        <item>这个应用没有广告</item>
+    </string-array>
+    <string-array name="antilost_questions">
+        <item>如何找到物品?</item>
+        <item>如何找到手机?</item>
+        <item>什么情况下会自动安全报警?</item>
+        <item>如何用防丢卫士拍照?</item>
+        <item>什么是免打扰模式?</item>
+        <item>如何能让手机和设备不响铃?</item>
+    </string-array>
+    <string-array name="antilost_answers">
+        <item>连接状态下,在防丢卫士界面,按下“点击找我”,与物品在一块的防丢卫士会发出蜂鸣音,根据声音,你会找到物品。再次点击,蜂鸣停止。</item>
+        <item>连接状态下,按下防丢卫士设备上的按钮,手机会同时发出蜂鸣音,根据声音,你会找到手机。</item>
+        <item>为防止手机或与防丢卫士设备一块的物品丢失,当手机和防丢卫士设备之间的距离超过你设定的安全距离时,手机和设备会同时发出蜂鸣音进行报警。当二者之间的距离重新恢复安全距离时,蜂鸣自动停止。</item>
+        <item>想要拍照却没人帮忙是令人多么烦躁的事情。现在,你只需在连接状态下,双击防丢卫士设备上的按钮,就可完成拍照了。自拍从未如此简单,去试一下吧。</item>
+        <item>开启免打扰模式,在设定的免打扰时间段内,手机和防丢卫士设备超出安全距离时,手机和设备都不会再发出蜂鸣音,但是为了安全考虑,手机仍会收到提示。</item>
+        <item>你可以设置免打扰时间或者关闭防丢功能,手机和防丢卫士设备超出安全距离时,手机和设备都不会再发出蜂鸣音,但是为了安全考虑,手机仍会收到提示。处于安全考虑,不建议关闭防丢功能。</item>
+    </string-array>
+    <string-array name="antispam_repeat_week">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
+    <string-array name="app_mgr_apk_file_filter">
+        <item>全部</item>
+        <item>未安装</item>
+        <item>已安装</item>
+        <item>新版本</item>
+        <item>旧版本</item>
+        <item>破损</item>
+        <item>重复</item>
+    </string-array>
+    <string-array name="appmanager_uninstaller_sort_app">
+        <item>按名称排序</item>
+        <item>按占用大小排序</item>
+        <item>按安装日期排序</item>
+    </string-array>
+    <string-array name="appmanager_running_state_sort">
+        <item>按内存占用排序</item>
+        <item>按运行时长排序</item>
+        <item>按应用名称排序</item>
+    </string-array>
+    <string-array name="appmanager_app_history_sort">
+        <item>按名称排序</item>
+        <item>按安装时间排序</item>
+        <item>按是否卸载排序</item>
+    </string-array>
+    <string-array name="provider_list">
+        <item>中国移动</item>
+        <item>中国联通</item>
+        <item>中国电信</item>
+    </string-array>
+    <string-array name="query_number_list">
+        <item>1008611</item>
+        <item>1001011</item>
+        <item>1000011</item>
+    </string-array>
+    <string-array name="provider_list_short">
+        <item>移动</item>
+        <item>联通</item>
+        <item>电信</item>
+    </string-array>
+    <string-array name="provider_cm_entries">
+        <item>全球通</item>
+        <item>动感地带</item>
+        <item>神州行</item>
+    </string-array>
+    <string-array name="provider_ct_entries">
+        <item>电信</item>
+    </string-array>
+    <string-array name="province_list">
+        <item>北京</item>
+        <item>上海</item>
+        <item>天津</item>
+        <item>重庆</item>
+        <item>安徽</item>
+        <item>福建</item>
+        <item>甘肃</item>
+        <item>广东</item>
+        <item>广西</item>
+        <item>贵州</item>
+        <item>海南</item>
+        <item>河北</item>
+        <item>河南</item>
+        <item>黑龙江</item>
+        <item>湖北</item>
+        <item>湖南</item>
+        <item>吉林</item>
+        <item>江苏</item>
+        <item>江西</item>
+        <item>辽宁</item>
+        <item>内蒙古</item>
+        <item>宁夏</item>
+        <item>青海</item>
+        <item>山东</item>
+        <item>山西</item>
+        <item>陕西</item>
+        <item>四川</item>
+        <item>西藏</item>
+        <item>新疆</item>
+        <item>云南</item>
+        <item>浙江</item>
+    </string-array>
+    <string-array name="city_list">
+        <item>北京</item>
+        <item>上海</item>
+        <item>天津</item>
+        <item>重庆</item>
+        <item>合肥</item>
+        <item>蚌埠</item>
+        <item>芜湖</item>
+        <item>淮南</item>
+        <item>亳州</item>
+        <item>阜阳</item>
+        <item>淮北</item>
+        <item>宿州</item>
+        <item>滁州</item>
+        <item>安庆</item>
+        <item>六安</item>
+        <item>马鞍山</item>
+        <item>宣城</item>
+        <item>黄山</item>
+        <item>池州</item>
+        <item>铜陵</item>
+        <item>福州</item>
+        <item>厦门</item>
+        <item>泉州</item>
+        <item>三明</item>
+        <item>南平</item>
+        <item>漳州</item>
+        <item>莆田</item>
+        <item>宁德</item>
+        <item>龙岩</item>
+        <item>兰州</item>
+        <item>天水</item>
+        <item>平凉</item>
+        <item>酒泉</item>
+        <item>嘉峪关</item>
+        <item>金昌</item>
+        <item>白银</item>
+        <item>武威</item>
+        <item>张掖</item>
+        <item>庆阳</item>
+        <item>定西</item>
+        <item>陇南</item>
+        <item>广州</item>
+        <item>深圳</item>
+        <item>汕头</item>
+        <item>惠州</item>
+        <item>珠海</item>
+        <item>揭阳</item>
+        <item>佛山</item>
+        <item>河源</item>
+        <item>阳江</item>
+        <item>茂名</item>
+        <item>湛江</item>
+        <item>梅州</item>
+        <item>肇庆</item>
+        <item>韶关</item>
+        <item>潮州</item>
+        <item>东莞</item>
+        <item>中山</item>
+        <item>清远</item>
+        <item>江门</item>
+        <item>汕尾</item>
+        <item>云浮</item>
+        <item>南宁</item>
+        <item>柳州</item>
+        <item>桂林</item>
+        <item>梧州</item>
+        <item>北海</item>
+        <item>崇左</item>
+        <item>来宾</item>
+        <item>贺州</item>
+        <item>玉林</item>
+        <item>百色</item>
+        <item>河池</item>
+        <item>钦州</item>
+        <item>防城港</item>
+        <item>贵港</item>
+        <item>贵阳</item>
+        <item>六盘水</item>
+        <item>遵义</item>
+        <item>安顺</item>
+        <item>毕节</item>
+        <item>铜仁</item>
+        <item>海口</item>
+        <item>三亚</item>
+        <item>石家庄</item>
+        <item>唐山</item>
+        <item>邯郸</item>
+        <item>秦皇岛</item>
+        <item>保定</item>
+        <item>张家口</item>
+        <item>承德</item>
+        <item>廊坊</item>
+        <item>沧州</item>
+        <item>衡水</item>
+        <item>邢台</item>
+        <item>郑州</item>
+        <item>洛阳</item>
+        <item>开封</item>
+        <item>漯河</item>
+        <item>安阳</item>
+        <item>新乡</item>
+        <item>周口</item>
+        <item>三门峡</item>
+        <item>焦作</item>
+        <item>平顶山</item>
+        <item>信阳</item>
+        <item>南阳</item>
+        <item>鹤壁</item>
+        <item>濮阳</item>
+        <item>许昌</item>
+        <item>商丘</item>
+        <item>驻马店</item>
+        <item>哈尔滨</item>
+        <item>大庆</item>
+        <item>齐齐哈尔</item>
+        <item>佳木斯</item>
+        <item>鸡西</item>
+        <item>鹤岗</item>
+        <item>双鸭山</item>
+        <item>牡丹江</item>
+        <item>伊春</item>
+        <item>七台河</item>
+        <item>黑河</item>
+        <item>绥化</item>
+        <item>加格达奇</item>
+        <item>武汉</item>
+        <item>襄樊</item>
+        <item>宜昌</item>
+        <item>黄石</item>
+        <item>鄂州</item>
+        <item>随州</item>
+        <item>荆州</item>
+        <item>荆门</item>
+        <item>十堰</item>
+        <item>孝感</item>
+        <item>黄冈</item>
+        <item>咸宁</item>
+        <item>长沙</item>
+        <item>株洲</item>
+        <item>湘潭</item>
+        <item>衡阳</item>
+        <item>岳阳</item>
+        <item>郴州</item>
+        <item>永州</item>
+        <item>邵阳</item>
+        <item>怀化</item>
+        <item>常德</item>
+        <item>益阳</item>
+        <item>张家界</item>
+        <item>娄底</item>
+        <item>长春</item>
+        <item>吉林</item>
+        <item>四平</item>
+        <item>辽源</item>
+        <item>通化</item>
+        <item>白山</item>
+        <item>松原</item>
+        <item>白城</item>
+        <item>南京</item>
+        <item>镇江</item>
+        <item>常州</item>
+        <item>无锡</item>
+        <item>苏州</item>
+        <item>徐州</item>
+        <item>连云港</item>
+        <item>淮安</item>
+        <item>盐城</item>
+        <item>扬州</item>
+        <item>泰州</item>
+        <item>南通</item>
+        <item>宿迁</item>
+        <item>南昌</item>
+        <item>九江</item>
+        <item>赣州</item>
+        <item>吉安</item>
+        <item>鹰潭</item>
+        <item>上饶</item>
+        <item>萍乡</item>
+        <item>景德镇</item>
+        <item>新余</item>
+        <item>宜春</item>
+        <item>抚州</item>
+        <item>沈阳</item>
+        <item>大连</item>
+        <item>金州</item>
+        <item>鞍山</item>
+        <item>抚顺</item>
+        <item>本溪</item>
+        <item>丹东</item>
+        <item>锦州</item>
+        <item>营口</item>
+        <item>阜新</item>
+        <item>辽阳</item>
+        <item>盘锦</item>
+        <item>铁岭</item>
+        <item>朝阳</item>
+        <item>葫芦岛</item>
+        <item>呼和浩特</item>
+        <item>包头</item>
+        <item>乌海</item>
+        <item>赤峰</item>
+        <item>通辽</item>
+        <item>鄂尔多斯</item>
+        <item>呼伦贝尔</item>
+        <item>巴彦淖尔</item>
+        <item>乌兰察布</item>
+        <item>银川</item>
+        <item>石嘴山</item>
+        <item>吴忠</item>
+        <item>固原</item>
+        <item>中卫</item>
+        <item>西宁</item>
+        <item>济南</item>
+        <item>青岛</item>
+        <item>淄博</item>
+        <item>枣庄</item>
+        <item>东营</item>
+        <item>烟台</item>
+        <item>潍坊</item>
+        <item>济宁</item>
+        <item>泰安</item>
+        <item>威海</item>
+        <item>日照</item>
+        <item>莱芜</item>
+        <item>临沂</item>
+        <item>德州</item>
+        <item>聊城</item>
+        <item>菏泽</item>
+        <item>滨州</item>
+        <item>太原</item>
+        <item>大同</item>
+        <item>忻州</item>
+        <item>阳泉</item>
+        <item>长治</item>
+        <item>晋城</item>
+        <item>朔州</item>
+        <item>晋中</item>
+        <item>运城</item>
+        <item>临汾</item>
+        <item>吕梁</item>
+        <item>西安</item>
+        <item>咸阳</item>
+        <item>铜川</item>
+        <item>延安</item>
+        <item>宝鸡</item>
+        <item>渭南</item>
+        <item>汉中</item>
+        <item>安康</item>
+        <item>商洛</item>
+        <item>榆林</item>
+        <item>成都</item>
+        <item>绵阳</item>
+        <item>德阳</item>
+        <item>广元</item>
+        <item>自贡</item>
+        <item>攀枝花</item>
+        <item>乐山</item>
+        <item>南充</item>
+        <item>内江</item>
+        <item>遂宁</item>
+        <item>广安</item>
+        <item>泸州</item>
+        <item>达州</item>
+        <item>眉山</item>
+        <item>宜宾</item>
+        <item>雅安</item>
+        <item>资阳</item>
+        <item>巴中</item>
+        <item>拉萨</item>
+        <item>乌鲁木齐</item>
+        <item>克拉玛依</item>
+        <item>昆明</item>
+        <item>曲靖</item>
+        <item>玉溪</item>
+        <item>保山</item>
+        <item>昭通</item>
+        <item>丽江</item>
+        <item>普洱</item>
+        <item>临沧</item>
+        <item>杭州</item>
+        <item>嘉兴</item>
+        <item>湖州</item>
+        <item>宁波</item>
+        <item>金华</item>
+        <item>温州</item>
+        <item>丽水</item>
+        <item>绍兴</item>
+        <item>衢州</item>
+        <item>舟山</item>
+        <item>台州</item>
+    </string-array>
+    <string-array name="provider_cu_entries">
+        <item>2G</item>
+        <item>3G</item>
+    </string-array>
+    <integer-array name="province_citycount">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>16</item>
+        <item>9</item>
+        <item>12</item>
+        <item>21</item>
+        <item>14</item>
+        <item>6</item>
+        <item>2</item>
+        <item>11</item>
+        <item>17</item>
+        <item>13</item>
+        <item>12</item>
+        <item>13</item>
+        <item>8</item>
+        <item>13</item>
+        <item>11</item>
+        <item>15</item>
+        <item>9</item>
+        <item>5</item>
+        <item>1</item>
+        <item>17</item>
+        <item>11</item>
+        <item>10</item>
+        <item>18</item>
+        <item>1</item>
+        <item>2</item>
+        <item>8</item>
+        <item>11</item>
+    </integer-array>
+    <string-array name="feedback_age_array">
+        <item>0-12</item>
+        <item>13-18</item>
+        <item>19-25</item>
+        <item>26-35</item>
+        <item>36-45</item>
+        <item>46-55</item>
+        <item>@string/older_than_fifty_five</item>
+    </string-array>
+    <string-array name="feedback_gender_array">
+        <item>@string/feedback_gender_male</item>
+        <item>@string/feedback_gender_female</item>
+    </string-array>
+    <string-array name="fw_tips">
+        <item>"如何设置一键加速白名单
+点击悬浮窗界面右上角的设置按钮即可找到“进程保护白名单”"</item>
+        <item>"手机为什么会很慢或者很卡?
+当您的手机 CPU 及内存占用率过高，会导致手机应用运行不畅，即“卡”的感觉。建议您使用“手机加速”功能；或者使用“应用管理”功能，卸载掉不常用的应用，同时冻结(需 root手机)偶尔使用的应用"</item>
+    </string-array>
+    <string-array name="fw_accelerate_contents">
+        <item>没有可清理的进程，点我可以深度加速</item>
+        <item>手机不能再快了，´∀`</item>
+        <item>自从用了卫士一键加速，一口气上五楼还不累</item>
+    </string-array>
+    <string-array name="netmonitor_alarm_array">
+        <item>无</item>
+        <item>提醒</item>
+        <item>关闭网络</item>
+    </string-array>
+    <string-array name="netflow_apps_dataflow_message">
+        <item>这些流量本可以多刷&lt;font color=\"#e13364\" >&lt;b >%d&lt;/font >&lt;/b >条微博</item>
+        <item>这些流量本可以多发&lt;font color=\"#e13364\" >&lt;b >%d&lt;/font >&lt;/b >条qq消息</item>
+        <item>这些流量本可以多发&lt;font color=\"#e13364\" >&lt;b >%d&lt;/font >&lt;/b >段微信语音</item>
+        <item>这些流量本可以多看&lt;font color=\"#e13364\" >&lt;b >%d&lt;/font >&lt;/b >个网页</item>
+        <item>这些流量本可以多逛&lt;font color=\"#e13364\" >&lt;b >%d&lt;/font >&lt;/b >件商品</item>
+    </string-array>
+    <integer-array name="netflow_apps_dataflow">
+        <item>9000</item>
+        <item>2000</item>
+        <item>5000</item>
+        <item>15000</item>
+        <item>20000</item>
+    </integer-array>
+    <string-array name="netflow_apps_share_message">
+        <item>恭喜扔蛋成功，鸡蛋表示很疼</item>
+        <item>恭喜扔蛋成功，鸡蛋的忧伤你如何懂</item>
+        <item>恭喜扔蛋成功，问蛋能有几多愁，恰似一行眼泪肚里流</item>
+        <item>恭喜扔蛋成功，蛋碎了</item>
+        <item>你的应用在笑，鸡蛋在飘，珍惜流量只有卫士知道</item>
+        <item>天苍苍野茫茫，为谁辛苦为谁忙，每月流量没多少，全被应用偷跑光！</item>
+    </string-array>
+    <string-array name="netflow_cjsw_provider">
+        <item>移动用户可以办理以下套餐：</item>
+        <item>联通用户可以办理以下套餐：</item>
+        <item>电信用户可以办理以下套餐：</item>
+    </string-array>
+    <string-array name="optimize_memory_items_summary">
+        <item>默认模式</item>
+        <item>适用于经常使用单一程序的用户</item>
+        <item>适用于多程序运行，频繁切换应用的用户</item>
+        <item>省电省内存的轻量均衡配置</item>
+    </string-array>
+    <string-array name="optimize_memory_items">
+        <item>系统默认</item>
+        <item>游戏玩家/重度浏览器使用者配置</item>
+        <item>多任务配置</item>
+        <item>轻度用户/女生专用配置</item>
+    </string-array>
+    <string-array name="optimize_memory_items_about_content">
+        <item>系统默认</item>
+        <item>"用户特点：长时间专注于某一特定的，高内存需求的程序，对多任务的需求不高 
+配置理念：压榨后台进程，内容供应节点和空进程，将内存尽可能多得留给前台进程和系统，提升游戏速度和浏览器体验 
+优点：程序启动和运行的速度最快 
+缺点：多任务处理不理想，开启程序较多时，后台进程会被终止"</item>
+        <item>"用户特点：同时运行多个应用程序，需要经常在多个程序间切换 
+配置理念：压榨空进程，给内容供应节点留有一定空间，最大限度提升后台程序的使用空间，提升多任务的处理能力 
+优点：运行多个程序时，由于可支配内存较多，后台程序不容易被终止 
+缺点：程序启动的速度和整体系统的运行速度可能会比游戏玩家配置略慢一些，由于经常运行多任务，平时系统的响应速度会受到一定影响"</item>
+        <item>"用户特点：手机的主要功能是短信和电话，偶尔用用相机自拍 
+配置理念：压榨空进程，给内容供应节点留有一定空间，最大限度提升后台程序的使用空间，提升多任务的处理能力 
+优点：比较均衡的配置，提升了系统的可用内存，使得系统的整体速度得到了提高，拉开了各级进程的管理策略层次，使得管理机制更有效率 
+缺点：比较均衡的配置，无明显缺点"</item>
+    </string-array>
+    <string-array name="space_large_file_filter">
+        <item>全部文件</item>
+        <item>压缩包文件</item>
+        <item>视频文件</item>
+        <item>音乐文件</item>
+        <item>文档文件</item>
+        <item>文件夹</item>
+        <item>其他文件</item>
+    </string-array>
+    <string-array name="space_large_file_type">
+        <item>未知</item>
+        <item>视频</item>
+        <item>压缩包</item>
+        <item>音乐</item>
+        <item>文档</item>
+        <item>安装包</item>
+        <item>字体</item>
+        <item>临时文件</item>
+        <item>日志文件</item>
+    </string-array>
+    <string-array name="saveflow_questions">
+        <item>百度手机卫士是如何省流量的？</item>
+        <item>如何使用省流量服务？</item>
+        <item>流量统计软件怎么和百度手机卫士统计的不一样？</item>
+        <item>百度手机卫士会节省WiFi流量吗？</item>
+    </string-array>
+    <string-array name="saveflow_answers">
+        <item>开启省流量助手后，您的2/3/4G网络流量会通过百度的云压缩中转服务器进行优化，重新调整图片类请求所使用的流量，大幅减少淘宝、微信朋友圈、QQ空间、微博等应用的流量消耗，进而达到节省流量的效果。</item>
+        <item>开启服务时，只需要按照提示简单的确认一下，就可成功开启省流量服务，无需做其他任何设置。</item>
+        <item>使用省流量服务后，我们会更精准的监控到您流量使用情况，其他流量统计应用会存在监控误差。因此，百度手机卫士的流量统计数据是最为准确的。同时，强烈的建议您开启流量自动校准功能，实时掌握流量信息。</item>
+        <item>不会，百度手机卫士仅会节省2/3/4G网络流量。</item>
+    </string-array>
+    <string-array name="shareto_sinaweibo_pkg">
+        <item>com.sina.weibo</item>
+        <item>com.htc.sinaweibo</item>
+        <item>com.sina.weibo.lephone</item>
+        <item>com.sina.mfweibo</item>
+    </string-array>
+    <string-array name="CacheListActivity_SMSTypes">
+        <item>全部短信</item>
+        <item>联系人短信</item>
+        <item>陌生人短信</item>
+        <item>垃圾扣费短信</item>
+        <item>服务短信</item>
+    </string-array>
+    <string-array name="time_area_types">
+        <item>全部时间段</item>
+        <item>一周前</item>
+        <item>一个月前</item>
+        <item>三个月前</item>
+        <item>一年前</item>
+    </string-array>
+    <string-array name="uninstall_ask_reasons">
+        <item>省电效果不明显</item>
+        <item>占用内存较多</item>
+        <item>界面不好看</item>
+        <item>没有我想要的功能</item>
+        <item>操作困难</item>
+    </string-array>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/netmonitor_mainsettings" layout="@layout/main_titlebar" />
+    <com.dianxinos.optimizer.ui.DxPageTips android:id="@id/txtsettingtips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:message="@string/netmonitot_already_hide" app:hasButton="false" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.SettingsPageMargin">
+            <LinearLayout android:id="@id/switch_group1" style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_netmonitor" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_isnetmonitoron" app:type="switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linishide" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/netmonitor_settitle_flowwin" style="@style/MyWidget.SettingsGroupTitle" />
+                <LinearLayout android:id="@id/lin_flow_setting" style="@style/MyWidget.SettingsGroup">
+                    <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_flow_win" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_flowwinon" app:type="switch" />
+                    <include layout="@layout/common_divider_settings" />
+                    <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_flow_list_filter" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_list_filter" app:summary="@string/netmonitor_list_filter_info" app:type="switch" />
+                    <include layout="@layout/common_divider_settings" />
+                    <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_flow_pin" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_pinlock" app:summary="@string/netmonitor_pinlock_sum" app:type="switch" />
+                    <include layout="@layout/common_divider_settings" />
+                    <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_flow_win_hide" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_hide_theremin" app:type="switch" />
+                    <include layout="@layout/common_divider_settings" />
+                    <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_flow_wifi_hide" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_wifi_hide" app:summary="@string/netmonitor_wifi_hide_info" app:type="switch" />
+                    <include layout="@layout/common_divider_settings" />
+                    <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_flow_only_on_home" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_only_on_home" app:summary="@string/netmonitor_only_on_home_info" app:type="switch" />
+                </LinearLayout>
+                <TextView android:text="@string/netmonitor_settitle_taocan" style="@style/MyWidget.SettingsGroupTitle" />
+                <LinearLayout style="@style/MyWidget.SettingsGroup">
+                    <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_taocan" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_taocan_info" app:type="normal" />
+                    <include android:id="@id/sep_phone_info" layout="@layout/common_divider_settings" />
+                    <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_phone_info" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_phone_info" app:type="normal" />
+                    <include layout="@layout/common_divider_settings" />
+                    <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_cal_used" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_gprs_cal" app:type="normal" />
+                    <include android:id="@id/sep_auto_correct" layout="@layout/common_divider_settings" />
+                    <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_auto_correct" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_auto_correct_title" app:summary="@string/netmonitor_auto_correct_sum" app:type="switch" />
+                </LinearLayout>
+                <TextView android:text="@string/netmonitor_settitle_notify" style="@style/MyWidget.SettingsGroupTitle" />
+                <LinearLayout style="@style/MyWidget.SettingsGroup">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                        <LinearLayout android:orientation="vertical" android:id="@id/linsetdayalarm" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="3.0">
+                            <TextView android:textSize="@dimen/common_text_size_middle" android:textColor="@color/common_dark" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/netmonitor_daylimit" />
+                            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                                <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_dark" android:gravity="center_vertical" android:id="@id/txtshowdaylimit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/netmonitor_forcast_daydata" />
+                                <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_dark" android:gravity="center_vertical" android:id="@id/txtdaylimit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/txtshowdaylimit" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <com.dianxinos.common.ui.view.DXToggleButton android:id="@id/isdayalarmon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+                    </LinearLayout>
+                    <include layout="@layout/common_divider_settings" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                        <LinearLayout android:orientation="vertical" android:id="@id/linsetmonthalarm" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                            <TextView android:textSize="@dimen/common_text_size_middle" android:textColor="@color/common_dark" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/netmonitor_monthlimit" />
+                            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                                <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_dark" android:id="@id/txtshomonthlimit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/netmonitor_forcast_monthdata" />
+                                <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_dark" android:id="@id/txtmonthlimit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/txtshomonthlimit" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <com.dianxinos.common.ui.view.DXToggleButton android:id="@id/ismonthalarmon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+                    </LinearLayout>
+                    <include layout="@layout/common_divider_settings" />
+                    <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_overgprs" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_overgprs" app:type="normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

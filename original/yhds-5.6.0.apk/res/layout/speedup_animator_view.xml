@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/common_titlebar_bkg_color" android:layout_width="fill_parent" android:layout_height="@dimen/common_page_header_animator_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/speedup_result_holder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/speedup_result_ok" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speedup_result_ok" />
+        <TextView android:textSize="16.0dip" android:id="@id/speedup_result" style="@style/MyWidget.HeaderTextViewShadow" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/loading_holder" android:background="@drawable/speedup_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/loading" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speedup_snail_light" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/snail_animator_holder" android:padding="1.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/flowers_bg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-15.0dip" android:src="@drawable/speedup_grassland" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/cloud2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speedup_cloud2" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/cloud1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="60.0dip" android:src="@drawable/speedup_cloud1" android:layout_below="@id/cloud2" android:layout_alignRight="@id/cloud2" />
+        <ImageView android:id="@id/snail_body" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speedup_snail_body" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/snail_head" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-8.0dip" android:src="@drawable/speedup_snail_head" android:layout_toRightOf="@id/snail_body" android:layout_alignBottom="@id/snail_body" />
+        <ImageView android:id="@id/snail_sweat" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speedup_snail_sweat" android:layout_toRightOf="@id/snail_head" android:layout_alignTop="@id/snail_head" android:alpha="0.0" />
+    </RelativeLayout>
+    <com.dianxinos.optimizer.ui.DxMovementView android:id="@id/bicycle_animator_holder_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:image_src="@drawable/speedup_builds" app:moveable="false" app:interval_x="3" />
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/bicycle_animator_holder" android:padding="1.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/bicycle_back_wheel" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="-57.0dip" android:layout_marginBottom="6.0dip" android:src="@drawable/speedup_bicycle_wheel" />
+        <ImageView android:id="@id/bicycle_body" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speedup_bicycle_body" />
+        <ImageView android:id="@id/bicycle_front_wheel" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-57.0dip" android:layout_marginBottom="6.0dip" android:src="@drawable/speedup_bicycle_wheel" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/rocket_animator_holder" android:padding="1.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dianxinos.optimizer.ui.DxMovementView android:id="@id/planet_big" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" app:image_src="@drawable/speedup_big_planet" app:moveable="false" app:direction="left" app:interval_x="2" />
+        <com.dianxinos.optimizer.ui.DxMovementView android:id="@id/planet_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" app:image_src="@drawable/speedup_small_planet" app:moveable="false" app:direction="left" app:interval_x="1" />
+        <ImageView android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-10.0dip" android:src="@drawable/speedup_rocket_earth" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/rocket_tail" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-75.0dip" android:layout_marginRight="-5.0dip" android:src="@drawable/speedup_rocket_tail" />
+            <ImageView android:id="@id/rocket_body" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speedup_rocket_body" />
+        </LinearLayout>
+        <ImageView android:id="@id/rocket_mask_layer" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-146.0dip" android:src="@drawable/rocket_mask_layer" android:layout_centerVertical="true" />
+        <RelativeLayout android:gravity="right" android:paddingRight="-200.0dip" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_centerInParent="true">
+            <View android:id="@id/rocket_meteor1" android:background="@drawable/rocket_meteor" android:visibility="visible" android:layout_width="200.0dip" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+            <View android:id="@id/rocket_meteor2" android:background="@drawable/rocket_meteor" android:visibility="visible" android:layout_width="200.0dip" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+            <View android:id="@id/rocket_meteor3" android:background="@drawable/rocket_meteor" android:visibility="visible" android:layout_width="200.0dip" android:layout_height="1.0dip" android:layout_marginTop="20.0dip" />
+            <View android:id="@id/rocket_meteor4" android:background="@drawable/rocket_meteor" android:visibility="visible" android:layout_width="200.0dip" android:layout_height="1.0dip" android:layout_marginTop="35.0dip" />
+            <View android:id="@id/rocket_meteor5" android:background="@drawable/rocket_meteor" android:visibility="visible" android:layout_width="200.0dip" android:layout_height="1.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" />
+            <View android:id="@id/rocket_meteor6" android:background="@drawable/rocket_meteor" android:visibility="visible" android:layout_width="200.0dip" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <com.dianxinos.optimizer.ui.DxPageTips android:id="@id/page_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" app:message="@string/netmonitor_ac_tips" app:hasButton="false" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="@color/common_dark" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/netmonitor_ac_province" android:layout_weight="1.0" />
+                <com.dianxinos.common.ui.view.PickSelectView android:id="@id/spinner_province" android:layout_width="0.0dip" android:layout_weight="2.0" app:title="@string/netmonitor_ac_province" app:entries="@array/province_list" style="@style/MyWidget.PickSelectView" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="@color/common_dark" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/netmonitor_ac_city" android:layout_weight="1.0" />
+                <com.dianxinos.common.ui.view.PickSelectView android:id="@id/spinner_city" android:layout_width="0.0dip" android:layout_weight="2.0" app:title="@string/netmonitor_ac_city" style="@style/MyWidget.PickSelectView" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="@color/common_dark" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/netmonitor_ac_provider" android:layout_weight="1.0" />
+                <com.dianxinos.common.ui.view.PickSelectView android:id="@id/spinner_provider" android:layout_width="0.0dip" android:layout_weight="2.0" app:title="@string/netmonitor_ac_provider" app:entries="@array/provider_list" style="@style/MyWidget.PickSelectView" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="@color/common_dark" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/netmonitor_ac_brand" android:layout_weight="1.0" />
+                <com.dianxinos.common.ui.view.PickSelectView android:id="@id/spinner_brand" android:layout_width="0.0dip" android:layout_weight="2.0" app:title="@string/netmonitor_ac_brand" style="@style/MyWidget.PickSelectView" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@id/limitok" android:text="@string/netmonitor_ac_save_sms" style="@style/MyWidget.PageBottomButtonLayoutNoBackground" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/digital_time_hour_hundred" android:background="@drawable/digital_time_bkg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/digital_time_hour_tens" android:background="@drawable/digital_time_bkg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+    <ImageView android:id="@id/digital_time_hour_single" android:background="@drawable/digital_time_bkg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+    <TextView android:textColor="@color/common_white" android:layout_gravity="bottom" android:id="@id/digital_time_hour_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/common_time_hour" />
+    <ImageView android:id="@id/digital_time_min_tens" android:background="@drawable/digital_time_bkg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
+    <ImageView android:id="@id/digital_time_min_single" android:background="@drawable/digital_time_bkg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+    <TextView android:textColor="@color/common_white" android:layout_gravity="bottom" android:id="@id/digital_time_min_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/common_time_minute" />
+</merge>

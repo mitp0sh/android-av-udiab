@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianxinos.notify.ui.view.ShareButtonLayout android:orientation="vertical" android:id="@id/notify_share_btn_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_share" android:background="@drawable/notify_simple_sharebtn_selector" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/share_list" android:background="@drawable/notify_dialog_simple_sharelist" android:paddingTop="22.0dip" android:paddingBottom="14.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/btn_sina_weibo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:src="@drawable/notify_dialog_simple_weibo" android:scaleType="center" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/btn_weixin_pyq" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/notify_dialog_simple_pyq" android:scaleType="center" android:contentDescription="@null" />
+    </LinearLayout>
+</com.dianxinos.notify.ui.view.ShareButtonLayout>

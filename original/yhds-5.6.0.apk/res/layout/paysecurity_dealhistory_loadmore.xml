@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/common_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:gravity="center" android:id="@id/tv_loading" android:layout_width="wrap_content" android:layout_height="@dimen/common_list_item_height" android:layout_marginLeft="2.0dip" android:text="@string/claims_details_loadmore" android:layout_centerInParent="true" />
+    <ProgressBar android:id="@id/pb_loading" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/dx_loading_inside_rotate" android:indeterminateBehavior="repeat" android:layout_toLeftOf="@id/tv_loading" android:layout_centerVertical="true" />
+</RelativeLayout>

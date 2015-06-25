@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/paysecurity_scan_window_body" android:background="@drawable/paysecurity_window_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/paysecurity_scan_status_panel" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/scan_status_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/paysecurity_scan" />
+            <TextView android:textColor="@color/common_white" android:id="@id/scan_status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paysecurity_scan_tips" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/paysecurity_tips_panel" android:padding="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/common_white_alpha_50" android:id="@id/tips_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paysecurity_scan_title" android:drawableLeft="@drawable/paysecurity_title" android:drawablePadding="6.0dip" />
+            <TextView android:id="@id/tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/paysecurity_scan_tips" />
+            <TextView android:textColor="@color/common_blue" android:layout_gravity="right" android:id="@id/tips_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/paysecurity_scan_tips_on" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

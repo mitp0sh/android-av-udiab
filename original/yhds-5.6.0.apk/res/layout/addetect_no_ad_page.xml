@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#fff2f6f9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <com.dianxinos.optimizer.module.addetect.widget.NoAdLayoutView android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <TextView android:textSize="12.0sp" android:textColor="@color/report_activity_jump_tv_color" android:id="@id/report_jump_tv_innoad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="8.0dip" android:text="@string/report_activity_jump_text" android:layout_alignParentRight="true" />
+</RelativeLayout>

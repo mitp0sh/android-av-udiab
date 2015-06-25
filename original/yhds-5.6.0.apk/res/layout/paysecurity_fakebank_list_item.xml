@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="false" android:clickable="false" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/icon" style="@style/MyWidget.ListViewItemAppIcon" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:gravity="left" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MyWidget.ListViewItemTextTop" />
+        <TextView android:textColor="#ffff7d00" android:gravity="center|left" android:id="@id/fakebank_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MyWidget.ListViewItemTextBottom" />
+    </LinearLayout>
+    <RelativeLayout android:background="@drawable/dx_action_bkg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+        <com.dianxinos.optimizer.ui.DxActionButton android:gravity="center" android:id="@id/change_bank_action_button" style="@style/MyWidget.ActionButton" />
+    </RelativeLayout>
+</LinearLayout>

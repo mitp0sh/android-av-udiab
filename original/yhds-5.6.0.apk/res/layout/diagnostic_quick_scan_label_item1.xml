@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="25.0sp" android:textColor="@color/white" android:id="@id/scan_result_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/scan_result_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/scan_result_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

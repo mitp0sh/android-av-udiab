@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/payment_dialog_image" android:layout_width="wrap_content" android:layout_height="280.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/payment_guide_image" android:background="@drawable/paysecurity_payment_dialog" android:layout_width="fill_parent" android:layout_height="280.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="#19000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/common_text_size_middle" android:textColor="@color/common_white" android:gravity="center_horizontal" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payment_paysecurity_dialog_title" />
+        <TextView android:textSize="@dimen/common_text_size_middle" android:textColor="@color/common_white" android:gravity="center_horizontal" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payment_paysecurity_dialog_text" />
+    </LinearLayout>
+</RelativeLayout>

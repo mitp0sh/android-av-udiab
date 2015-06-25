@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" android:layout_alignParentTop="true" layout="@layout/main_titlebar" />
+    <FrameLayout android:id="@id/items_top_panel" android:background="@color/common_titlebar_bkg_color" android:layout_width="fill_parent" android:layout_height="125.0dip" android:layout_below="@id/titlebar" android:layout_alignWithParentIfMissing="true">
+        <GridView android:layout_gravity="center" android:id="@id/items_top" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:horizontalSpacing="4.0dip" style="@style/MyWidget.GridView" />
+    </FrameLayout>
+    <GridView android:id="@id/items_more" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="gone" android:layoutAnimation="@anim/safetools_random_wave_scale_anim" android:layout_height="wrap_content" android:horizontalSpacing="4.0dip" android:verticalSpacing="10.0dip" android:layout_below="@id/items_top_panel" style="@style/MyWidget.GridView" />
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/items_top_panel" />
+</RelativeLayout>

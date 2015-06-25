@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MyWidget.Notification.Body"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:src="@drawable/notification_downloading_large" style="@style/MyWidget.Notification.LeftArea.Icon" />
+    <ImageView style="@style/MyWidget.Notification.Divider" />
+    <RelativeLayout android:paddingTop="0.0dip" android:paddingRight="0.0dip" style="@style/MyWidget.Notification.Area">
+        <TextView android:id="@id/title" android:layout_marginTop="12.0dip" android:layout_marginRight="@dimen/common_notification_margin_horizontal" style="@style/MyWidget.Notification.Text.Top" />
+        <ProgressBar android:id="@id/progress_bar" android:layout_marginTop="12.0dip" android:layout_marginRight="@dimen/common_notification_margin_horizontal" android:layout_below="@id/title" style="@style/MyWidget.ProgressBarMain" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/notification_logo_top_right" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

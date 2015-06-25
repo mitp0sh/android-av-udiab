@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/space_header" layout="@layout/space_header" />
+    <ScrollView android:id="@id/scrollview" android:background="@drawable/dx_main_screen_bkg" android:scrollbars="vertical" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/MyWidget.ScrollView">
+        <include layout="@layout/alltrash_layout" />
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ffd0dee6" style="@style/MyWidget.Divider.Horizontal" />
+        <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/space_go" style="@style/MyWidget.PageBottomButtonLayout" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/fp_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" android:layout_alignParentTop="true" layout="@layout/fp_layout_title_bar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/tip_layout" android:background="@color/fp_color_order_bg" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingRight="15.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_bar">
+        <TextView android:textSize="@dimen/fp_text_size_18" android:textColor="@color/fp_color_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fp_supported_credits" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/fp_supported_credits_detail" />
+    </LinearLayout>
+    <View android:background="@drawable/fp_histroy_line" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_alignBottom="@id/tip_layout" />
+    <LinearLayout android:gravity="center" android:id="@id/empty_view" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tip_layout">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/fp_loading" />
+        <TextView android:textColor="@color/fp_color_999" android:layout_gravity="center" android:id="@id/reget" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fp_reget_debits" />
+    </LinearLayout>
+    <ScrollView android:scrollbarSize="5.0dip" android:scrollbarThumbVertical="@drawable/fp_shape_scrollbar" android:scrollbarStyle="outsideOverlay" android:padding="0.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tip_layout">
+        <LinearLayout android:orientation="vertical" android:id="@id/grid_credits" android:background="@color/fp_white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</RelativeLayout>

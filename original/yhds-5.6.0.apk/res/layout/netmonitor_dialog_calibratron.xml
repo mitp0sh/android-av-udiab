@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/page_margin_width" android:layout_marginTop="@dimen/page_margin_width" android:layout_marginRight="@dimen/page_margin_width" android:layout_marginBottom="@dimen/page_margin_width">
+        <TextView android:textSize="16.0dip" android:textColor="@color/common_dark" android:id="@id/usage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dip" android:text="@string/netmonitor_ac_manual" android:layout_centerVertical="true" />
+        <EditText android:textSize="16.0dip" android:textColor="@color/common_dark" android:id="@id/edtcalibary" android:background="@drawable/text_editor_bkg" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="32.0dip" android:maxLength="6" android:layout_toRightOf="@id/usage" android:inputType="numberDecimal" />
+        <TextView android:textColor="@color/common_grey" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:text="@string/netmonitor_unit_mb" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="12.0dip">
+        <Button android:id="@id/custom_ok_btn" android:layout_width="0.0dip" android:layout_marginRight="8.0dip" android:text="@string/common_ok" android:singleLine="true" android:layout_weight="1.0" style="@style/MyWidget.RoundButton.Highlight" />
+        <Button android:id="@id/custom_cancel_btn" android:layout_width="0.0dip" android:layout_marginRight="8.0dip" android:text="@string/common_cancel" android:singleLine="true" android:layout_weight="1.0" style="@style/MyWidget.RoundButton.Normal" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ac_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_marginLeft="-10.0dip" android:layout_marginBottom="16.0dip" style="@style/MyWidget.Divider.Horizontal" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/common_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/page_margin_width" android:layout_marginRight="@dimen/page_margin_width" android:text="@string/netmonitor_cal_monthgprs" />
+        <Button android:id="@id/btn_auto" android:layout_width="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="10.0dip" android:text="@string/netmonitor_auto_correct" style="@style/MyWidget.RoundButton.Highlight" />
+    </LinearLayout>
+</LinearLayout>

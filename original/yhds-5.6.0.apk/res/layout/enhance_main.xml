@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <RelativeLayout android:id="@id/rl_top_bg" android:layout_width="fill_parent" android:layout_height="160.0dip">
+        <ImageView android:id="@id/iv_enhance_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_unable" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tv_enhance_state_enable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/enhance_state_unenable" android:singleLine="true" />
+            <Button android:textSize="16.0sp" android:textColor="#ff0b6698" android:layout_gravity="center_horizontal" android:id="@id/btn_enhance_open" android:background="@drawable/enhance_open_selector" android:layout_width="240.0dip" android:layout_height="36.0dip" android:layout_marginBottom="10.0dip" android:text="@string/enhance_open" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_enable" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tv_enhance_state_unable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="@string/enhance_state_enable" android:singleLine="true" />
+            <TextView android:textSize="13.0sp" android:textColor="#ffccffff" android:layout_gravity="center_horizontal" android:id="@id/tv_enhance_case" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/fun_freezon" style="@style/MyWidget.ListViewItem" layout="@layout/enhance_function_item" />
+            <include layout="@layout/common_divider_settings" />
+            <include android:id="@id/fun_process" style="@style/MyWidget.ListViewItem" layout="@layout/enhance_function_item" />
+            <include layout="@layout/common_divider_settings" />
+            <include android:id="@id/fun_firewall" style="@style/MyWidget.ListViewItem" layout="@layout/enhance_function_item" />
+            <include layout="@layout/common_divider_settings" />
+            <include android:id="@id/fun_preinstall" style="@style/MyWidget.ListViewItem" layout="@layout/enhance_function_item" />
+            <include layout="@layout/common_divider_settings" />
+            <include android:id="@id/fun_permission" style="@style/MyWidget.ListViewItem" layout="@layout/enhance_function_item" />
+            <include layout="@layout/common_divider_settings" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

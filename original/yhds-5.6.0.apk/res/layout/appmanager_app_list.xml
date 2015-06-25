@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_setinittime" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout="@layout/appmanager_custompreference" app:name="@string/appmanager_uninstall_setinittime" app:type="none" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/empty_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.dianxinos.optimizer.ui.DXEmptyView android:id="@id/empty_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/empty_button" style="@style/MyWidget.PageBottomButtonLayout" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/cover_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/app_status" android:layout_alignParentTop="true" style="@style/MyWidget.InfoBarLayout" />
+            <com.dianxinos.common.ui.view.PinnedHeaderListView android:id="@id/app_name_listview" android:paddingBottom="4.0dip" android:layout_height="fill_parent" android:layout_marginBottom="-6.0dip" android:layout_above="@id/uninstall_button" android:layout_below="@id/app_status" style="@style/MyWidget.ListView" />
+            <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/uninstall_button" android:layout_alignParentBottom="true" app:showCheckbox="true" style="@style/MyWidget.PageBottomButtonLayout" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

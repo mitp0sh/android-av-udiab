@@ -1,0 +1,10 @@
+<default>
+Google Play||浏览搜索历史、设置||com.android.vending
+安卓市场||搜索历史、浏览历史||com.hiapk.marketpho
+安智市场||搜索历史、浏览历史||cn.goapk.market
+豌豆荚||搜索历史、浏览历史||com.wandoujia.phoenix2
+360手机助手||搜索历史、浏览历史||com.qihoo.appstore
+应用汇||搜索历史、浏览历史||com.yingyonghui.market
+搜狐新闻||浏览历史||com.sohu.newsclient
+网易新闻||浏览历史||com.netease.newsreader.activity
+</default>

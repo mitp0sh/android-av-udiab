@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fan_layout" android:visibility="invisible" android:layout_width="@dimen/tk_tap_clean_shortcut_size" android:layout_height="@dimen/tk_tap_clean_shortcut_size">
+        <View android:id="@id/fan_back" android:background="@drawable/taskman_clear_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/fan_leaves" android:background="@drawable/taskman_clear_fan" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/fan_wind" android:background="@drawable/taskman_center_dot" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/fan_cover" android:background="@drawable/taskman_clear_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</RelativeLayout>

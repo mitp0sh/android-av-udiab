@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffe7f3f8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include android:id="@id/menu_phoneacc_layout" layout="@layout/main_home_content_top_item" />
+        <include android:id="@id/menu_trashclean_layout" layout="@layout/main_home_content_top_item" />
+        <include android:id="@id/menu_appmgr_layout" layout="@layout/main_home_content_top_item" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <include android:id="@id/menu_antiharass_layout" layout="@layout/main_home_content_left_item" />
+            <include android:id="@id/menu_netmonitor_layout" layout="@layout/main_home_content_left_item" />
+            <include android:id="@id/menu_safeguard_layout" layout="@layout/main_home_content_left_item" />
+        </LinearLayout>
+        <View android:background="@color/home_menu_bg_selected" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <include android:id="@id/menu_anticost_layout" layout="@layout/main_home_content_right_item" />
+            <include android:id="@id/menu_toolbox_layout" layout="@layout/main_home_content_right_item" />
+            <include android:id="@id/menu_more_layout" layout="@layout/main_home_content_right_item" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

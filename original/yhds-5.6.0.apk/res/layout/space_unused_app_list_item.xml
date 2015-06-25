@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/space_unused_app_item_body" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/space_unused_app_item_icon" style="@style/MyWidget.ListViewItemAppIcon" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/space_unused_app_item_primary" style="@style/MyWidget.ListViewItemTextTop" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/space_unused_app_item_summary" style="@style/MyWidget.ListViewItemTextBottom" />
+            <TextView android:id="@id/space_unused_app_item_size" android:layout_marginLeft="28.0dip" android:singleLine="true" style="@style/MyWidget.ListViewItemTextBottom" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/checkbox_panel" style="@style/MyWidget.ListActionPanel">
+        <com.dianxinos.optimizer.ui.DxActionButton android:id="@id/action_button" app:icon="@drawable/dx_action_delete" app:label="@string/common_uninstall" style="@style/MyWidget.ActionButton" />
+        <TextView android:id="@id/uninstall_app_uninstalled_text" android:visibility="gone" android:text="@string/app_uninstalled_text" style="@style/MyWidget.ListActionStatus" />
+    </LinearLayout>
+</LinearLayout>

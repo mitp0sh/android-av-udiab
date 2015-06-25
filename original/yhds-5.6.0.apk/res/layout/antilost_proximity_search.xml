@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/antilost_common_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:roundProgress="http://schemas.android.com/apk/res/cn.opda.a.phonoalbumshoushou">
+    <include android:id="@id/search_titlebar" android:layout_above="@id/antilost_search_mainframe" layout="@layout/main_titlebar" />
+    <FrameLayout android:id="@id/antilost_search_mainframe" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/antilost_search_start_button" android:layout_below="@id/search_titlebar">
+        <ImageView android:layout_gravity="center" android:id="@id/antilost_waveimg_imageview" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/antilost_openbluetooth_wave" />
+        <ImageView android:layout_gravity="center" android:id="@id/antilost_backring_imageview" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/antilost_search_backimage" />
+        <com.dianxinos.optimizer.module.antilost.layout.SearchDeviceImageLayout android:gravity="center" android:layout_gravity="center" android:id="@id/antilost_search_devices_images" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.dianxinos.optimizer.module.antilost.layout.SearchDeviceTextLayout android:gravity="center" android:layout_gravity="center" android:id="@id/antilost_search_devices_names" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Antilost_DeviceName_Style" />
+        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="110.0dip" android:layout_height="110.0dip">
+            <com.dianxinos.optimizer.module.antilost.layout.CircleProgress android:layout_gravity="center" android:id="@id/circleprogressbar_view" android:background="@drawable/antilost_alert_list_driver" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" roundProgress:progressmax="100" roundProgress:progressfill="false" roundProgress:progressPaint_Width="7" roundProgress:progressPaint_Color="@color/antilost_progress_paint" roundProgress:progressInside_Interval="7" />
+            <ImageView android:layout_gravity="center" android:id="@id/antilost_search_center" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/antilost_search_retry" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/antilost_search_tips_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-180.0dip" android:layout_below="@id/antilost_search_mainframe">
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/antilost_show_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Antilost_TextView_Show_Tips_Style" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/antilost_running_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Antilost_TextView_Running_Tips_Style" />
+    </LinearLayout>
+    <Button android:textSize="18.0sp" android:textColor="@color/antilost_text_color_white" android:gravity="center" android:layout_gravity="center" android:id="@id/antilost_search_start_button" android:background="@drawable/antilost_bottom_button_press" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

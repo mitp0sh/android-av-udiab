@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:id="@id/bkg_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/dxfast_widget_body" android:background="@drawable/dxfast_widget_bg" android:layout_width="fill_parent" android:layout_height="136.0dip" android:layout_marginBottom="12.0dip">
+        <include android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:minHeight="94.0dip" android:layout_weight="1.0" layout="@layout/dxfast_widget_switches" />
+        <ImageView android:background="@drawable/dxfast_widget_common_functions_bg_normal" android:layout_width="fill_parent" android:layout_height="42.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/dxfast_widget_common_functions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-12.0dip" android:layout_alignBottom="@id/dxfast_widget_body" android:layout_alignParentLeft="true">
+        <FrameLayout android:id="@id/dxfast_widget_accelerate" android:background="@drawable/dxfast_widget_accelerate_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center" android:id="@id/dxfast_widget_speed_status" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dxfast_widget_speed_green" />
+            <ImageView android:layout_gravity="center" android:id="@id/dxfast_widget_accelerate_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dxfast_widget_accelerate_bar_selector" />
+            <TextView android:textSize="@dimen/common_text_size_middle" android:textColor="@color/common_dark" android:gravity="center" android:layout_gravity="center" android:id="@id/dxfast_widget_accelerate_content" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <ImageView android:id="@id/dxfast_widget_space_cleanup_img" android:background="@drawable/dxfast_widget_icon_selector" android:padding="9.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/dxfast_widget_clean_icon" android:layout_toRightOf="@id/dxfast_widget_accelerate" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/dxfast_widget_dashi_diagnose_img" android:background="@drawable/dxfast_widget_icon_selector" android:padding="9.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/dxopt_logo_quick_helper_float_window" android:layout_toRightOf="@id/dxfast_widget_space_cleanup_img" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffc2dff2" android:gravity="center" android:id="@id/dxfast_widget_memory_used" android:layout_width="108.0dip" android:layout_height="wrap_content" android:layout_toLeftOf="@id/dxfast_widget_accelerate" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

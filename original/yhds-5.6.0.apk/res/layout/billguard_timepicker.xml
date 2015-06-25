@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:descendantFocusability="beforeDescendants" android:layout_width="110.0dip" android:layout_height="120.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianxinos.optimizer.module.billguard.view.NumPickerView android:id="@id/time_hour" android:layout_width="@dimen/numberpicker_width" android:layout_height="fill_parent" />
+    <com.dianxinos.optimizer.module.billguard.view.NumPickerView android:id="@id/time_min" android:layout_width="@dimen/numberpicker_width" android:layout_height="fill_parent" />
+</LinearLayout>

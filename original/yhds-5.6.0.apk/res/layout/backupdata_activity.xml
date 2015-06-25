@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <ScrollView android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titlebar" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/commu_protect" layout="@layout/billguard_anticosts_list_item" />
+            <include layout="@layout/common_divider_horizontal" />
+            <include android:id="@id/pic_protect" layout="@layout/billguard_anticosts_list_item" />
+            <include layout="@layout/common_divider_horizontal" />
+            <include android:id="@id/video_protect" layout="@layout/billguard_anticosts_list_item" />
+            <include layout="@layout/common_divider_horizontal" />
+            <include android:id="@id/file_protect" android:visibility="gone" layout="@layout/billguard_anticosts_list_item" />
+            <include android:visibility="gone" layout="@layout/common_divider_horizontal" />
+            <include android:id="@id/app_protect" android:visibility="gone" layout="@layout/billguard_anticosts_list_item" />
+            <include android:visibility="gone" layout="@layout/common_divider_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/space_large_file_cover_layout" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:ellipsize="middle" android:id="@id/space_large_file_page_tip" style="@style/MyWidget.InfoBarLayout" />
+        <ProgressBar android:layout_gravity="bottom" android:id="@id/space_large_file_progressbar" android:visibility="gone" style="@style/MyWidget.ProgressBarNoCorner" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@id/space_large_file_list" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MyWidget.ListView" />
+        <com.dianxinos.optimizer.ui.DXEmptyView android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/large_file_clear_button" style="@style/MyWidget.PageBottomButtonLayout" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_fun_icon" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginRight="@dimen/common_list_item_app_icon_right_margin" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:gravity="bottom|center|left" android:id="@id/tv_fun_title" android:layout_toRightOf="@id/iv_fun_icon" style="@style/MyWidget.ListViewItemTextTop" />
+    <TextView android:id="@id/tv_fun_des" android:layout_toRightOf="@id/iv_fun_icon" android:layout_below="@id/tv_fun_title" android:layout_alignLeft="@id/tv_fun_title" style="@style/MyWidget.ListViewItemTextBottom" />
+    <ImageView android:id="@id/iv_fun_icon_right" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginRight="18.0dip" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

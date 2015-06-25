@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:ellipsize="middle" android:id="@id/permission_total_description" style="@style/MyWidget.InfoBarLayout" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/permission_read_phone_number" layout="@layout/main_screen_list_item" />
+            <include layout="@layout/common_divider_horizontal" />
+            <include android:id="@id/permission_view_contact" layout="@layout/main_screen_list_item" />
+            <include layout="@layout/common_divider_horizontal" />
+            <include android:id="@id/permission_send_sms" layout="@layout/main_screen_list_item" />
+            <include layout="@layout/common_divider_horizontal" />
+            <include android:id="@id/permission_call_previlige" layout="@layout/main_screen_list_item" />
+            <include layout="@layout/common_divider_horizontal" />
+            <include android:id="@id/permission_sms_history" layout="@layout/main_screen_list_item" />
+            <include layout="@layout/common_divider_horizontal" />
+            <include android:id="@id/permission_call_history" layout="@layout/main_screen_list_item" />
+            <include layout="@layout/common_divider_horizontal" />
+            <include android:id="@id/permission_position" layout="@layout/main_screen_list_item" />
+            <include layout="@layout/common_divider_horizontal" />
+            <include android:id="@id/permission_phone_state" layout="@layout/main_screen_list_item" />
+            <include layout="@layout/common_divider_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

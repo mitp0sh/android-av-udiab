@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/antilost_common_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/antilost_common_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="34.0dip">
+        <FrameLayout android:background="@drawable/antilost_main_device_background" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0">
+            <ImageView android:layout_gravity="center" android:id="@id/proximity_main_wave" android:visibility="invisible" android:layout_width="140.0dip" android:layout_height="140.0dip" android:src="@drawable/antilost_openbluetooth_wave" />
+            <ImageView android:layout_gravity="center" android:id="@id/proximity_main_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/antilost_proximitymain_addevice" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/antilost_text_color_white" android:layout_gravity="center" android:id="@id/proximity_main_adddevice_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-90.0dip" android:text="@string/device_add_text" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/alert_switch_layout" android:background="@drawable/antilost_common_list_item_bkg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:textColor="@color/antilost_common_selector" android:gravity="center" android:id="@id/alert_function" android:background="@drawable/antilost_common_list_item_bkg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/antilost_introduce_buy_text" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

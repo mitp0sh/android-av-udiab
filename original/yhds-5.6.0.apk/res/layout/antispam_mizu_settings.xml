@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/reset" android:layout_alignParentBottom="true" style="@style/MyWidget.PageBottomButtonLayout" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/reset" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.SettingsPageMargin">
+            <LinearLayout style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.optimizer.module.antispam.ui.MiuiSettingPrefernce android:layout_width="fill_parent" android:layout_height="wrap_content" app:content="@string/antispam_mizu_setting_spam_step_1" />
+                <com.dianxinos.optimizer.module.antispam.ui.MiuiSettingPrefernce android:layout_width="fill_parent" android:layout_height="wrap_content" app:content="@string/antispam_mizu_setting_spam_step_2" />
+                <com.dianxinos.optimizer.module.antispam.ui.MiuiSettingPrefernce android:id="@id/pref_step1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:content="@string/antispam_mizu_setting_spam_step_3" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

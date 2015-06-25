@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianxinos.common.ui.view.DXSelectSwitch android:id="@id/select_switch" android:layout_width="160.0dip" android:layout_height="30.0dip" app:textLeft="@string/netmonitor_firewall_month_sort" app:textRight="@string/netmonitor_firewall_day_sort" app:defaultSelectLeft="true" />
+    </LinearLayout>
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/MyWidget.ListView" />
+</LinearLayout>

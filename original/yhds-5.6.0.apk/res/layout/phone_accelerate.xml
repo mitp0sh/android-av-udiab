@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <include android:id="@id/page_header" android:layout_width="fill_parent" android:layout_height="@dimen/common_page_header_animator_height" android:layout_below="@id/titlebar" layout="@layout/accelerate_header" />
+    <ScrollView android:background="@color/phoneacc_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/page_header" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:background="@color/phoneacc_bg_color" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/process_manager" layout="@layout/phone_accelerate_groupview_item" />
+            <include layout="@layout/common_divider_settings" />
+            <include android:id="@id/boot_manager" layout="@layout/phone_accelerate_groupview_item" />
+            <include layout="@layout/common_divider_settings" />
+            <Button android:id="@id/accelerate_go" android:visibility="gone" android:layout_width="fill_parent" android:layout_margin="10.0dip" android:text="@string/acc_go_title" style="@style/MyWidget.RoundButton.Highlight" />
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <View android:background="#ffd0dee6" style="@style/MyWidget.Divider.Horizontal" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/deep_analysis" android:background="@drawable/phoneacc_bottom_item_bg" android:layout_width="0.0dip" android:layout_height="90.0dip" android:layout_weight="1.0">
+                    <TextView android:background="@drawable/phoneacc_deep_analysis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" />
+                    <TextView android:textSize="14.0dip" android:textColor="#ff4d616c" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/deep_analysis_title" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/app_freeze" android:background="@drawable/phoneacc_bottom_item_bg" android:layout_width="0.0dip" android:layout_height="90.0dip" android:layout_weight="1.0">
+                    <TextView android:background="@drawable/phoneacc_app_freeze" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" />
+                    <TextView android:textSize="14.0dip" android:textColor="#ff4d616c" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/freeze_unused_app" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cpu_overclocking" android:background="@drawable/phoneacc_bottom_item_bg" android:layout_width="0.0dip" android:layout_height="90.0dip" android:layout_weight="1.0">
+                    <TextView android:background="@drawable/phoneacc_cpu_overclocking" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" />
+                    <TextView android:textSize="14.0dip" android:textColor="#ff4d616c" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/cpu_overloacking" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

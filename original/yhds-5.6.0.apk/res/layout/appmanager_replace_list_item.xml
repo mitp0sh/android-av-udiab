@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/appmanager_replace_list_item" android:layout_height="@dimen/appmanager_common_stat_three_line" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/relpace_app_icon" android:layout_marginTop="10.0dip" style="@style/MyWidget.ListViewItemAppIcon" />
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center|left|top" android:orientation="horizontal" android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:id="@id/relpace_app_label" android:layout_width="0.0dip" android:singleLine="true" android:layout_weight="1.0" style="@style/MyWidget.ListViewItemTextTop" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_blue" android:id="@id/replace_download_state" android:layout_marginRight="14.0dip" android:singleLine="true" style="@style/MyWidget.ListViewItemTextTop" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/replace_progress" android:visibility="gone" android:layout_marginTop="6.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="6.0dip" android:max="100" android:layout_below="@id/title_layout" style="@style/MyWidget.ProgressBarMain" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/replace_genuine_info" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/replace_progress">
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_red" android:id="@id/replace_app_genuine_false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/appmanager_uninstall_genuine_false" android:singleLine="true" android:drawableLeft="@drawable/appmanager_genuine_false" android:drawablePadding="4.0dip" style="@style/MyWidget.ListViewItemTextBottom" />
+            <TextView android:textSize="12.0sp" android:id="@id/replace_app_genuine_to" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/appmanager_uninstall_replaceto" android:singleLine="true" style="@style/MyWidget.ListViewItemTextBottom" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_green" android:id="@id/replace_app_genuine_true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/appmanager_uninstall_genuine_true" android:singleLine="true" android:drawableLeft="@drawable/appmanager_genuine_true" android:drawablePadding="4.0dip" style="@style/MyWidget.ListViewItemTextBottom" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/replace_genuine_info">
+            <TextView android:id="@id/relpace_app_replace_size" android:layout_marginRight="14.0dip" style="@style/MyWidget.ListViewItemTextBottom" />
+            <TextView android:id="@id/replace_app_genunie_rate" style="@style/MyWidget.ListViewItemTextBottom" />
+        </LinearLayout>
+        <TextView android:id="@id/replace_download_rate" android:layout_marginRight="14.0dip" android:layout_below="@id/replace_progress" android:layout_alignParentRight="true" style="@style/MyWidget.ListViewItemTextBottom" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/action_panel" style="@style/MyWidget.ListActionPanel">
+        <com.dianxinos.optimizer.ui.DxActionButton android:id="@id/replace_action_button" style="@style/MyWidget.ActionButton" />
+        <TextView android:id="@id/replace_app_uninstalled_text" android:visibility="gone" android:text="@string/app_uninstalled_text" style="@style/MyWidget.ListActionStatus" />
+    </LinearLayout>
+</LinearLayout>

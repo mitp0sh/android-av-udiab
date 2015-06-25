@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/ds_title" android:layout_alignParentTop="true" layout="@layout/main_titlebar" />
+    <RelativeLayout android:id="@id/titlebar" android:background="#fff2f7fd" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:paddingRight="10.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ds_title">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/user_feedback_big_q" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:autoLink="all" android:id="@id/topic_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/divider" android:background="#ffc6d3dd" android:layout_width="fill_parent" android:layout_height="0.6600001dip" android:layout_below="@id/titlebar" />
+    <com.dianxinos.optimizer.module.feedback.view.FeedbackConversationBottomBar android:id="@id/bottombar" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="16.0sp" android:id="@id/send" android:layout_width="64.0dip" android:layout_height="fill_parent" android:text="@string/feedback_conversation_send" android:layout_alignParentRight="true" style="@style/MyWidget.RoundButton.Highlight" />
+        <EditText android:textSize="14.0sp" android:textColor="#ff333333" android:textColorHint="#ffa3a3a3" android:gravity="center|left" android:id="@id/content" android:background="@drawable/text_editor_bkg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:hint="@string/feedback_conversation_hints" android:layout_toLeftOf="@id/send" />
+    </com.dianxinos.optimizer.module.feedback.view.FeedbackConversationBottomBar>
+    <ListView android:id="@id/conversation_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:layout_above="@id/bottombar" android:layout_below="@id/divider" />
+    <View android:background="@drawable/titlebar_shadow" android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_below="@id/titlebar" />
+</RelativeLayout>

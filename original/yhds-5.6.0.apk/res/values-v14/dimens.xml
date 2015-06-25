@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="common_bottombtn_bottom_radius_has">@dimen/common_bottombtn_corner_radius</item>
+    <dimen name="common_bottombtn_bottom_radius_none">0.0dip</dimen>
+    <item type="dimen" name="common_select_switch_radius_has">@dimen/common_select_switch_corner_radius</item>
+    <dimen name="common_select_switch_radius_none">0.0dip</dimen>
+</resources>

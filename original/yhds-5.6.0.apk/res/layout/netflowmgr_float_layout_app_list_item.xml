@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="28.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="28.0dip" android:layout_weight="3.0">
+        <ImageView android:layout_gravity="center" android:id="@id/nfwali_tv_app_icon" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/def_app_icon" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff505e6f" android:layout_gravity="center" android:id="@id/nfwali_tv_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/netflow_android_system_text" />
+    </FrameLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ff505e6f" android:gravity="center" android:id="@id/nfwali_tv_today_used" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.0" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff505e6f" android:gravity="center" android:id="@id/nfwali_tv_current_speed" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.0" />
+</LinearLayout>

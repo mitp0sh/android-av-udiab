@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <TextView android:id="@id/txtsettingtips" android:visibility="gone" style="@style/MyWidget.InfoBarLayout" />
+    <ScrollView android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.SettingsPageMargin">
+            <LinearLayout android:id="@id/switch_group1" style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_regular_clean" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/isregular_clean" app:type="switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linishide" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/process_clean" style="@style/MyWidget.SettingsGroupTitle" />
+                <LinearLayout android:id="@id/lin_flow_setting" style="@style/MyWidget.SettingsGroup">
+                    <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_screen_off" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/screen_off_clean" app:type="switch" />
+                    <include layout="@layout/common_divider_settings" />
+                    <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_memory_low" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/memory_low_clean" app:type="switch" />
+                    <include layout="@layout/common_divider_settings" />
+                    <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_one_hour" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/one_hour_clean" app:type="switch" />
+                </LinearLayout>
+                <TextView android:text="@string/trash_clean" style="@style/MyWidget.SettingsGroupTitle" />
+                <LinearLayout android:id="@id/lin_w_setting" style="@style/MyWidget.SettingsGroup">
+                    <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_every_day_app_cache" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/every_day_cache_clean" app:type="switch" />
+                    <include layout="@layout/common_divider_settings" />
+                    <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_every_month_remain_pic" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/every_month_pic_clean" app:type="switch" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

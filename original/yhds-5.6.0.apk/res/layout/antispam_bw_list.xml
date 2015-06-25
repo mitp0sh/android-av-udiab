@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/cover_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/shadow" android:background="@drawable/dx_info_bar_shadow" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <com.dianxinos.optimizer.ui.DXEmptyView android:id="@id/notify_antispam" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <com.dianxinos.common.ui.view.PinnedHeaderListView android:id="@id/antispam_listview" android:layout_height="0.0dip" android:layout_marginTop="-2.0dip" android:layout_weight="1.0" style="@style/MyWidget.ListView" />
+        <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/add_button" style="@style/MyWidget.PageBottomButtonLayout" />
+    </LinearLayout>
+</FrameLayout>

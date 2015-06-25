@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/scanall" android:background="@drawable/home_menu_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/av_scan_all" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/common_dark" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/whole_scan" />
+    </LinearLayout>
+    <View android:layout_gravity="center_vertical" android:id="@id/divider" android:background="@color/common_divider_color" android:layout_width="1.0px" android:layout_height="72.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/scanfast" android:background="@drawable/home_menu_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/av_scan_fast" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/common_dark" android:gravity="center" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fast_scan" />
+    </LinearLayout>
+</LinearLayout>

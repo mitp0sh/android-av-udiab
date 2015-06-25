@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/av_scanning_header" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="7.5dip" android:layout_marginBottom="7.5dip">
+            <ImageView android:layout_gravity="center" android:id="@id/av_scan_bottomimg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/av_scan_bottom" />
+            <RelativeLayout android:layout_gravity="center" android:id="@id/av_scan_icon_ll" android:layout_width="60.0dip" android:layout_height="60.0dip">
+                <ImageView android:id="@id/av_scan_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/av_anva_tips" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/av_anva_whitelist_scan_tips" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <ImageView android:layout_gravity="center" android:id="@id/av_scan_topimg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/av_scan_top" />
+        </FrameLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/av_scanresult_stateimg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" android:layout_marginBottom="7.5dip" android:src="@drawable/av_scan_bottom" />
+    </FrameLayout>
+</LinearLayout>

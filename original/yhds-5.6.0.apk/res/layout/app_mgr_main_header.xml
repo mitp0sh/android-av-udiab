@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/common_titlebar_bkg_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/app_mgr_search_layoutid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <ImageView android:id="@id/app_mgr_search_bkg_id" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="33.0dip" android:layout_marginRight="33.0dip" android:src="@drawable/my_app_mgr_search_text_bg" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/app_mgr_search_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:src="@drawable/app_mgr_search_icon" android:layout_alignRight="@id/app_mgr_search_bkg_id" android:layout_centerVertical="true" />
+        <View android:id="@id/app_mgr_search" android:background="@color/appmanager_appsearch_solid_color" android:layout_width="1.0px" android:layout_height="12.0dip" android:layout_marginRight="12.0dip" android:layout_toLeftOf="@id/app_mgr_search_icon" android:layout_centerInParent="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/common_white" android:ellipsize="marquee" android:id="@id/app_mgr_search_text_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/app_mgr_search_default_hint" android:singleLine="true" android:layout_toLeftOf="@id/app_mgr_search_icon" android:layout_alignLeft="@id/app_mgr_search_bkg_id" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center|top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/app_mgr_apps_count_imge_id" android:background="@drawable/my_app_mgr_count_text_bg" android:clickable="true" android:layout_width="0.0dip" android:layout_height="120.0dip" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/app_mgr_my_apps_count_hotzone_id" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/my_app_mgr_count_bg" />
+                <TextView android:textSize="24.0sp" android:textColor="@color/common_white" android:layout_gravity="center" android:id="@id/app_mgr_my_apps_count_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/app_mgr_default_count" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/common_text_size_middle" android:textColor="@color/common_white" android:id="@id/app_mgr_my_apps_text_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/app_mgr_my_apps" />
+        </LinearLayout>
+        <View android:layout_gravity="center_vertical" android:id="@id/app_mgr_sep11" android:background="@color/appmanager_appsearch_solid_color" android:layout_width="1.0px" android:layout_height="60.0dip" android:layout_marginTop="-20.0dip" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/app_mgr_apps_kid_img" android:background="@drawable/my_app_mgr_count_text_bg" android:clickable="true" android:layout_width="0.0dip" android:layout_height="120.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/app_mgr_app_kit_id" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dx_toolbox_embeded_icon_app_kit1" />
+            <TextView android:textSize="@dimen/common_text_size_middle" android:textColor="@color/common_white" android:id="@id/app_mgr_app_kit_text_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/toolbox_app_kit_name" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

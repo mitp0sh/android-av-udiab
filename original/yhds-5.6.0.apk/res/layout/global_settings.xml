@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <ScrollView android:id="@id/global_settings_scrollview" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.SettingsPageMargin">
+            <LinearLayout android:id="@id/switch_group1" android:visibility="gone" style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_language" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/GlobalSettings_select_language" app:type="triangle" />
+            </LinearLayout>
+            <TextView android:text="@string/settings_display_quick_title" style="@style/MyWidget.SettingsGroupTitle" />
+            <LinearLayout style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_statusbar_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/GlobalSettings_statusbar_nofity_title" app:type="switch" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_statusbar_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/GlobalSettings_statusbar_appearance_title" app:type="triangle" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_quick_win_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/settings_quick_win_title" app:type="normal" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_how_to_quick_win" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/settings_how_to_quick_win" app:type="normal" />
+                <include android:id="@id/how_to_quick_win_spare_line" layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_quick_desk_shortcut" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/settings_quick_desk_shortcut" app:type="normal" />
+            </LinearLayout>
+            <TextView android:id="@id/pref_quick_install_switch_title" android:text="@string/settings_operation_title" style="@style/MyWidget.SettingsGroupTitle" />
+            <LinearLayout android:id="@id/pref_quick_install_switch_list" style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_quick_install_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/settings_operation_quick_install" app:type="switch" />
+                <include android:id="@id/quick_install_switch_spare_line" android:visibility="gone" layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_quick_shake_clear" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/settings_operation_shake" app:type="normal" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_quick_seven_keys" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/settings_operation_seven_keys_add" app:type="normal" />
+            </LinearLayout>
+            <TextView android:text="@string/settings_service_title" style="@style/MyWidget.SettingsGroupTitle" />
+            <LinearLayout style="@style/MyWidget.SettingsGroup">
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_antispam" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_title" app:summary="@string/antispam_summary" app:type="normal" />
+                <include layout="@layout/common_divider_settings" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/ue_improve_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/settings_service_ue_improve_title" app:type="switch" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <ScrollView android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/titlebar">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/sale_info_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/sale_info_normal" android:background="@drawable/recharge_discount_activity_banner" android:layout_width="fill_parent" android:layout_height="88.0dip" />
+                <ImageView android:id="@id/sale_info_activity" android:background="@drawable/recharge_discount_activity_banner" android:layout_width="fill_parent" android:layout_height="135.0dip" />
+                <com.dianxinos.optimizer.ui.DxPageTips android:id="@id/sale_info_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:isImageButton="false" app:buttonText="@string/recharge_look_detail_infor" />
+            </FrameLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/recharge_color_a" android:gravity="center" android:id="@id/location" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="33.0dip" android:layout_below="@id/sale_info_layout" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:id="@id/phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_below="@id/location">
+                <com.dianxinos.optimizer.module.recharge.ui.RechargeAutoCompleteTextView android:id="@id/phone_input" android:minHeight="35.0dip" android:hint="@string/recharge_phone_input_hint" android:maxLength="13" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:inputType="number" style="@style/MyWidget.EditText" />
+                <ImageButton android:id="@id/select_btn" android:background="@drawable/recharge_select_contact_icon_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/line_between" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/recharge_btn_between_line" android:layout_toLeftOf="@id/select_btn" android:layout_centerVertical="true" />
+                <ImageButton android:id="@id/clean_btn" android:background="@drawable/recharge_clear_number_icon_selector" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_toLeftOf="@id/line_between" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/recharge_color_b" android:id="@id/show_recharge_choose_money_tips_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="24.0dip" android:text="@string/recharge_to_choose_money_tip" android:layout_below="@id/phone" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/show_recharge_money_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/phone" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true">
+                <TextView android:textSize="14.0sp" android:textColor="@color/recharge_color_b" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recharge_into_money" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/recharge_color_b" android:gravity="center" android:id="@id/show_recharge_money" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/show_money_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/show_recharge_money_info" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true">
+                <TextView android:textSize="14.0sp" android:textColor="@color/recharge_color_r" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recharge_true_money" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/recharge_color_r" android:gravity="center" android:id="@id/show_money" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/acount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="14.0dip" android:layout_below="@id/show_money_info">
+                <include android:id="@id/recharge_amount_group" layout="@layout/recharge_amount_group_view" />
+                <Button android:id="@id/confirm_btn" android:layout_marginTop="36.0dip" android:text="@string/common_ok" android:layout_below="@id/recharge_amount_group" style="@style/MyWidget.RoundButton.Highlight" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_below="@id/acount" android:layout_centerHorizontal="true">
+                <TextView android:textSize="12.0sp" android:textColor="#ff8496a0" android:gravity="center" android:id="@id/tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recharge_tip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff8496a0" android:gravity="center" android:id="@id/tip_show" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/recharge_tip_show" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff8496a0" android:gravity="center" android:autoLink="phone" android:id="@id/tip_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/recharge_tip_phone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

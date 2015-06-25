@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@color/home_menu_popview_normal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/homeItemBody" android:background="@drawable/home_menu_popview_selector" android:layout_width="@dimen/home_popview_center_single_width" android:layout_height="@dimen/home_popview_center_single_height">
+        <ImageView android:id="@id/homeItemImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <View android:id="@id/homeItemTips" android:visibility="gone" android:layout_marginLeft="@dimen/home_popview_tips_left_margin" android:layout_alignLeft="@id/homeItemImage" android:layout_alignTop="@id/homeItemImage" style="@style/MyWidget.DotTips" />
+        <TextView android:id="@id/homeItemText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/homeItemImage" android:layout_centerHorizontal="true" style="@style/HomePopViewIconDescStyle" />
+    </RelativeLayout>
+</RelativeLayout>

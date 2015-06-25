@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="10.0dip" android:layout_height="wrap_content" style="@style/MyWidget.ListViewItem">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/app_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/dxopt_icon" style="@style/MyWidget.ListViewItemAppIcon" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:id="@id/app_name" android:layout_width="wrap_content" android:singleLine="true" style="@style/MyWidget.ListViewItemTextTop" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:textColor="@color/common_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/billguard_alarm_dialogview_day_use_text" android:singleLine="true" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/common_yellow" android:id="@id/netflow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/common_red" android:id="@id/malice_result" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/billguard_alarm_malice_result" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/night_netflow_ll" android:background="@drawable/billgraud_netflow_dialogview_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/common_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/billguard_alarm_dialogview_night_use_text" android:singleLine="true" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/common_yellow" android:id="@id/night_netflow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="12.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/common_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/billguard_alarm_dialogview_recommend_text" android:layout_centerVertical="true" />
+            <Button android:textSize="14.0sp" android:textColor="@color/common_white" android:id="@id/open_btn" android:background="@drawable/billguard_netflow_dialog_openbtn_bg" android:layout_width="77.0dip" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/common_switch_on" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

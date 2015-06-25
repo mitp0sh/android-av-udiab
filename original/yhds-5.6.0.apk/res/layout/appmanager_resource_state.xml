@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/empty_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.dianxinos.optimizer.ui.DXEmptyView android:id="@id/empty_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.dianxinos.common.ui.view.ShadowLinearLayout android:orientation="vertical" android:id="@id/cover_layout" android:background="@drawable/dx_main_screen_bkg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/app_status" style="@style/MyWidget.InfoBarLayout" />
+            <ListView android:id="@id/app_name_listview" android:paddingBottom="4.0dip" android:layout_height="fill_parent" android:layout_marginBottom="-6.0dip" android:layout_weight="1.0" style="@style/MyWidget.ListView" />
+        </com.dianxinos.common.ui.view.ShadowLinearLayout>
+    </FrameLayout>
+</LinearLayout>

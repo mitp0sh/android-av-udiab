@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/body" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/smsconversation_activity_tablelayout_info" style="@style/MyWidget.InfoBarLayout">
+            <TextView android:id="@id/tv_Conversation_total_info" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/MyWidget.InfoBarText" />
+            <TextView android:id="@id/tv_Message_total_info" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/MyWidget.InfoBarText" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/cachelistactivity_layout_spinner" android:background="@drawable/common_list_header_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.dianxinos.common.ui.view.PickSelectView android:id="@id/time_choosen_spinner" android:layout_width="0.0dip" android:layout_margin="4.0dip" android:layout_weight="1.0" app:title="@string/sms_time_area_prompt" app:entries="@array/time_area_types" style="@style/MyWidget.PickSelectView" />
+            <com.dianxinos.common.ui.view.PickSelectView android:id="@id/cachelistactivity_spinner" android:layout_width="0.0dip" android:layout_margin="4.0dip" android:layout_weight="1.0" app:title="@string/CacheListActivity_SMSTypes_prompt" app:entries="@array/CacheListActivity_SMSTypes" style="@style/MyWidget.PickSelectView" />
+        </LinearLayout>
+        <include layout="@layout/common_divider_horizontal" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.dianxinos.optimizer.ui.DXEmptyView android:id="@id/AndroidConversationMasterActivity_TextView_NoSMS" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ListView android:id="@id/listView_MesageConversation" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MyWidget.ListView" />
+        </FrameLayout>
+        <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/page_bottom_btn" app:text="@string/common_onekey_clean" app:showCheckbox="true" style="@style/MyWidget.PageBottomButtonLayout" />
+    </LinearLayout>
+</LinearLayout>

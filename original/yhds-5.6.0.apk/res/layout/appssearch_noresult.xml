@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/appssearch_noresult_img" android:background="@drawable/dxopt_logo_empty_view_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <TextView android:textSize="14.0sp" android:gravity="center_horizontal" android:id="@id/appssearch_noresult_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/app_mgr_appssearch_noresult" android:maxEms="15" android:layout_below="@id/appssearch_noresult_img" android:layout_centerHorizontal="true" />
+</RelativeLayout>

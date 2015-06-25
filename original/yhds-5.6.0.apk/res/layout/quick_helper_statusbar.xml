@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="#ffbbbbbd" android:gravity="center" android:id="@id/statusbar_battery_energe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/quick_helper_battery_electricity" android:drawablePadding="2.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffbbbbbd" android:gravity="center" android:id="@id/statusbar_battery_temperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/quick_helper_battery_temperature" android:drawablePadding="2.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffbbbbbd" android:gravity="center" android:id="@id/statusbar_netfolw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/quick_helper_netflow" android:drawablePadding="2.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

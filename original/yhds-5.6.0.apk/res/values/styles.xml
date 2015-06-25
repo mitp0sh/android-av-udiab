@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="FpThemeAppBase" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:screenOrientation">sensor</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="FpThemeActivityBase" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@color/fp_color_window_bg</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/fp_color_text</item>
+    </style>
+    <style name="FpDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/fp_transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="FpPromptDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/fp_transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:textColor">@color/fp_color_text</item>
+        <item name="android:background">@color/fp_transparent</item>
+    </style>
+    <style name="MyWidget" parent="@android:style/Theme" />
+    <style name="MyWidget.AutoCompletetextView" parent="@android:style/Widget.AutoCompleteTextView">
+        <item name="android:popupBackground">@drawable/appssearch_suggestion_bg</item>
+    </style>
+    <style name="MyWidget.DropDownList" parent="@android:style/Widget.ListView.DropDown">
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_handle_vertical</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:paddingLeft">1.0px</item>
+        <item name="android:paddingRight">1.0px</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@color/common_screen_bkg_cache_color</item>
+        <item name="android:divider">@color/common_divider_color</item>
+        <item name="android:dividerHeight">@dimen/common_list_sperator_height</item>
+        <item name="android:fadeScrollbars">true</item>
+    </style>
+    <style name="MyWidget.TitleBarText" parent="@style/MyWidget">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MyWidget.DialogTitleBarText" parent="@style/MyWidget.TitleBarText">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/common_dark</item>
+        <item name="android:layout_marginLeft">6.0dip</item>
+        <item name="android:drawableLeft">@drawable/dxopt_logo_titlebar_normal</item>
+    </style>
+    <style name="MyWidget.TabText" parent="@style/MyWidget">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/tab_indicator_text</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MyWidget.PageTipsText" parent="@style/MyWidget">
+        <item name="android:textSize">@dimen/common_text_size_middle_2</item>
+        <item name="android:textColor">#ff6d838f</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/main_page_tips_bkg</item>
+        <item name="android:paddingLeft">@dimen/common_list_item_left_padding</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">@dimen/common_list_item_left_padding</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">30.0dip</item>
+    </style>
+    <style name="MyWidget.InfoBarLayout" parent="@style/MyWidget">
+        <item name="android:textSize">@dimen/common_text_size_middle_2</item>
+        <item name="android:textColor">@color/common_dark</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/common_list_header_bkg</item>
+        <item name="android:paddingLeft">@dimen/common_list_item_left_padding</item>
+        <item name="android:paddingRight">@dimen/common_list_item_left_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">32.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MyWidget.InfoBarText" parent="@style/MyWidget">
+        <item name="android:textSize">@dimen/common_text_size_middle_2</item>
+        <item name="android:textColor">@color/common_dark</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="MyWidget.PageHeaderShadow" parent="@style/MyWidget">
+        <item name="android:background">@drawable/page_header_shadow</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/common_page_shadow_height</item>
+    </style>
+    <style name="MyWidget.ModuleListItemIcon" parent="@style/MyWidget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/common_list_item_app_icon_left_margin</item>
+        <item name="android:layout_marginRight">@dimen/common_list_item_app_icon_right_margin</item>
+    </style>
+    <style name="MyWidget.AdapterView" parent="@style/MyWidget">
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_handle_vertical</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:fadingEdgeLength">0.0dip</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+    <style name="MyWidget.GridView" parent="@style/MyWidget.AdapterView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:listSelector">@drawable/dx_grid_item_gray</item>
+        <item name="android:numColumns">4</item>
+    </style>
+    <style name="MyWidget.ScrollView" parent="@style/MyWidget.AdapterView">
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+    <style name="MyWidget.ModulePageMargin" parent="@style/MyWidget">
+        <item name="android:paddingLeft">@dimen/common_module_page_margin_left</item>
+        <item name="android:paddingRight">@dimen/common_module_page_margin_right</item>
+        <item name="android:paddingBottom">@dimen/common_module_page_margin_bottom</item>
+    </style>
+    <style name="MyWidget.SettingsPageMargin" parent="@style/MyWidget">
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingRight">12.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+    </style>
+    <style name="MyWidget.SettingsGroupTitle" parent="@style/MyWidget">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">@color/common_grey</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="MyWidget.SettingsGroup" parent="@style/MyWidget">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/common_settings_group_bkg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+        <item name="android:layout_marginBottom">12.0dip</item>
+    </style>
+    <style name="MyWidget.CategoryHeaderText" parent="@style/MyWidget">
+        <item name="android:textSize">@dimen/common_text_size_small</item>
+        <item name="android:textColor">#ff6d838f</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="MyWidget.RoundButton" parent="@style/MyWidget">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">38.0dip</item>
+    </style>
+    <style name="MyWidget.RoundButton.Green" parent="@style/MyWidget.RoundButton">
+        <item name="android:textColor">@color/dx_btn_green_text</item>
+        <item name="android:background">@drawable/common_roundbtn_green</item>
+    </style>
+    <style name="MyWidget.RoundButton.Red" parent="@style/MyWidget.RoundButton">
+        <item name="android:textColor">@color/dx_btn_green_text</item>
+        <item name="android:background">@drawable/common_roundbtn_red</item>
+    </style>
+    <style name="MyWidget.RoundButton.Highlight" parent="@style/MyWidget.RoundButton">
+        <item name="android:textColor">@color/dx_btn_green_text</item>
+        <item name="android:background">@drawable/common_roundbtn_blue</item>
+    </style>
+    <style name="MyWidget.RoundButton.Normal" parent="@style/MyWidget.RoundButton">
+        <item name="android:textColor">@color/dx_btn_white_text</item>
+        <item name="android:background">@drawable/common_roundbtn_white</item>
+    </style>
+    <style name="MyWidget.PageHeaderButton" parent="@style/MyWidget">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">27.0dip</item>
+    </style>
+    <style name="MyWidget.PageHeaderButton.Blue" parent="@style/MyWidget.PageHeaderButton">
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:background">@drawable/common_page_headerbtn_blue</item>
+    </style>
+    <style name="MyWidget.PageHeaderButton.AVirusRed" parent="@style/MyWidget.PageHeaderButton">
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:background">@drawable/avscan_btn_red</item>
+    </style>
+    <style name="MyWidget.SmallButton" parent="@style/MyWidget.RoundButton.Highlight">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:layout_height">28.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MyWidget.ShareButton" parent="@style/MyWidget.RoundButton.Highlight">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingRight">12.0dip</item>
+        <item name="android:layout_height">24.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MyWidget.BottomButton.FastPayButton" parent="@style/MyWidget.BottomButton">
+        <item name="android:background">@drawable/common_bottombtn_fp_nocorner</item>
+    </style>
+    <style name="MyWidget.PageBottomButtonLayout" parent="@style/MyWidget">
+        <item name="android:background">@color/common_white</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/common_page_bottom_button_height</item>
+    </style>
+    <style name="MyWidget.PageBottomButtonLayoutNoBackground" parent="@style/MyWidget.RoundButton.Highlight">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">38.0dip</item>
+        <item name="android:layout_marginLeft">18.0dip</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_marginRight">18.0dip</item>
+        <item name="android:layout_marginBottom">24.0dip</item>
+    </style>
+    <style name="MyWidget.Divider" parent="@style/MyWidget">
+        <item name="android:background">@color/common_divider_color</item>
+    </style>
+    <style name="MyWidget.Divider.Horizontal" parent="@style/MyWidget.Divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/common_divider_line_size</item>
+    </style>
+    <style name="MyWidget.Divider.Horizontal.WithMargin" parent="@style/MyWidget.Divider.Horizontal">
+        <item name="android:layout_marginLeft">@dimen/common_divider_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/common_divider_horizontal_margin</item>
+    </style>
+    <style name="MyWidget.Divider.Vertical" parent="@style/MyWidget.Divider">
+        <item name="android:layout_width">@dimen/common_divider_line_size</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+    </style>
+    <style name="MyWidget.ListView" parent="@style/MyWidget.AdapterView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@color/common_screen_bkg_cache_color</item>
+        <item name="android:divider">@color/common_divider_color</item>
+        <item name="android:dividerHeight">@dimen/common_list_sperator_height</item>
+        <item name="android:fadeScrollbars">true</item>
+    </style>
+    <style name="MyWidget.ListView.Card" parent="@style/MyWidget.ListView">
+        <item name="android:dividerHeight">0.0dip</item>
+    </style>
+    <style name="MyWidget.ListView.ForAdDetect" parent="@style/MyWidget.ListView">
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0.0px</item>
+    </style>
+    <style name="MyWidget.ListHeaderText" parent="@style/MyWidget">
+        <item name="android:textSize">@dimen/common_text_size_middle_2</item>
+        <item name="android:textColor">@color/common_dark</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="MyWidget.ListHeaderText.Layout" parent="@style/MyWidget.ListHeaderText">
+        <item name="android:background">@drawable/common_list_header_bkg</item>
+        <item name="android:paddingLeft">@dimen/common_list_header_padding_left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/common_list_header_height</item>
+    </style>
+    <style name="MyWidget.ListViewItem" parent="@style/MyWidget">
+        <item name="android:background">@drawable/common_list_item_bkg</item>
+        <item name="android:paddingLeft">@dimen/common_list_item_left_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/common_list_item_height</item>
+    </style>
+    <style name="MyWidget.ListViewItem.Card" parent="@style/MyWidget.ListViewItem">
+        <item name="android:background">@drawable/common_list_card_item_bkg</item>
+        <item name="android:paddingLeft">@dimen/common_list_card_padding_left</item>
+        <item name="android:paddingTop">@dimen/common_list_card_margin_vertical</item>
+        <item name="android:paddingRight">@dimen/common_list_card_margin_horizontal</item>
+    </style>
+    <style name="MyWidget.ListViewItem.HomeCard" parent="@style/MyWidget.ListViewItem.Card">
+        <item name="android:background">@drawable/common_list_home_card_item_bkg</item>
+        <item name="android:paddingBottom">1.0px</item>
+    </style>
+    <style name="MyWidget.ListViewItem.ForAdDetect" parent="@style/MyWidget.ListViewItem">
+        <item name="android:paddingLeft">0.0dip</item>
+    </style>
+    <style name="MyWidget.ListViewItemAppIcon" parent="@style/MyWidget">
+        <item name="android:layout_width">@dimen/common_list_item_app_icon_size</item>
+        <item name="android:layout_height">@dimen/common_list_item_app_icon_size</item>
+        <item name="android:layout_marginRight">@dimen/common_list_item_app_icon_right_margin</item>
+    </style>
+    <style name="MyWidget.ListViewItemTextTop" parent="@style/MyWidget">
+        <item name="android:textSize">@dimen/common_text_size_middle</item>
+        <item name="android:textColor">@color/common_dark</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/common_list_item_two_line_first_top_margin</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MyWidget.ListViewItemTextCenter" parent="@style/MyWidget">
+        <item name="android:textSize">@dimen/common_text_size_middle</item>
+        <item name="android:textColor">@color/common_dark</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MyWidget.ListViewItemTextBottom" parent="@style/MyWidget">
+        <item name="android:textSize">@dimen/common_text_size_small</item>
+        <item name="android:textColor">@color/common_grey</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/common_list_item_two_line_second_top_margin</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MyWidget.ListActionPanel" parent="@style/MyWidget">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/dx_action_bkg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">@dimen/common_list_action_panel_left_margin</item>
+    </style>
+    <style name="MyWidget.ListActionStatus" parent="@style/MyWidget">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/common_green</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">@dimen/common_action_button_width</item>
+        <item name="android:layout_height">@dimen/common_action_button_height</item>
+    </style>
+    <style name="MyWidget.ActionButton" parent="@style/MyWidget">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/common_list_item_bkg</item>
+        <item name="android:layout_width">@dimen/common_action_button_width</item>
+        <item name="android:layout_height">@dimen/common_action_button_height</item>
+    </style>
+    <style name="MyWidget.ExpandableListView" parent="@style/MyWidget.AdapterView">
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@color/common_screen_bkg_cache_color</item>
+        <item name="android:groupIndicator">@drawable/dx_expander_group</item>
+        <item name="android:indicatorLeft">@dimen/common_expandable_list_group_indicator_left</item>
+        <item name="android:childDivider">@drawable/dx_expandable_list_group_divider</item>
+        <item name="android:divider">@drawable/dx_expandable_list_group_divider</item>
+    </style>
+    <style name="MyWidget.ExpandableListView.ForAdDetect" parent="@style/MyWidget.ExpandableListView">
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0.0px</item>
+    </style>
+    <style name="MyWidget.CommonDialogListText" parent="@style/MyWidget">
+        <item name="android:textSize">@dimen/common_text_size_middle</item>
+        <item name="android:textColor">@color/common_dark</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MyWidget.CommonDialogListText.Multiline" parent="@style/MyWidget.CommonDialogListText">
+        <item name="android:singleLine">false</item>
+    </style>
+    <style name="MyWidget.ProgressBarMain" parent="@style/MyWidget">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">3.0dip</item>
+        <item name="android:max">100</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/common_progressbar_main</item>
+    </style>
+    <style name="MyWidget.ProgressBarNoCorner" parent="@style/MyWidget.ProgressBarMain">
+        <item name="android:progressDrawable">@drawable/common_progressbar_no_corner</item>
+    </style>
+    <style name="MyWidget.ProgressBarNotification" parent="@style/MyWidget.ProgressBarMain">
+        <item name="android:progressDrawable">@drawable/common_progressbar_notification</item>
+    </style>
+    <style name="MyWidget.ProgressBarForPower" parent="@style/MyWidget.ProgressBarMain">
+        <item name="android:progressDrawable">@drawable/common_progressbar_power</item>
+    </style>
+    <style name="MyWidget.Notification" parent="@style/MyWidget" />
+    <style name="MyWidget.Notification.BodyCompat" parent="@style/MyWidget.Notification">
+        <item name="android:background">@color/common_white</item>
+    </style>
+    <style name="MyWidget.Notification.Body" parent="@style/MyWidget.Notification.BodyCompat" />
+    <style name="MyWidget.Notification.AreaCompat" parent="@style/MyWidget.Notification" />
+    <style name="MyWidget.Notification.Area" parent="@style/MyWidget.Notification.AreaCompat">
+        <item name="android:paddingLeft">@dimen/common_notification_margin_horizontal</item>
+        <item name="android:paddingTop">@dimen/common_notification_margin_horizontal</item>
+        <item name="android:paddingRight">@dimen/common_notification_margin_horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="MyWidget.Notification.LeftArea" parent="@style/MyWidget.Notification.AreaCompat">
+        <item name="android:layout_width">@dimen/common_notification_left_icon_size</item>
+        <item name="android:layout_height">@dimen/common_notification_left_icon_size</item>
+    </style>
+    <style name="MyWidget.Notification.LeftArea.Icon" parent="@style/MyWidget.Notification.AreaCompat">
+        <item name="android:padding">@dimen/common_notification_margin_horizontal</item>
+        <item name="android:layout_width">@dimen/common_notification_left_icon_size</item>
+        <item name="android:layout_height">@dimen/common_notification_left_icon_size</item>
+        <item name="android:src">@drawable/dxopt_icon</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="MyWidget.Notification.LeftIcon" parent="@style/MyWidget.Notification">
+        <item name="android:layout_width">@dimen/app_icon_size</item>
+        <item name="android:layout_height">@dimen/app_icon_size</item>
+        <item name="android:src">@drawable/dxopt_icon</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="MyWidget.Notification.DividerCompat" parent="@style/MyWidget.Notification">
+        <item name="android:background">@color/common_divider_color</item>
+    </style>
+    <style name="MyWidget.Notification.Divider" parent="@style/MyWidget.Notification.DividerCompat">
+        <item name="android:layout_width">@dimen/common_divider_line_size</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginTop">@dimen/common_notification_margin_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/common_notification_margin_horizontal</item>
+    </style>
+    <style name="MyWidget.Notification.Text" parent="@style/MyWidget.Notification">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MyWidget.Notification.Text.TopCompat" parent="@style/MyWidget.Notification.Text">
+        <item name="android:textColor">@color/common_dark</item>
+    </style>
+    <style name="MyWidget.Notification.Text.Top" parent="@style/MyWidget.Notification.Text.TopCompat">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:layout_marginTop">2.0dip</item>
+    </style>
+    <style name="MyWidget.Notification.Text.BottomCompat" parent="@style/MyWidget.Notification.Text">
+        <item name="android:textColor">@color/common_grey</item>
+    </style>
+    <style name="MyWidget.Notification.Text.Bottom" parent="@style/MyWidget.Notification.Text.BottomCompat">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+    </style>
+    <style name="MyWidget.PickSelectView" parent="@style/MyWidget">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/common_dark</item>
+        <item name="android:textColorHint">@color/common_blue</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:background">@drawable/btn_pick_bg</item>
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:layout_height">32.0dip</item>
+        <item name="android:hint">@string/common_pick_hint</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MyWidget.MySeekbar" parent="@style/MyWidget">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+        <item name="android:maxHeight">4.0dip</item>
+        <item name="android:max">255</item>
+        <item name="android:progressDrawable">@drawable/my_seekbar_style</item>
+        <item name="android:minHeight">4.0dip</item>
+        <item name="android:thumb">@drawable/my_seek_bar_thumb_bg</item>
+        <item name="android:thumbOffset">1.0px</item>
+    </style>
+    <style name="MyWidget.MySeekbarBrightness" parent="@style/MyWidget">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxHeight">4.0dip</item>
+        <item name="android:max">255</item>
+        <item name="android:progressDrawable">@drawable/dxfast_widget_more_act_seekbar_style</item>
+        <item name="android:minHeight">4.0dip</item>
+        <item name="android:thumbOffset">1.0px</item>
+    </style>
+    <style name="MyWidget.MySeekbarTitleName" parent="@style/MyWidget">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/common_dark</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">28.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="MyWidget.MySeekbarTitleSize" parent="@style/MyWidget">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@color/common_grey</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">28.0dip</item>
+    </style>
+    <style name="MyWidget.RatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">12.0dip</item>
+        <item name="android:progressDrawable">@drawable/custom_ratingbar</item>
+        <item name="android:minHeight">12.0dip</item>
+        <item name="android:numStars">5</item>
+        <item name="android:stepSize">0.5</item>
+    </style>
+    <style name="MyWidget.EditText" parent="@style/MyWidget">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/common_dark</item>
+        <item name="android:textColorHint">@color/common_grey</item>
+        <item name="android:background">@drawable/text_editor_bkg</item>
+        <item name="android:padding">6.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">34.0dip</item>
+    </style>
+    <style name="MyWidget.CheckBox" parent="@style/MyWidget">
+        <item name="android:textSize">@dimen/common_text_size_middle</item>
+        <item name="android:textColor">@color/common_dark</item>
+        <item name="android:paddingLeft">@dimen/common_checkbox_padding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@drawable/dx_checkbox_btn</item>
+    </style>
+    <style name="MyWidget.CheckBox.NoText" parent="@style/MyWidget.CheckBox">
+        <item name="android:layout_width">@dimen/common_checkbox_size</item>
+        <item name="android:layout_height">@dimen/common_checkbox_size</item>
+    </style>
+    <style name="MyWidget.CheckBox.Small" parent="@style/MyWidget.CheckBox">
+        <item name="android:textSize">@dimen/common_text_size_middle_2</item>
+        <item name="android:textColor">@color/common_grey</item>
+        <item name="android:paddingLeft">@dimen/common_checkbox_small_padding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@drawable/dx_checkbox_small_btn</item>
+    </style>
+    <style name="Theme.CustomActDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/filled_box</item>
+    </style>
+    <style name="MyWidget.TextViewShadow" parent="@style/MyWidget">
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#ff014da4</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="MyWidget.HeaderTextViewShadow" parent="@style/MyWidget">
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#29000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">8.0</item>
+        <item name="android:shadowRadius">6.0</item>
+    </style>
+    <style name="MyWidget.TextTips" parent="@style/MyWidget">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/common_tips_text_height</item>
+        <item name="android:minWidth">@dimen/common_tips_text_height</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MyWidget.TextTips.Green" parent="@style/MyWidget.TextTips">
+        <item name="android:background">@drawable/common_tips_text_green_bkg</item>
+    </style>
+    <style name="MyWidget.TextTips.Red" parent="@style/MyWidget.TextTips">
+        <item name="android:background">@drawable/common_tips_text_red_bkg</item>
+    </style>
+    <style name="MyWidget.TextTips.New" parent="@style/MyWidget.TextTips.Red">
+        <item name="android:layout_width">36.0dip</item>
+        <item name="android:text">@string/dashi_new_function_tip</item>
+    </style>
+    <style name="MyWidget.DxPageTipsText" parent="@style/MyWidget">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ffa07100</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">6.0dip</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="MyWidget.DxPageTipsLayout" parent="@style/MyWidget">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">#fff6eda4</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">30.0dip</item>
+    </style>
+    <style name="MyWidget.DotTips" parent="@style/MyWidget">
+        <item name="android:background">@drawable/common_tips_dot_red</item>
+        <item name="android:layout_width">@dimen/common_tips_dot_size</item>
+        <item name="android:layout_height">@dimen/common_tips_dot_size</item>
+    </style>
+    <style name="MyWidget.HomeDialogWindowAnim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/main_dialog_bg_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/main_dialog_bg_out_anim</item>
+    </style>
+    <style name="TextView_AppName_Style">
+        <item name="android:textColor">@color/scan_app_name_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:ems">9</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="TextView_ScanAppTips_AppName_Style" parent="@style/TextView_AppName_Style">
+        <item name="android:ems">7</item>
+    </style>
+    <style name="Antilost_TextView_Show_Tips_Style">
+        <item name="android:textSize">@dimen/antilost_show_tips_size</item>
+        <item name="android:textColor">@color/antilost_show_tips</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Antilost_TextView_Running_Tips_Style">
+        <item name="android:textSize">@dimen/antilost_running_tips_size</item>
+        <item name="android:textColor">@color/antilost_running_tips</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="AntiLost_PageBottomButtonLayout">
+        <item name="android:background">@drawable/antilost_bottom_button_press</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">52.0dip</item>
+    </style>
+    <style name="Antilost_DeviceName_Style">
+        <item name="android:textSize">@dimen/antilost_running_tips_size</item>
+        <item name="android:textColor">@color/antilost_running_tips</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Antispam" parent="@style/MyWidget" />
+    <style name="Antispam.Tag" parent="@style/MyWidget.ListViewItemTextBottom">
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:background">@drawable/antispam_tag_bg</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:maxWidth">96.0dip</item>
+    </style>
+    <style name="Antispam.Empty.Tag" parent="@style/MyWidget.ListViewItemTextBottom">
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:background">@drawable/antispam_tag_harass_bg</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">96.0dip</item>
+    </style>
+    <style name="Antispam.Harass.Tag" parent="@style/Antispam.Empty.Tag" />
+    <style name="Antispam.Usefull.Tag" parent="@style/Antispam.Empty.Tag">
+        <item name="android:background">@drawable/antispam_tag_usefull_bg</item>
+    </style>
+    <style name="Antispam.MessageButton" parent="@style/Antispam">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/notify_msg_btn_bg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">26.0dip</item>
+        <item name="android:minWidth">58.0dip</item>
+    </style>
+    <style name="Antispam.MessageBody" parent="@style/Antispam">
+        <item name="android:textSize">@dimen/common_text_size_middle</item>
+        <item name="android:textColor">#ff8ca2ae</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Antispam.SmsDetailTile" parent="@style/Antispam">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+    </style>
+    <style name="Antispam.SmsDetailBody" parent="@style/Antispam">
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">14.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">14.0dip</item>
+    </style>
+    <style name="Antispam.SmsDetailText" parent="@style/Antispam">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff3d5562</item>
+    </style>
+    <style name="Antispam.ReportInfoRight" parent="@style/Antispam">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">#ff334854</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/common_list_item_two_line_first_top_margin</item>
+    </style>
+    <style name="Antispam.ReportInfoLeft" parent="@style/Antispam">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff334854</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/common_list_item_two_line_first_top_margin</item>
+    </style>
+    <style name="Antispam.ReportInfo" parent="@style/Antispam">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/common_list_header_bkg</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">60.0dip</item>
+    </style>
+    <style name="Antispam.ReportButton" parent="@style/Antispam">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff4d616c</item>
+        <item name="android:background">@drawable/antispam_report_dialog_btn_bkg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Antispam.ReportTypeText" parent="@style/Antispam">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff334854</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">115.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Antispam.FloatViewTextStyle" parent="@style/Antispam">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#ff848484</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="Antispam.AchieveButton" parent="@style/Antispam">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:background">@drawable/common_roundbtn_blue</item>
+        <item name="android:layout_width">75.0dip</item>
+        <item name="android:layout_height">25.0dip</item>
+        <item name="android:layout_marginRight">13.0dip</item>
+    </style>
+    <style name="Antispam.AchieveText" parent="@style/Antispam">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/common_dark_grey</item>
+        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">13.0dip</item>
+    </style>
+    <style name="Antispam.AddContact" parent="@style/Antispam">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingRight">30.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="HomeScanLabel">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="HomeIconDescStyle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff466372</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="HomePopViewIconDescStyle">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff466372</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="feedback_list">
+        <item name="android:fadingEdge">none</item>
+        <item name="android:cacheColorHint">@color/common_screen_bkg_cache_color</item>
+        <item name="android:divider">@color/common_divider_color</item>
+        <item name="android:dividerHeight">@dimen/common_list_sperator_height</item>
+    </style>
+    <style name="feedback_conversation_list_item_frame">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:minHeight">48.0dip</item>
+    </style>
+    <style name="feedback_conversation_list_item_content">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="sevenkey_small_text">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@color/common_grey</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="sevenkey_big_text" parent="@style/sevenkey_small_text">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/common_dark</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:drawablePadding">0.0dip</item>
+    </style>
+    <style name="MyWidget.BottomButton" parent="@style/MyWidget">
+        <item name="android:textSize">@dimen/common_text_size_large</item>
+        <item name="android:textColor">@color/common_dark</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/common_page_bottom_button_height</item>
+    </style>
+    <style name="MyWidget.BottomButton.NoCorner" parent="@style/MyWidget.BottomButton">
+        <item name="android:background">@drawable/common_bottombtn_nocorner</item>
+    </style>
+    <style name="MyWidget.BottomButton.NoCorner.Highlight" parent="@style/MyWidget.BottomButton.NoCorner">
+        <item name="android:textColor">@color/common_blue</item>
+    </style>
+    <style name="MyWidget.BottomButton.BothCorner" parent="@style/MyWidget.BottomButton">
+        <item name="android:background">@drawable/common_bottombtn_bothcorner</item>
+    </style>
+    <style name="MyWidget.BottomButton.LeftCorner" parent="@style/MyWidget.BottomButton">
+        <item name="android:background">@drawable/common_bottombtn_leftcorner</item>
+    </style>
+    <style name="MyWidget.BottomButton.RightCorner" parent="@style/MyWidget.BottomButton">
+        <item name="android:background">@drawable/common_bottombtn_rightcorner</item>
+    </style>
+    <style name="Animations" />
+    <style name="Animations.PopDownMenu" parent="@style/Animations" />
+    <style name="Animations.PopDownMenu.Center" parent="@style/Animations.PopDownMenu">
+        <item name="android:windowEnterAnimation">@anim/quickaction2_grow_from_top</item>
+        <item name="android:windowExitAnimation">@anim/quickaction2_shrink_from_bottom</item>
+    </style>
+    <style name="Animations.PopDownMenu.Left" parent="@style/Animations.PopDownMenu">
+        <item name="android:windowEnterAnimation">@anim/quickaction2_grow_from_topleft_to_bottomright</item>
+        <item name="android:windowExitAnimation">@anim/quickaction2_shrink_from_bottomright_to_topleft</item>
+    </style>
+    <style name="Animations.PopDownMenu.Right" parent="@style/Animations.PopDownMenu">
+        <item name="android:windowEnterAnimation">@anim/quickaction2_grow_from_topright_to_bottomleft</item>
+        <item name="android:windowExitAnimation">@anim/quickaction2_shrink_from_bottomleft_to_topright</item>
+    </style>
+    <style name="Animations.PopDownMenu.Reflect" parent="@style/Animations.PopDownMenu">
+        <item name="android:windowEnterAnimation">@anim/quickaction2_pump_top</item>
+        <item name="android:windowExitAnimation">@anim/quickaction2_disappear</item>
+    </style>
+    <style name="Animations.PopUpMenu" parent="@style/Animations" />
+    <style name="Animations.PopUpMenu.Center" parent="@style/Animations.PopUpMenu">
+        <item name="android:windowEnterAnimation">@anim/quickaction2_grow_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/quickaction2_shrink_from_top</item>
+    </style>
+    <style name="Animations.PopUpMenu.Left" parent="@style/Animations.PopUpMenu">
+        <item name="android:windowEnterAnimation">@anim/quickaction2_grow_from_bottomleft_to_topright</item>
+        <item name="android:windowExitAnimation">@anim/quickaction2_shrink_from_topright_to_bottomleft</item>
+    </style>
+    <style name="Animations.PopUpMenu.Right" parent="@style/Animations.PopUpMenu">
+        <item name="android:windowEnterAnimation">@anim/quickaction2_grow_from_bottomright_to_topleft</item>
+        <item name="android:windowExitAnimation">@anim/quickaction2_shrink_from_topleft_to_bottomright</item>
+    </style>
+    <style name="Animations.PopUpMenu.Reflect" parent="@style/Animations.PopUpMenu">
+        <item name="android:windowEnterAnimation">@anim/quickaction2_pump_bottom</item>
+        <item name="android:windowExitAnimation">@anim/quickaction2_disappear</item>
+    </style>
+    <style name="MainTheme" parent="@android:style/Theme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="MyTheme" parent="@style/MainTheme" />
+    <style name="MyTheme.StartWindow" parent="@style/MyTheme">
+        <item name="android:windowBackground">@color/common_screen_bkg_color</item>
+    </style>
+    <style name="MyTheme.FullScreen" parent="@style/MyTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="MyTheme.Transparent" parent="@style/MyTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="MyTheme.HalfTransparent" parent="@style/MyTheme.Transparent">
+        <item name="android:windowBackground">@color/common_half_transparent</item>
+    </style>
+    <style name="MyTheme.80PercentTransparent" parent="@style/MyTheme.Transparent">
+        <item name="android:windowBackground">@color/common_80_percent_transparent</item>
+    </style>
+    <style name="MyTheme.CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="MyTheme.FullscreenDialog" parent="@style/MyTheme">
+        <item name="android:windowBackground">@color/common_70_percent_transparent</item>
+        <item name="android:windowAnimationStyle">@style/MyWidget.HomeDialogWindowAnim</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+    <style name="MyTheme.CustomDialogNoDim" parent="@style/MyTheme.CustomDialog">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="MyTheme.AutoCompleteTextView" parent="@style/MyTheme">
+        <item name="android:dropDownListViewStyle">@style/MyWidget.DropDownList</item>
+    </style>
+</resources>

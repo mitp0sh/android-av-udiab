@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/titlebar" android:background="#ffdfecf4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/hot_topics_title" android:background="@color/transparent" android:layout_height="48.0dip" android:singleLine="false" style="@style/MyWidget.InfoBarLayout" />
+    </RelativeLayout>
+    <ListView android:id="@id/hot_topics_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titlebar" style="@style/feedback_list" />
+    <com.dianxinos.optimizer.ui.DXEmptyView android:id="@id/feedback_hot_topics_empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

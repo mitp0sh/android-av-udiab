@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/dlg_view" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:layout_gravity="center" android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.dianxinos.optimizer.ui.DXEmptyView android:layout_gravity="center" android:id="@id/empty_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ListView android:id="@id/list" android:visibility="gone" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/MyWidget.ListView" />
+</LinearLayout>

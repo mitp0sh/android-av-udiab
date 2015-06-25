@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/version_layout" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="-47.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_white" android:id="@id/version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aboutversion" android:alpha="0.5" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_white" android:id="@id/version_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:alpha="0.5" />
+    </LinearLayout>
+    <ImageView android:gravity="top" android:background="@color/common_titlebar_bkg_color" android:layout_width="fill_parent" android:layout_height="186.0dip" android:src="@drawable/dxopt_logo_slogan_about" android:scaleType="centerInside" />
+    <ScrollView android:background="@color/common_screen_bkg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/common_page_left_margin" android:paddingTop="16.0dip" android:paddingRight="@dimen/common_page_left_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/common_settings_group_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/feed_back" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/feedback" app:type="normal" />
+                <View android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/welcome" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/welcome" app:type="normal" />
+                <View android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/new_guide" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/new_guide" app:type="normal" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff8ba1af" android:gravity="center" android:id="@id/copyright" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:layout_marginBottom="21.0dip" android:text="@string/aboutcopyright" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

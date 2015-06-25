@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianxinos.optimizer.module.querylocation.floatingwindow.QueryLocationFloatingView android:paddingLeft="9.0dip" android:paddingTop="9.0dip" android:paddingRight="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianxinos.common.ui.view.AutoScaleImageView android:id="@id/img_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="10.0dip" android:textColor="#80ffffff" android:id="@id/phone_calllog" android:paddingBottom="10.0dip" android:layout_alignBottom="@id/img_bkg" style="@style/Antispam.FloatViewTextStyle" />
+        <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_billguard_prevent_cheat_tips" android:layout_marginBottom="34.0dip" android:text="@string/billguard_prevent_cheat_find_cheat_call" android:layout_alignBottom="@id/img_bkg" style="@style/Antispam.FloatViewTextStyle" />
+        <TextView android:textSize="10.0dip" android:textColor="#ffffffff" android:id="@id/number_mark_count" android:paddingTop="112.0dip" android:visibility="gone" style="@style/Antispam.FloatViewTextStyle" />
+        <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@id/call_name" android:paddingTop="137.0dip" style="@style/Antispam.FloatViewTextStyle" />
+        <TextView android:textSize="18.0dip" android:textColor="#80ffffff" android:id="@id/phone_number" android:visibility="gone" android:layout_marginTop="161.0dip" style="@style/Antispam.FloatViewTextStyle" />
+        <TextView android:textSize="15.0dip" android:textColor="#80ffffff" android:id="@id/phone_location" android:visibility="gone" android:layout_marginTop="161.0dip" style="@style/Antispam.FloatViewTextStyle" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/antispam_phone_label_bg" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ds_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/antispam_floating_view_logo" android:scaleType="fitCenter" android:layout_alignParentLeft="true" />
+            <ImageButton android:id="@id/bt_close" android:background="@drawable/querylocation_fw_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0dip">
+        <ImageView android:id="@id/caller_image" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/querylocation_people_img_default" android:layout_centerInParent="true" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff6bad11" android:ellipsize="none" android:gravity="center" android:id="@id/phone_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="47.0dip" android:singleLine="true" android:maxLength="4" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</com.dianxinos.optimizer.module.querylocation.floatingwindow.QueryLocationFloatingView>

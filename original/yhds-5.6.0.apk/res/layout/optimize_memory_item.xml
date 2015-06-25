@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/common_list_item_bkg" android:layout_width="fill_parent" android:layout_height="@dimen/common_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="@dimen/common_list_item_height" android:layout_marginLeft="16.0dip" android:layout_weight="1.0">
+        <TextView android:id="@id/optimize_memory_item_name" android:layout_marginTop="6.0dip" style="@style/MyWidget.ListViewItemTextTop" />
+        <TextView android:id="@id/optimize_memory_item_summary" android:layout_below="@id/optimize_memory_item_name" style="@style/MyWidget.ListViewItemTextBottom" />
+    </RelativeLayout>
+    <ImageView android:gravity="center" android:id="@id/optimize_memory_item_stateicon" android:background="@drawable/dx_action_bkg" android:layout_width="@dimen/common_list_item_height" android:layout_height="@dimen/common_list_item_height" android:src="@drawable/radio_off" android:scaleType="centerInside" />
+</LinearLayout>

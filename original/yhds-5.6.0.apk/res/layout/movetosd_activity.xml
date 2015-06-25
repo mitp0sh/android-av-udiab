@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" android:layout_alignParentTop="true" layout="@layout/main_titlebar" />
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titlebar" />
+    <com.dianxinos.optimizer.ui.DXEmptyView android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/movetosd_activity_layout_button_panel" android:layout_below="@id/titlebar" />
+    <include android:id="@id/move_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="138.0dip" android:layout_below="@id/titlebar" layout="@layout/move_to_sd_header" />
+    <com.dianxinos.optimizer.ui.TitleIndicator android:id="@id/pagerindicator" android:background="@drawable/common_tab_bkg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/common_tab_height" android:layout_below="@id/move_header" app:textColor="@color/tab_indicator_text" app:textSizeNormal="@dimen/common_text_size_middle" app:textSizeSelected="@dimen/common_text_size_middle" app:footerLineHeight="0.0dip" app:footerColor="@color/tab_indicator_text_selected" app:footerTriangleHeight="@dimen/common_tab_indicator_height" />
+    <android.support.v4.view.ViewPager android:id="@id/view_pager" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:layout_above="@id/movetosd_activity_layout_button_panel" android:layout_below="@id/pagerindicator" />
+    <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/movetosd_activity_layout_button_panel" android:layout_alignParentBottom="true" style="@style/MyWidget.PageBottomButtonLayout" />
+</RelativeLayout>

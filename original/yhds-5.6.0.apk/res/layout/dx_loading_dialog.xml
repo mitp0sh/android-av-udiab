@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:background="@drawable/dx_loading_dialog_bkg" android:layout_width="90.0dip" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="60.0dip" android:layout_height="60.0dip" android:indeterminateDrawable="@drawable/dx_loading_dialog_rotate" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/common_loading_text_color" android:layout_gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_loading_2" />
+</FrameLayout>

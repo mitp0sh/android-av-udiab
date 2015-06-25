@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/billinfo_header_bg_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_white" android:gravity="center" android:id="@id/bill_header_txt_noquery" android:background="@drawable/billinfo_header_bg_blue" android:padding="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="116.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bill_header_hf_layout" android:layout_width="fill_parent" android:layout_height="116.0dip" android:baselineAligned="false">
+        <RelativeLayout android:id="@id/bill_header_dyhf_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="13.0dip" android:textColor="#80ffffff" android:id="@id/bill_header_dyhf_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/billinfo_header_byhf_txt" android:layout_centerHorizontal="true" />
+            <LinearLayout android:id="@id/bill_header_dyhf_value_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/bill_header_dyhf_info" android:layout_centerHorizontal="true">
+                <TextView android:textSize="60.0dip" android:id="@id/bill_header_dyhf" style="@style/MyWidget.HeaderTextViewShadow" />
+                <TextView android:textSize="13.0dip" android:id="@id/bill_header_dyhf_unit" android:layout_marginBottom="10.0dip" android:text="@string/billinfo_hf_unit" style="@style/MyWidget.HeaderTextViewShadow" />
+            </LinearLayout>
+            <ProgressBar android:id="@id/bill_header_dyhf_progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:indeterminateDrawable="@drawable/billguard_header_billinfo_progress" android:layout_below="@id/bill_header_dyhf_info" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bill_header_hfye_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="13.0dip" android:textColor="#80ffffff" android:id="@id/bill_header_hfye_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/billinfo_header_hfye_txt" android:layout_centerHorizontal="true" />
+            <LinearLayout android:id="@id/bill_header_hfye_value_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/bill_header_hfye_info" android:layout_centerHorizontal="true">
+                <TextView android:textSize="16.0sp" android:textColor="@color/common_white" android:id="@id/bill_header_qf_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/billinfo_charge_text" />
+                <TextView android:textSize="60.0dip" android:id="@id/bill_header_hfye" style="@style/MyWidget.HeaderTextViewShadow" />
+                <TextView android:textSize="13.0dip" android:id="@id/bill_header_hfye_unit" android:layout_marginBottom="10.0dip" android:text="@string/billinfo_hf_unit" style="@style/MyWidget.HeaderTextViewShadow" />
+            </LinearLayout>
+            <ProgressBar android:id="@id/bill_header_hfye_progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:indeterminateDrawable="@drawable/billguard_header_billinfo_progress" android:layout_below="@id/bill_header_hfye_info" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="27.0dip" android:layout_marginBottom="14.0dip">
+        <RelativeLayout android:layout_gravity="center" android:id="@id/bill_header_searching_btn_layout" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="27.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_weight="1.0">
+            <Button android:layout_width="fill_parent" android:text="@string/billinfo_querying_init" style="@style/MyWidget.PageHeaderButton.Blue" />
+            <ProgressBar android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="5.0dip" android:indeterminateDrawable="@drawable/netflow_header_banner_progress" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyleLarge" />
+        </RelativeLayout>
+        <Button android:id="@id/bill_header_go" android:layout_width="0.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:text="@string/billinfo_click_query" android:layout_weight="1.0" style="@style/MyWidget.PageHeaderButton.Blue" />
+        <include layout="@layout/netflow_divider_vertical" />
+        <RelativeLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="27.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_weight="1.0">
+            <Button android:id="@id/bill_charge_go" android:layout_width="fill_parent" android:text="@string/billinfo_click_charge" style="@style/MyWidget.PageHeaderButton.Blue" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

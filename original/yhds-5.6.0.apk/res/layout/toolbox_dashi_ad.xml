@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.dianxinos.optimizer.ui.DXEmptyView android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/apk_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dianxinos.common.ui.view.AutoScaleImageView android:id="@id/bannar_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/common_page_left_margin" />
+        <include layout="@layout/common_divider_horizontal" />
+        <com.dianxinos.common.ui.view.PinnedHeaderListView android:id="@id/app_listview" android:paddingBottom="4.0dip" android:layout_height="fill_parent" style="@style/MyWidget.ListView" />
+    </LinearLayout>
+</LinearLayout>

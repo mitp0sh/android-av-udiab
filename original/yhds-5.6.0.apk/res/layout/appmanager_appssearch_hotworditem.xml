@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/appmanager_appssearch_hotworditem_bg" android:layout_width="fill_parent" android:layout_height="43.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/common_dark" android:ellipsize="end" android:gravity="center" android:id="@id/hotwordinfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:text="@string/app_detail_title" android:ems="12" android:singleLine="true" android:layout_centerInParent="true" />
+    <TextView android:textSize="8.0sp" android:textStyle="bold" android:textColor="@color/common_white" android:gravity="center" android:id="@id/hotwordtip" android:background="@drawable/appssearch_hotrecommand" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="42.0dip" android:layout_height="12.0dip" android:text="@string/appmanager_hottip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

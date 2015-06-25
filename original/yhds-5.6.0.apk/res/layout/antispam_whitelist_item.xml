@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/process_body" android:layout_height="wrap_content" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/number" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/MyWidget.ListViewItemTextTop" />
+    <TextView android:ellipsize="end" android:gravity="right" android:id="@id/remark" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:singleLine="true" android:layout_toLeftOf="@id/checkbox_panel" android:layout_toRightOf="@id/number" android:layout_centerVertical="true" style="@style/MyWidget.ListViewItemTextTop" />
+    <LinearLayout android:id="@id/checkbox_panel" android:layout_alignParentRight="true" style="@style/MyWidget.ListActionPanel">
+        <com.dianxinos.optimizer.ui.DxActionButton android:id="@id/delete" style="@style/MyWidget.ActionButton" />
+    </LinearLayout>
+</RelativeLayout>

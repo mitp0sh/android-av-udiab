@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/header_forground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/trash_clean_clip_header" android:scaleType="fitXY" android:alpha="0.0" />
+    <RelativeLayout android:id="@id/trash_total_holder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="90.0dip" android:textColor="@color/common_white" android:id="@id/trash_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:shadowColor="#29000000" android:shadowDx="0.0" android:shadowDy="8.0" android:shadowRadius="6.0" />
+        <TextView android:textSize="25.0dip" android:textColor="@color/common_white" android:id="@id/trash_total_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="M" android:shadowColor="#29000000" android:shadowDx="0.0" android:shadowDy="8.0" android:shadowRadius="6.0" android:layout_toRightOf="@id/trash_total" android:layout_alignTop="@id/trash_total" />
+    </RelativeLayout>
+    <View android:background="@drawable/common_titlebar_round_corner_cover" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/trash_clean_scan_line" android:background="@drawable/trash_clean_scan_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-26.0dip" android:src="@drawable/trash_clean_scan_line" android:scaleType="fitXY" />
+</merge>

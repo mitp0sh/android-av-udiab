@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/common_list_item_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="54.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/privacy_app_icon" android:layout_margin="10.0dip" style="@style/MyWidget.ListViewItemAppIcon" />
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:gravity="bottom|center|left" android:id="@id/privacy_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_alignParentTop="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/common_grey" android:id="@id/privacy_app_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/privacy_app_name" />
+    </RelativeLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginRight="18.0dip" android:src="@drawable/arrow_right" />
+</LinearLayout>

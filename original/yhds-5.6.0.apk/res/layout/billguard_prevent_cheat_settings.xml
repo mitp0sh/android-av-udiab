@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_bar" layout="@layout/main_titlebar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.SettingsPageMargin">
+        <LinearLayout style="@style/MyWidget.SettingsGroup">
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_prevent_cheat_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/billguard_prevent_cheat_open_smart_block" app:summary="@string/billguard_prevent_cheat_open_smart_block_tips" app:type="switch" />
+            <include layout="@layout/common_divider_settings" />
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_billguard_notify_on" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/billguard_prevent_cheat_settings_notifycation" app:summary="@string/billguard_prevent_cheat_settings_notifycation_tips" app:type="switch" />
+        </LinearLayout>
+        <LinearLayout style="@style/MyWidget.SettingsGroup">
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_prevent_cheat_whitelist" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/billguard_prevent_cheat_white_list" app:summary="@string/billguard_prevent_cheat_white_list_tips" app:type="normal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

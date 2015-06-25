@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/startupmanager_list_adapter_imageview_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/MyWidget.ListViewItemAppIcon" />
+    <LinearLayout android:id="@id/action_panel" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/MyWidget.ListActionPanel">
+        <com.dianxinos.optimizer.ui.DxActionButton android:id="@id/startupmanager_list_adapter_button_permission" style="@style/MyWidget.ActionButton" />
+    </LinearLayout>
+    <ImageView android:id="@id/startupmanager_list_adapter_item_lock" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="18.0dip" android:scaleType="center" android:layout_toLeftOf="@id/action_panel" />
+    <TextView android:ellipsize="end" android:id="@id/startupmanager_list_adapter_textview_name" android:singleLine="true" android:layout_toLeftOf="@id/startupmanager_list_adapter_item_lock" android:layout_toRightOf="@id/startupmanager_list_adapter_imageview_icon" android:layout_alignParentTop="true" style="@style/MyWidget.ListViewItemTextTop" />
+    <TextView android:ellipsize="end" android:id="@id/boot_manager_list_item_comment" android:layout_marginRight="2.0dip" android:singleLine="true" android:layout_toLeftOf="@id/startupmanager_list_adapter_item_lock" android:layout_below="@id/startupmanager_list_adapter_textview_name" android:layout_alignLeft="@id/startupmanager_list_adapter_textview_name" android:layout_alignWithParentIfMissing="true" style="@style/MyWidget.ListViewItemTextBottom" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_flow_win" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_flowwinon" app:summary="@string/netmonitor_info_hide" app:type="switch" />
+    <include layout="@layout/common_divider_settings" />
+    <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_flow_list_filter" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_list_filter" app:summary="@string/netmonitor_list_filter_info" app:type="switch" />
+    <include layout="@layout/common_divider_settings" />
+    <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_flow_pin" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_pinlock" app:summary="@string/netmonitor_pinlock_sum" app:type="switch" />
+    <include layout="@layout/common_divider_settings" />
+    <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_flow_win_hide" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_hide_theremin" app:summary="@string/netmonitor_info_onemin" app:type="switch" />
+    <include layout="@layout/common_divider_settings" />
+    <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_flow_wifi_hide" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_wifi_hide" app:summary="@string/netmonitor_wifi_hide_info" app:type="switch" />
+    <include layout="@layout/common_divider_settings" />
+    <com.dianxinos.common.ui.view.DxPreference android:id="@id/set_flow_only_on_home" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/netmonitor_only_on_home" app:summary="@string/netmonitor_only_on_home_info" app:type="switch" />
+</LinearLayout>

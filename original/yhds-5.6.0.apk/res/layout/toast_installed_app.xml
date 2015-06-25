@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/app_installed_toast_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/common_white" android:layout_gravity="center_vertical" android:id="@id/text" android:paddingLeft="9.0dip" android:paddingTop="4.0dip" android:paddingRight="2.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:drawableLeft="@drawable/dxopt_logo_toast_view" android:drawablePadding="9.0dip" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:src="@drawable/av_anva_whitelist_install_tips" />
+</LinearLayout>

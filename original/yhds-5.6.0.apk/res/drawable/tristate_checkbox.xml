@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:drawable="@drawable/trash_group_on" app:state_all="true" app:state_apart="false" />
+    <item android:drawable="@drawable/trash_group_off" app:state_all="false" app:state_apart="false" />
+    <item android:drawable="@drawable/trash_group_mid" app:state_all="false" app:state_apart="true" />
+</selector>

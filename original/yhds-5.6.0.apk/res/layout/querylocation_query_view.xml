@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/querylocation_ql_query_background" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/arrow_tip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:src="@drawable/querylocation_ql_query_arrow" android:scaleType="fitCenter" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/query_header" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/arrow_tip">
+        <TextView android:textSize="20.0sp" android:textColor="#ff687882" android:layout_gravity="bottom|center|left" android:id="@id/location_tip" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/querylocation_dx_location_tip" android:layout_weight="1.0" />
+        <TextView android:layout_gravity="top" android:id="@id/new_data_tip" android:visibility="gone" android:layout_marginRight="-2.0dip" style="@style/MyWidget.TextTips.New" />
+        <ImageButton android:layout_gravity="center|right" android:id="@id/bt_settings" android:background="#00000000" android:paddingLeft="10.0dip" android:paddingRight="2.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/querylocation_ql_settings_button" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <TextView android:textSize="26.0sp" android:textColor="@color/querylocation_common_query_result_color" android:gravity="bottom|center" android:id="@id/query_result" android:background="@drawable/querylocation_ql_number_input_bottom_bkg" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/querylocation_query_result_text_height" android:layout_marginLeft="2.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="2.0dip" android:layout_below="@id/query_header" />
+    <LinearLayout android:id="@id/edit_parent" android:background="@drawable/querylocation_ql_number_input_up_bkg" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/query_header">
+        <EditText android:textSize="20.0sp" android:textColor="@color/querylocation_common_query_result_color" android:id="@id/edit_phone_number" android:background="@drawable/text_editor_bkg" android:padding="10.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawableLeft="@drawable/querylocation_ql_query" android:drawablePadding="10.0dip" android:inputType="phone">
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+</RelativeLayout>

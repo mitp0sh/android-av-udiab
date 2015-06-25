@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/space_cache_item_body" android:layout_width="fill_parent" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sysappconstrict_list_item_imageview_icon" style="@style/MyWidget.ListViewItemAppIcon" />
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/sysappconstrict_list_item_textview_title" style="@style/MyWidget.ListViewItemTextTop" />
+        <TextView android:id="@id/sysappconstrict_list_item_textview_size" android:layout_below="@id/sysappconstrict_list_item_textview_title" style="@style/MyWidget.ListViewItemTextBottom" />
+        <TextView android:textColor="@color/common_blue" android:id="@id/advice_to_keep" android:visibility="gone" android:text="@string/system_apps_advice_keep" android:layout_alignTop="@id/sysappconstrict_list_item_textview_size" android:layout_alignParentRight="true" style="@style/MyWidget.ListViewItemTextBottom" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/action_panel" style="@style/MyWidget.ListActionPanel">
+        <com.dianxinos.optimizer.ui.DxActionButton android:id="@id/action_button" style="@style/MyWidget.ActionButton" />
+    </LinearLayout>
+</LinearLayout>

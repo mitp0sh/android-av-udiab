@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" android:layout_alignParentTop="true" layout="@layout/main_titlebar" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_bt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/bt_complete" android:text="完成" style="@style/MyWidget.PageBottomButtonLayout" />
+        </LinearLayout>
+        <GridView android:id="@id/gridview" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:horizontalSpacing="8.0dip" android:verticalSpacing="8.0dip" android:numColumns="3" android:layout_above="@id/ll_bt" />
+        <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

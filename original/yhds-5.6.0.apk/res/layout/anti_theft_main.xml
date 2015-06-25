@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" android:visibility="gone" layout="@layout/main_titlebar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_dialog_margin_top">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/common_dark" android:id="@id/express_content11" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="@color/common_blue" android:id="@id/express_content12" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="@color/common_dark" android:id="@id/express_content13" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textColor="@color/common_dark" android:gravity="center" android:id="@id/express_content2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/common_dark" android:gravity="center" android:id="@id/express_content3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_edtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_page_left_margin" android:layout_marginTop="@dimen/common_dialog_margin_top" android:layout_marginRight="@dimen/common_page_left_margin">
+        <TextView android:textColor="@color/common_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/antitheft_current_number_title" />
+        <EditText android:id="@id/current_number_edt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/function_button_text_top_margin" android:phoneNumber="true" style="@style/MyWidget.EditText" />
+        <TextView android:textColor="@color/common_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/function_button_text_top_margin" android:text="@string/antitheft_anti_password_title" />
+        <EditText android:id="@id/anti_password_edt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/function_button_text_top_margin" android:password="true" style="@style/MyWidget.EditText" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_show_photo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_page_left_margin" android:layout_marginRight="@dimen/common_page_left_margin">
+        <TextView android:textColor="@color/common_dark" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/function_button_text_top_margin" android:text="@string/antitheft_show_phone_title" />
+        <SurfaceView android:layout_gravity="center" android:id="@id/surfaceView1" android:layout_width="80.0dip" android:layout_height="100.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_page_left_margin" android:layout_marginRight="@dimen/common_page_left_margin">
+        <TextView android:gravity="center" android:id="@id/anti_send_order_txt" android:paddingTop="@dimen/app_trash_item_layout_margin" android:paddingBottom="@dimen/app_trash_item_layout_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_page_bottom_one_button_margin" android:text="@string/antitheft_send_order" style="@style/MyWidget.RoundButton.Highlight" />
+        <TextView android:gravity="center" android:id="@id/anti_send_experience_txt" android:paddingTop="@dimen/app_trash_item_layout_margin" android:paddingBottom="@dimen/app_trash_item_layout_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/function_button_text_top_margin" android:text="@string/antitheft_experience_order" style="@style/MyWidget.RoundButton.Highlight" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.SettingsPageMargin">
+        <LinearLayout style="@style/MyWidget.SettingsGroup">
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_label_data" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_data_label_data" app:summary="@string/antispam_data_label_data_update_summary" app:type="normal" />
+            <include layout="@layout/common_divider_settings" />
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_keyword_data" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_data_keyword" app:summary="@string/antispam_data_label_data_update_summary" app:type="normal" />
+            <include layout="@layout/common_divider_settings" />
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_nbc_data" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_data_nbc" app:summary="@string/antispam_data_label_data_update_summary" app:type="normal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

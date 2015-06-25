@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/help_titlebar" layout="@layout/main_titlebar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/help_titlebar" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:id="@id/content_holder" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:padding="@dimen/saveflow_help_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff627797" android:id="@id/question" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="TextView" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff717171" android:id="@id/answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_below="@id/question" />
+            </RelativeLayout>
+            <include layout="@layout/divider_settings" />
+            <RelativeLayout android:padding="@dimen/saveflow_help_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff627797" android:id="@id/question" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="TextView" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff717171" android:id="@id/answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_below="@id/question" />
+            </RelativeLayout>
+            <include layout="@layout/divider_settings" />
+            <RelativeLayout android:padding="@dimen/saveflow_help_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff627797" android:id="@id/question" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="TextView" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff717171" android:id="@id/answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_below="@id/question" />
+            </RelativeLayout>
+            <include layout="@layout/divider_settings" />
+            <RelativeLayout android:padding="@dimen/saveflow_help_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff627797" android:id="@id/question" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff717171" android:id="@id/answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/question" />
+            </RelativeLayout>
+            <include layout="@layout/divider_settings" />
+            <RelativeLayout android:padding="@dimen/saveflow_help_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff627797" android:id="@id/question" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff717171" android:id="@id/answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/question" />
+            </RelativeLayout>
+            <include layout="@layout/divider_settings" />
+            <RelativeLayout android:padding="@dimen/saveflow_help_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="#ff627797" android:id="@id/question" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff717171" android:id="@id/answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/question" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

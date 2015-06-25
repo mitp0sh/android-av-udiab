@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_centerVertical="true" style="@style/MyWidget.ListViewItemAppIcon" />
+    <LinearLayout android:id="@id/action_panel" android:layout_alignParentRight="true" style="@style/MyWidget.ListActionPanel">
+        <com.dianxinos.optimizer.ui.DxActionButton android:id="@id/action_first" style="@style/MyWidget.ActionButton" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_blue" android:id="@id/status" android:layout_toLeftOf="@id/action_panel" style="@style/MyWidget.ListViewItemTextTop" />
+    <TextView android:ellipsize="marquee" android:id="@id/app_name" android:layout_toLeftOf="@id/status" android:layout_toRightOf="@id/icon" style="@style/MyWidget.ListViewItemTextTop" />
+    <ProgressBar android:id="@id/progress" android:layout_marginTop="4.0dip" android:max="100" android:layout_toLeftOf="@id/action_panel" android:layout_toRightOf="@id/icon" android:layout_below="@id/app_name" style="@style/MyWidget.ProgressBarMain" />
+    <TextView android:id="@id/app_size" android:layout_width="100.0dip" android:layout_toRightOf="@id/icon" android:layout_below="@id/app_name" style="@style/MyWidget.ListViewItemTextBottom" />
+    <TextView android:ellipsize="marquee" android:id="@id/app_version" android:layout_toLeftOf="@id/action_panel" android:layout_toRightOf="@id/app_size" android:layout_alignTop="@id/app_size" style="@style/MyWidget.ListViewItemTextBottom" />
+</RelativeLayout>

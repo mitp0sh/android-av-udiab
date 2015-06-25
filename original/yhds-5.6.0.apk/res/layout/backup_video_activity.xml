@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" android:layout_alignParentTop="true" layout="@layout/main_titlebar" />
+    <TextView android:gravity="center" android:id="@id/tips" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.PageTipsText" />
+    <com.dianxinos.optimizer.ui.DXEmptyView android:id="@id/emptyView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <GridView android:id="@id/items_more" android:visibility="gone" android:layoutAnimation="@anim/safetools_random_wave_scale_anim" android:layout_height="0.0dip" android:listSelector="#00000000" android:cacheColorHint="@color/white" android:horizontalSpacing="15.0dip" android:verticalSpacing="15.0dip" android:numColumns="3" android:layout_weight="1.0" style="@style/MyWidget.GridView" />
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_vertical" style="@style/MyWidget.PageBottomButtonLayout">
+        <Button android:id="@id/left_btn" android:layout_width="0.0dip" android:text="@string/take_video" android:layout_weight="1.0" style="@style/MyWidget.BottomButton.NoCorner" />
+        <include android:id="@id/btn_divider" layout="@layout/common_divider_vertical" />
+        <Button android:id="@id/right_btn" android:layout_width="0.0dip" android:text="@string/add_video" android:layout_weight="1.0" style="@style/MyWidget.BottomButton.NoCorner" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="download_progress_bkg_color">#ff545454</color>
+    <color name="download_progress_fore_color">#ff1988fb</color>
+    <color name="notify_notifycationbar_progressbar_bg_color">@android:color/white</color>
+    <color name="notify_notifycationbar_progressbar_progress_color">#ff4789c5</color>
+    <color name="notify_notifycationbar_item_bg_color">#ff000000</color>
+    <color name="notify_notifycationbar_divider_color">#ff2a3c48</color>
+    <color name="notify_notifycationbar_title_color">@android:color/white</color>
+    <color name="notify_notifycationbar_tips_content_color">#ff999999</color>
+</resources>

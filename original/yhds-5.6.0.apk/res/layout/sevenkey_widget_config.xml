@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <LinearLayout android:background="@drawable/sevenkey_widget_bkg" android:layout_width="fill_parent" android:layout_height="110.0dip">
+        <include android:layout_gravity="center_vertical" android:id="@id/widget_demo" android:layout_width="wrap_content" layout="@layout/sevenkey_widget" />
+    </LinearLayout>
+    <ScrollView android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.SettingsPageMargin">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/common_settings_group_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.dianxinos.common.ui.view.DxPreferenceSpinner android:id="@id/pref_bkg_set" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/widget_back_set" app:type="normal" />
+            </LinearLayout>
+            <TextView android:textColor="@color/common_grey" android:id="@id/widget_setButton_title" android:paddingLeft="10.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/widget_button_set" />
+            <include layout="@layout/sevenkey_widget_config_switches" />
+        </LinearLayout>
+    </ScrollView>
+    <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/widget_set_btn_ok" style="@style/MyWidget.PageBottomButtonLayout" />
+</merge>

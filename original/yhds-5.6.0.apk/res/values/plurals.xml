@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notification_days">
+        <item quantity="other">你有%d天没检测了</item>
+        <item quantity="zero"></item>
+    </plurals>
+</resources>

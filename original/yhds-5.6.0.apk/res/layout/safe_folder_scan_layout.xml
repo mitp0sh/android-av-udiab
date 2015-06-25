@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/dx_loading_dialog_bkg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/app_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/bd_default_portrait" />
+        <ImageView android:id="@id/scan_top" android:layout_width="85.0dip" android:layout_height="85.0dip" android:src="@drawable/safe_folder_scan" />
+    </FrameLayout>
+    <TextView android:textSize="12.0dip" android:textColor="@color/common_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="19.0dip" android:text="@string/safe_folder_scan" android:drawableLeft="@drawable/dxopt_logo_wite" android:drawablePadding="4.0dip" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:background="@drawable/baidu_left_red_corners" android:layout_width="28.0dip" android:layout_height="3.0dip" />
+        <TextView android:background="@drawable/baidu_right_blue_corners" android:layout_width="28.0dip" android:layout_height="3.0dip" />
+    </LinearLayout>
+</LinearLayout>

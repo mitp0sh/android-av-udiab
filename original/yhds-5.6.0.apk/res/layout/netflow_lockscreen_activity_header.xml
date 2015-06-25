@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/header" android:paddingLeft="@dimen/common_list_item_left_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/netflow_notification_desc" android:gravity="center_vertical" android:id="@id/netflow_sum" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="2.0" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/netflow_notification_up_download" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/upload_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/netflow_upload" android:layout_weight="1.0" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/netflow_notification_up_download" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/download_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/netflow_download" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

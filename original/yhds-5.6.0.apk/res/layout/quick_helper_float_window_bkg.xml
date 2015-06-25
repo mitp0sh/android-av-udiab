@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/background_holder" android:background="@drawable/airplane_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/aireplane_light_beam" android:background="@drawable/airplane_light_beam" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/platform_holder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/aireplane_hotzone" android:layout_width="100.0dip" android:layout_height="130.0dip" android:src="@color/transparent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/airplane_magic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/airplane_magic" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/airplane_paper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:src="@drawable/airplane_paper" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/airplane_paper_transformed" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/airplane_paper_transformed" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/airplane_flame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/airplane_flame" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/left_hotzone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/airplane_lockscreen_50" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/right_hotzone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/airplane_try_50" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/drag_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/fw_drag_text" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

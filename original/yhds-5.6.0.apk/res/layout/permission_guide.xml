@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/enhance_permission_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <CheckBox android:id="@id/download_app_store" android:layout_marginBottom="10.0dip" android:checked="true" android:text="@string/external_also_download_apps_store" style="@style/MyWidget.CheckBox.Small" />
+        <TextView android:textSize="@dimen/common_text_size_middle" android:textColor="@color/common_grey" android:id="@id/tv_download_status" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" />
+        <ProgressBar android:id="@id/download_progress" android:visibility="gone" android:layout_marginLeft="12.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="10.0dip" android:max="100" style="@style/MyWidget.ProgressBarMain" />
+        <Button android:id="@id/bt_go_into" android:text="@string/external_use_now" style="@style/MyWidget.PageBottomButtonLayoutNoBackground" />
+    </LinearLayout>
+</RelativeLayout>

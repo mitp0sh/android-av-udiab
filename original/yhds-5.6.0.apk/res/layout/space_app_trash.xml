@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianxinos.common.ui.view.ShadowLinearLayout android:orientation="vertical" android:id="@id/layout_app_trash_sh" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:ellipsize="middle" android:id="@id/scan_status" style="@style/MyWidget.InfoBarLayout" />
+        <ProgressBar android:layout_gravity="bottom" android:id="@id/space_app_trash_progressbar" android:visibility="gone" style="@style/MyWidget.ProgressBarNoCorner" />
+    </FrameLayout>
+    <include android:id="@id/title_divider" layout="@layout/common_divider_horizontal" />
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_trashes" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.dianxinos.optimizer.ui.DXEmptyView android:id="@id/view_no_trash" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ListView android:id="@id/app_trashes_list" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MyWidget.ListView.Card" />
+    </LinearLayout>
+    <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/cleared_button" style="@style/MyWidget.PageBottomButtonLayout" />
+</com.dianxinos.common.ui.view.ShadowLinearLayout>

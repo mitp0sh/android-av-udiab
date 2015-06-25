@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@drawable/float_window_bkg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="@color/common_white" android:gravity="center|right" android:layout_gravity="center_vertical" android:id="@id/nfw_tv_net_speed" android:paddingLeft="3.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="64.0dip" android:text="@string/default_netflow_speed" android:drawableLeft="@drawable/float_window_up_down" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/nfw_tv_net_month_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="64.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="#ff00aeff" android:id="@id/nfw_tv_net_month_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/curent_netflow_month_text" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/common_white" android:id="@id/nfw_tv_net_month_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/curent_netflow_month_count_default" />
+    </LinearLayout>
+</FrameLayout>

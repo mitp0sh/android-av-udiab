@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/dlg_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/dxopt_logo_querylocation_window" />
+    <ImageView android:id="@id/iv_marked_icon" android:background="@drawable/antispam_phone_label_mark_completed" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="80.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="110.0dip">
+        <TextView android:textSize="32.0sp" android:textColor="@color/white" android:id="@id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/district" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="78.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_delivery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+            <Button android:id="@id/btn_delivery" android:background="@drawable/antispam_phone_label_kd_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/tv_delivery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/antispam_report_delivery" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="64.0dip" android:layout_marginTop="84.0dip" android:layout_toRightOf="@id/ll_delivery">
+            <Button android:id="@id/btn_other" android:background="@drawable/antispam_phone_label_more_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/tv_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/antispam_report_more" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="24.0dip" android:layout_toRightOf="@id/ll_delivery">
+            <Button android:id="@id/btn_agent" android:background="@drawable/antispam_phone_label_zj_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/tv_agent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/antispam_report_agent" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="84.0dip" android:layout_marginRight="64.0dip" android:layout_toLeftOf="@id/ll_delivery">
+            <Button android:id="@id/btn_harass" android:background="@drawable/antispam_phone_label_sr_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/tv_harass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/antispam_report_harass" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginRight="20.0dip" android:layout_toLeftOf="@id/ll_delivery">
+            <Button android:id="@id/btn_advert" android:background="@drawable/antispam_phone_label_ad_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/tv_advert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/antispam_report_advert" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="13.0sp" android:textColor="#ff95ccf7" android:gravity="center" android:id="@id/tv_mark_phonelabel_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="52.0dip" android:text="@string/antispam_report_user_tips" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center" android:id="@id/ll_bottom_opt" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/tv_add_to_contact" android:clickable="true" android:text="@string/antispam_report_dialog_add_to_contact" style="@style/Antispam.AddContact" />
+        <View android:background="#ff666666" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <TextView android:id="@id/tv_cancel_mark" android:clickable="true" android:text="@string/antispam_report_dialog_cancel" style="@style/Antispam.AddContact" />
+    </LinearLayout>
+    <View android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignTop="@id/ll_bottom_opt" android:layout_alignParentLeft="true" />
+</RelativeLayout>

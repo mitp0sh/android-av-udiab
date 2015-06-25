@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <include layout="@layout/common_divider_horizontal" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/detail_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/cpu_group" layout="@layout/hardware_details_group" />
+            <include android:id="@id/storage_group" layout="@layout/hardware_details_group" />
+            <include android:id="@id/gpu_group" layout="@layout/hardware_details_group" />
+            <include android:id="@id/screen_group" layout="@layout/hardware_details_group" />
+            <include android:id="@id/sensor_group" layout="@layout/hardware_details_group" />
+            <include android:id="@id/camera_group" layout="@layout/hardware_details_group" />
+            <include android:id="@id/system_group" layout="@layout/hardware_details_group" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

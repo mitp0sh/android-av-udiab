@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffe1eff8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="6.0dip" android:src="@drawable/root_permission_tag" />
+    <TextView android:textSize="20.0sp" android:textColor="#ff3d5562" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/root_perm_title" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="13.0sp" android:textColor="#ff62737d" android:paddingLeft="42.0dip" android:paddingRight="42.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/root_perm_details" />
+    </ScrollView>
+    <Button android:id="@id/allow" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="42.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="42.0dip" android:layout_marginBottom="34.0dip" android:text="@string/root_perm_allow" style="@style/MyWidget.RoundButton.Highlight" />
+</LinearLayout>

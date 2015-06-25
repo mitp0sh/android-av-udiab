@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/main_titlebar" />
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/addetect_detailpage_top_titlebkg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff334854" android:id="@id/spam_sms_detail_phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/pseudo_tip_tv" android:layout_alignLeft="@id/tv_prevent_cheat_detail_tips" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff334854" android:gravity="right" android:id="@id/spam_sms_detail_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="13.0sp" android:textColor="#fff1930d" android:gravity="center" android:id="@id/pseudo_tip_tv" android:background="@drawable/billguard_prevent_cheat_pseudobase_sms_tip_tv_bg" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="18.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/billguard_prevent_cheat_pseudobase_sms_tip" android:layout_toLeftOf="@id/spam_sms_detail_date" />
+        <TextView android:textSize="13.0sp" android:textColor="#ffe32f12" android:id="@id/tv_prevent_cheat_detail_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/billguard_prevent_cheat_help_tips" android:singleLine="true" android:layout_toLeftOf="@id/spam_sms_detail_location" android:layout_below="@id/spam_sms_detail_phone_number" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff334854" android:id="@id/spam_sms_detail_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:singleLine="true" android:layout_alignBaseline="@id/tv_prevent_cheat_detail_tips" android:layout_alignRight="@id/spam_sms_detail_date" />
+        <ImageView android:id="@id/isreport" android:background="@drawable/antispam_sms_report_icon2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="182.0dip" android:layout_marginTop="3.0dip" android:scaleType="fitEnd" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.8" style="@style/Antispam.SmsDetailBody">
+        <TextView android:id="@id/spam_sms_detail__body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="4.0dip" style="@style/Antispam.SmsDetailText" />
+    </ScrollView>
+    <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/report_btn" android:visibility="visible" style="@style/MyWidget.PageBottomButtonLayout" />
+</LinearLayout>

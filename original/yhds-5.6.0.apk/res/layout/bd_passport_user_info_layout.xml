@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/common_titlebar_bkg_color" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_view" android:layout_below="@id/titlebar">
+        <LinearLayout android:layout_gravity="center_horizontal" android:background="@drawable/bd_portrait_bg" android:layout_width="100.0dip" android:layout_height="100.0dip">
+            <com.dianxinos.optimizer.bdpassport.CircularImageView android:id="@id/user_portrait" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="7.0dip" android:src="@drawable/bd_default_portrait" android:scaleType="centerCrop" />
+        </LinearLayout>
+        <TextView android:textSize="22.0sp" android:textColor="@color/common_white" android:gravity="center" android:id="@id/user_name" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_view" android:background="@color/common_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="13.0sp" android:textColor="@color/common_dark" android:id="@id/bd_passport_desc" android:paddingLeft="16.0dip" android:paddingTop="18.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_bd_passport" />
+        <Button android:textColor="@color/dx_btn_green_text" android:id="@id/logout_passport" android:layout_marginBottom="12.0dip" style="@style/MyWidget.PageBottomButtonLayoutNoBackground" />
+    </LinearLayout>
+</RelativeLayout>

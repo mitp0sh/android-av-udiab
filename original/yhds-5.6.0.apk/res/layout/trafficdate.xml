@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.dianxinos.optimizer.ui.DxPageTips android:id="@id/saveflow_set_limit_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:message="@string/netflow_save_top_summary" app:isImageButton="false" app:buttonText="@string/common_settings_go" />
+    <include layout="@layout/trafficdate_item" />
+    <include layout="@layout/common_divider_settings" />
+    <ListView android:id="@id/trafficdate_list" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MyWidget.ListView" />
+</LinearLayout>

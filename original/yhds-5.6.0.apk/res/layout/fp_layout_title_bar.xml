@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/fp_title_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/fp_demin_48dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/title_bar_back" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="38.0dip" android:layout_height="30.0dip" android:src="@drawable/fp_title_back" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onBackClick" android:contentDescription="@string/fp_img" />
+    <ImageView android:id="@id/title_bar_logo" android:layout_width="89.0dip" android:layout_height="30.0dip" android:src="@drawable/fp_ic_logo" android:layout_centerInParent="true" android:contentDescription="@string/fp_img" />
+</RelativeLayout>

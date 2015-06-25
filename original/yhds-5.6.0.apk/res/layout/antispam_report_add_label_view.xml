@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText android:id="@id/new_label" android:hint="@string/antispam_report_add_new_label_empty_hit_tip" style="@style/MyWidget.EditText"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

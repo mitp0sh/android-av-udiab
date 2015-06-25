@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <RelativeLayout android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/lv_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:id="@id/tv_prefix_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/claims_details_num" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:ellipsize="end" android:id="@id/tv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/lv_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_below="@id/lv_num">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:id="@id/tv_prefix_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/claims_details_time" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:ellipsize="end" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/lv_account" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_below="@id/lv_time">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:id="@id/tv_prefix_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/claims_details_account" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:ellipsize="end" android:id="@id/tv_account" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/lv_status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_below="@id/lv_account">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:id="@id/tv_prefix_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/claims_details_status" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:ellipsize="end" android:id="@id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/lv_app" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_below="@id/lv_status">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:id="@id/tv_prefix_app" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/claims_details_app" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:ellipsize="end" android:id="@id/tv_app" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/lv_history" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="18.0dip" android:layout_below="@id/lv_app">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:id="@id/tv_prefix_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/claims_details_history" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:ellipsize="end" android:id="@id/tv_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ScrollView android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/lv_bottom" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginRight="28.0dip" style="@style/MyWidget.ListViewItem.HomeCard">
+                <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_grey" android:gravity="center_vertical" android:id="@id/danger_title" android:layout_width="fill_parent" android:layout_height="26.0dip" android:text="@string/claims_order_details_bottom_tips" />
+                <View android:background="#ffdde7ee" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginRight="@dimen/common_list_card_margin_horizontal" />
+                <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_grey" android:gravity="center_vertical" android:id="@id/tv_tips" android:paddingRight="@dimen/common_list_card_margin_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/claims_order_details_bdmoney_tips" />
+                <View android:background="@drawable/payscurity_dotted_line" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginRight="@dimen/common_list_card_margin_horizontal" />
+                <RelativeLayout android:paddingRight="@dimen/common_list_card_margin_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/common_action_button_width" android:layout_marginBottom="2.0dip">
+                    <RelativeLayout android:background="@drawable/dx_action_bkg_bank" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <com.dianxinos.optimizer.ui.DxActionButton android:id="@id/tv_open" android:layout_centerVertical="true" style="@style/MyWidget.ActionButton" />
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/common_text_size_middle_2" android:textColor="@color/common_dark" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/claims_order_details_bdmoney" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/claims_order_details_bdmoney_net" android:layout_below="@id/tv_title" android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/common_text_size_middle_2" android:textColor="@color/common_grey" android:gravity="center" android:id="@id/tv_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:text="@string/claims_order_details_bottom" />
+</LinearLayout>

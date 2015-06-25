@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/loaded_content_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.dianxinos.optimizer.ui.DxPageTips android:id="@id/authority_tips_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:isImageButton="false" app:buttonText="@string/authority_btn_enable" />
+        <TextView android:id="@id/freezemgr_disabledAppHead_disabledAppNum" style="@style/MyWidget.ListHeaderText.Layout" />
+        <GridView android:id="@id/freezemgr_disabledAppGridview" android:background="@android:color/transparent" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:horizontalSpacing="1.0dip" android:verticalSpacing="6.0dip" android:numColumns="4" android:layout_weight="0.8" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/freezemgr_noDisabledApp" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/freezemgr_no_disable_apps" android:layout_weight="0.8" />
+        <TextView android:id="@id/freezemgr_enabledAppListHead_enabledAppNum" style="@style/MyWidget.ListHeaderText.Layout" />
+        <GridView android:id="@id/freezemgr_enabledAppGridView" android:background="@android:color/transparent" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:horizontalSpacing="1.0dip" android:verticalSpacing="6.0dip" android:numColumns="4" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/freezemgr_noEnabledApp" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/freezemgr_no_enable_apps" android:layout_weight="1.0" />
+        <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/apply" style="@style/MyWidget.PageBottomButtonLayout" />
+    </LinearLayout>
+</LinearLayout>

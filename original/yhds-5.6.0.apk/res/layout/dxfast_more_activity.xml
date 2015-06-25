@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/more_back" android:background="#bf000000" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/more_body" android:background="@drawable/dxfast_widget_bg" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="340.0dip">
+        <GridView android:id="@id/more_entry_grid_view" android:layout_width="fill_parent" android:layout_height="260.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="10.0dip" android:listSelector="@drawable/dxfast_widget_item_selector" android:numColumns="5" />
+        <View android:background="#ffc4cace" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="16.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="16.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="62.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/more_auto_bright_item" android:background="#00ffffff" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="12.0dip">
+                <CheckBox android:id="@id/more_checkbox" android:paddingLeft="18.0dip" android:focusable="false" android:clickable="false" style="@style/MyWidget.CheckBox.Small" />
+                <TextView android:textSize="16.0dip" android:textColor="#ff75869a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-13.0dip" android:text="@string/dxfast_widget_automatic_brightness" />
+            </LinearLayout>
+            <ImageView android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/dxfast_widget_more_act_bright_low" />
+            <SeekBar android:id="@id/more_seek_bar" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="0.0dip" android:layout_marginLeft="4.0dip" android:thumb="@drawable/dxfast_widget_more_act_bright_slider" android:layout_weight="1.0" style="@style/MyWidget.MySeekbarBrightness" />
+            <ImageView android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/dxfast_widget_more_act_bright_high" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

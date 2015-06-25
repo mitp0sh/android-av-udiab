@@ -1,0 +1,5 @@
+<default>
+系统浏览器||网站账号密码、书签、访问历史、搜索历史||com.android.browser
+UC浏览器||网站账号密码、书签、访问历史、搜索历史||com.UCMobile
+QQ手机浏览器||网站账号密码、书签、访问历史、搜索历史||com.tencent.mtt
+</default>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/app_info_layout" android:layout_width="fill_parent" android:layout_height="@dimen/ad_app_list_item_height">
+        <ImageView android:id="@id/iv_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentLeft="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_toRightOf="@id/iv_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/ad_app_list_item_app_name_size" android:textColor="@color/ad_app_list_item_app_name_color" android:id="@id/tv_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextView_AppName_Style" />
+            <TextView android:textSize="@dimen/ad_app_list_item_app_des_size" android:textColor="@color/ad_app_list_item_app_des_color" android:id="@id/tv_app_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/addetect_notification_ad_dialog_text" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.dianxinos.optimizer.module.addetect.widget.DXCustomLayout android:id="@id/ll_notificationad" android:background="@drawable/addetect_log_item_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+</LinearLayout>

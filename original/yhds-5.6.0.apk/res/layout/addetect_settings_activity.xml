@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_bar" layout="@layout/main_titlebar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/settings_marginBottom" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.SettingsPageMargin">
+            <LinearLayout android:id="@id/setting_open_service" style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_ad_protection" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/ad_protection" app:type="switch" />
+                <include android:id="@id/divider_open_serives" layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_ad_cloudscan" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/prefs_ad_cloud_scan" app:summary="@string/prefs_ad_cloud_scan_summary" app:type="switch" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/setting_log" style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_show_blocked_app" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/block_ad_app" app:type="normal" />
+                <include android:id="@id/divider_setting_log" layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_show_log" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/log_setting" app:type="normal" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/setting_update" style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_character_update" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/addetect_adresupdate_title" app:type="normal" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_scan_new_install_app" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/scan_new_install_app" app:type="switch" />
+                <include android:id="@id/divider_setting_update" layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_send_intercept_report" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/send_intercept_report" app:type="switch" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

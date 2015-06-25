@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MyWidget.ScrollView"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.SettingsPageMargin">
+        <LinearLayout style="@style/MyWidget.SettingsGroup">
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_protected_list" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/tk_pref_protected_list" app:type="normal" />
+            <include layout="@layout/common_divider_settings" />
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_regular_clean" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/regular_clean_title" app:type="normal" />
+            <include layout="@layout/common_divider_settings" />
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_create_shortcut" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/pref_create_shortcut_title" app:summary="@string/pref_create_shortcut_subtitle" app:type="normal" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

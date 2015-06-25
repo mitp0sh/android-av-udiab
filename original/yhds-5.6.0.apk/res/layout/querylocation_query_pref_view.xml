@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:background="#ff15181a" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/settings_view" android:background="@drawable/querylocation_ql_setting_card_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianxinos.common.ui.view.DxPreference android:id="@id/incoming_floating_window_switch" android:layout_width="fill_parent" android:layout_height="56.0dip" app:name="@string/querylocation_incoming_location" app:type="switch" />
+        <include layout="@layout/querylocation_pref_divider" />
+        <com.dianxinos.common.ui.view.DxPreference android:id="@id/outgoing_floating_window_switch" android:layout_width="fill_parent" android:layout_height="56.0dip" app:name="@string/querylocation_outgoing_location" app:type="switch" />
+        <include layout="@layout/querylocation_pref_divider" />
+        <include android:id="@id/data_update_checking" layout="@layout/querylocation_data_update" />
+    </LinearLayout>
+</LinearLayout>

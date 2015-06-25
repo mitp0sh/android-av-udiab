@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MyWidget.ListView" />
+    <TextView android:textColor="@color/common_dark_grey" android:id="@id/no_option_msg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/none_move_to_rom" />
+</LinearLayout>

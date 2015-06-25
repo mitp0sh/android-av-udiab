@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/main_titlebar" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/addetect_detailpage_top_titlebkg" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <RelativeLayout style="@style/Antispam.SmsDetailTile">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:textColor="#ff334854" android:id="@id/spam_sms_detail_phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff334854" android:id="@id/spam_sms_detail_contact" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <ImageView android:id="@id/isreport" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:src="@drawable/antispam_sms_report_icon2" android:scaleType="fitEnd" android:layout_alignParentRight="true" />
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="13.0sp" android:textColor="#ff334854" android:id="@id/spam_sms_detail_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff334854" android:id="@id/spam_sms_detail_location" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.8" style="@style/Antispam.SmsDetailBody">
+        <TextView android:id="@id/spam_sms_detail__body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="4.0dip" style="@style/Antispam.SmsDetailText" />
+    </ScrollView>
+    <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/report_btn" android:visibility="visible" style="@style/MyWidget.PageBottomButtonLayout" />
+</LinearLayout>

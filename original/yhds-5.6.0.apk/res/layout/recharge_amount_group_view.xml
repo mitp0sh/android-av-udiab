@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianxinos.optimizer.module.recharge.ui.RechargeAmountGroupView android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianxinos.optimizer.module.recharge.ui.RechargeAmountView android:id="@id/thty_acount" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" app:amount_value="@string/recharge_thirty_acount" />
+        <com.dianxinos.optimizer.module.recharge.ui.RechargeAmountView android:textSize="20.0sp" android:gravity="center" android:id="@id/fifty_acount" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" app:amount_value="@string/recharge_fifty_acount" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianxinos.optimizer.module.recharge.ui.RechargeAmountView android:textSize="20.0sp" android:gravity="center" android:id="@id/hundred_acount" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" app:amount_value="@string/recharge_hundred_acount" />
+        <com.dianxinos.optimizer.module.recharge.ui.RechargeAmountView android:textSize="20.0sp" android:gravity="center" android:id="@id/three_hundred_acount" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="16.0dip" android:layout_weight="1.0" app:amount_value="@string/recharge_three_hundred_acount" />
+    </LinearLayout>
+</com.dianxinos.optimizer.module.recharge.ui.RechargeAmountGroupView>

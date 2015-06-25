@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll" android:background="@color/common_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/appssearch_titlebar" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/searchresult" layout="@layout/appmanager_appssearchresult_layout" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/hotwordslayout" android:background="#ffe7f3f8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip">
+            <GridView android:gravity="center" android:id="@id/hotwordsGridView" android:background="#ffcedfe9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="1.0px" android:verticalSpacing="1.0px" android:stretchMode="columnWidth" android:numColumns="3" style="@style/MyWidget.ListView" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

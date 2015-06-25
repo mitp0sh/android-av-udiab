@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <ScrollView android:id="@id/global_settings_scrollview" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.SettingsPageMargin">
+            <LinearLayout style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/updatelib" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/update_lib_version" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/cloud_scan_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/cloud_scan" app:type="switch" />
+                <include android:id="@id/scan_new_app_divider" layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/scan_new_app_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/scan_new_app" app:type="switch" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/auto_update_lib_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/auto_update_lib_version" app:type="switch" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/app_start_monitor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/app_start_monitor_setting_title" app:type="switch" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/ignor_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/ignore_list" app:summary="@string/ignore_title_text" app:type="normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

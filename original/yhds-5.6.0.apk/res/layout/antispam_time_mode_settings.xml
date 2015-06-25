@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/reset" android:layout_below="@id/titlebar" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.SettingsPageMargin">
+            <LinearLayout style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_sms" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_stranger_sms" app:type="switch" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_smart_cloud_block" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_smart_cloud_block" app:type="switch" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_keywords" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_keywords_stranger_sms" app:type="switch" />
+            </LinearLayout>
+            <LinearLayout style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_blacklist" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_blacklist_all" app:type="switch" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_whitelist" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_whitelist_all" app:type="switch" />
+            </LinearLayout>
+            <LinearLayout style="@style/MyWidget.SettingsGroup">
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_stranger" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_stranger_all" app:type="switch" />
+                <include layout="@layout/common_divider_settings" />
+                <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_contacts" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_contacts_all" app:type="switch" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/reset" android:layout_alignParentBottom="true" style="@style/MyWidget.PageBottomButtonLayout" />
+</RelativeLayout>

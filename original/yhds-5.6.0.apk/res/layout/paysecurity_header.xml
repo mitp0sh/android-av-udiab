@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="187.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bank_safe_header" android:background="@drawable/paysecurity_safe_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+        <View android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bank_danger_header" android:background="@drawable/paysecurity_danger_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+        <ImageView android:layout_gravity="center" android:id="@id/safesecurity_icon" android:background="@drawable/paysecutity_header_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_titlebar_height" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/common_white" android:id="@id/safe_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:shadowColor="#29000000" android:shadowDx="0.0" android:shadowDy="8.0" android:shadowRadius="6.0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/payment_banner_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/common_page_header_height" android:baselineAligned="false" android:layout_below="@id/bank_titlebar">
+        <ImageView android:id="@id/payment_banner_image" android:background="@drawable/paysecurity_payment_banner_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/payment_open_group" android:background="@color/common_20_percent_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_white" android:id="@id/payment_open_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/payment_open_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toLeftOf="@id/payment_open_text" android:layout_centerVertical="true" />
+            <Button android:textSize="@dimen/common_text_size_small" android:layout_gravity="right" android:id="@id/payment_open_button" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="26.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/MyWidget.RoundButton.Normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <include android:id="@id/bank_titlebar" layout="@layout/main_titlebar" />
+</RelativeLayout>

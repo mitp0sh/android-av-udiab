@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <include android:id="@id/av_state_header" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="13.0" layout="@layout/av_state_header" />
+    <include android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="7.0" layout="@layout/av_state_bottom" />
+</LinearLayout>

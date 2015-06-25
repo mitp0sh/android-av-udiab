@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar" />
+    <style name="MyWidget.Notification.BodyCompat" parent="@style/MyWidget.Notification">
+        <item name="android:background">@drawable/notification_bkg</item>
+    </style>
+    <style name="MyWidget.Notification.AreaCompat" parent="@style/MyWidget.Notification">
+        <item name="android:background">@drawable/notification_area_bkg</item>
+    </style>
+    <style name="MyWidget.Notification.DividerCompat" parent="@style/MyWidget.Notification">
+        <item name="android:background">#ff2a3c48</item>
+    </style>
+    <style name="MyWidget.Notification.Text.TopCompat" parent="@style/MyWidget.Notification.Text">
+        <item name="android:textColor">@color/common_white</item>
+    </style>
+    <style name="MyWidget.Notification.Text.BottomCompat" parent="@style/MyWidget.Notification.Text">
+        <item name="android:textColor">#ff999999</item>
+    </style>
+</resources>

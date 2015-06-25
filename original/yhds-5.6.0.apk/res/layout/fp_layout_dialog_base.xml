@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/fp_color_window_bg" android:layout_width="@dimen/common_dialog_width" android:layout_height="wrap_content" android:minWidth="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/dialog_title" android:paddingLeft="0.0dip" android:layout_width="fill_parent" android:layout_height="42.0dip" android:text="@string/common_dialog_title_tip" android:drawableLeft="@drawable/dxopt_logo_titlebar_normal" style="@style/MyWidget.DialogTitleBarText" />
+    <View android:layout_marginBottom="@dimen/common_dialog_content_margin_vertical" style="@style/MyWidget.Divider.Horizontal.WithMargin" />
+    <LinearLayout android:orientation="vertical" android:background="@color/fp_color_window_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/dialog_content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include layout="@layout/common_divider_horizontal_with_margin" />
+        <LinearLayout android:id="@id/dialog_btns" android:layout_width="fill_parent" android:layout_height="@dimen/common_dialog_button_height">
+            <Button android:id="@id/negative_btn" android:layout_width="0.0dip" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:text="@string/fp_cancel" android:singleLine="true" android:layout_weight="1.0" style="@style/MyWidget.BottomButton.FastPayButton" />
+            <include layout="@layout/common_divider_vertical" />
+            <Button android:textColor="@color/common_blue" android:id="@id/positive_btn" android:layout_width="0.0dip" android:layout_marginLeft="0.0dip" android:text="@string/fp_exit" android:singleLine="true" android:layout_weight="1.0" style="@style/MyWidget.BottomButton.FastPayButton" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

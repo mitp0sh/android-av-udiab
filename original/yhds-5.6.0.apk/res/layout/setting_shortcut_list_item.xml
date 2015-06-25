@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/setting_shortcut_item_icon" style="@style/MyWidget.ListViewItemAppIcon" />
+    <TextView android:id="@id/setting_shortcut_item_name" android:layout_width="0.0dip" android:layout_marginTop="0.0dip" android:layout_weight="1.0" style="@style/MyWidget.ListViewItemTextTop" />
+</LinearLayout>

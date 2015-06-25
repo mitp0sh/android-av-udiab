@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/background" android:background="@drawable/scale_bar_bg" android:layout_width="wrap_content" android:layout_height="6.0dip" android:layout_marginLeft="46.0dip" android:layout_marginRight="46.0dip" android:layout_centerVertical="true" />
+    <View android:id="@id/progress" android:background="@color/common_blue" android:layout_width="100.0dip" android:layout_height="6.0dip" android:layout_marginLeft="70.0dip" android:layout_alignTop="@id/background" />
+    <ImageView android:id="@id/drag_end" android:paddingRight="6.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="100.0dip" android:layout_marginBottom="-10.0dip" android:src="@drawable/scale_bar_drag_end" android:scaleType="center" android:layout_alignTop="@id/background" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/common_dark" android:gravity="left" android:id="@id/txt_end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/background" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/drag_start" android:paddingLeft="6.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginBottom="-10.0dip" android:src="@drawable/scale_bar_drag_start" android:scaleType="center" android:layout_alignTop="@id/background" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/common_dark" android:gravity="right" android:id="@id/txt_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/background" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/traffic_state_item_body" android:layout_height="@dimen/appmanager_common_stat_three_line" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/traffic_state_icon" style="@style/MyWidget.ListViewItemAppIcon" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:ellipsize="middle" android:id="@id/traffic_state_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/common_grey" android:id="@id/traffic_state_proportion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/traffic_state_progress" android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:progressDrawable="@drawable/dx_progressbar_orange_rect" style="?android:attr/progressBarStyleHorizontal" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/common_grey" android:id="@id/traffic_state_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout style="@style/MyWidget.ListActionPanel">
+        <com.dianxinos.optimizer.ui.DxActionButton android:id="@id/action_button" app:icon="@drawable/dx_action_delete" app:label="@string/common_uninstall" style="@style/MyWidget.ActionButton" />
+        <TextView android:id="@id/uninstall_app_uninstalled_text" android:visibility="gone" android:text="@string/app_uninstalled_text" style="@style/MyWidget.ListActionStatus" />
+    </LinearLayout>
+</LinearLayout>

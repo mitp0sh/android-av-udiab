@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/splash_layout" android:background="@color/common_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/splash_logo" android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@drawable/dxopt_splash_logo" android:scaleType="centerInside" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/common_text_size_small_2" android:textColor="#ffbec8d4" android:gravity="center" android:id="@id/splash_copyright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="36.0dip" android:text="@string/splash_copyright" android:drawableTop="@drawable/splash_screen" android:drawablePadding="2.0dip" />
+    </LinearLayout>
+    <com.dianxinos.common.ui.view.GuideGallery android:id="@id/gallery" android:background="#ff717171" android:visibility="gone" android:fadingEdge="none" android:fadingEdgeLength="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:spacing="10.0dip" android:unselectedAlpha="1.0" />
+    <com.dianxinos.common.ui.view.ViewPagerIndicator android:layout_gravity="bottom|center" android:id="@id/indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" />
+</merge>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/bank_icon" style="@style/MyWidget.ListViewItemAppIcon" />
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/bank_title_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/common_text_size_middle" android:textColor="@color/common_dark" android:id="@id/bank_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_grey" android:gravity="center|left" android:id="@id/bank_version" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/dx_action_bkg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.dianxinos.optimizer.ui.DxActionButton android:id="@id/open_bank_action_button" style="@style/MyWidget.ActionButton" />
+    </RelativeLayout>
+</LinearLayout>

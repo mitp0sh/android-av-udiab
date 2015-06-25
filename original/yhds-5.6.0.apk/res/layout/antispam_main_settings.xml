@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MyWidget.ScrollView"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyWidget.SettingsPageMargin">
+        <TextView android:id="@id/mizu_setting_title" android:visibility="gone" android:text="@string/antispam_mizu_setting_title" style="@style/MyWidget.SettingsGroupTitle" />
+        <LinearLayout android:id="@id/mizu_setting" android:visibility="gone" style="@style/MyWidget.SettingsGroup">
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_mizu_spam" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_mizu_setting" app:type="normal" />
+        </LinearLayout>
+        <TextView android:id="@id/miui_setting_title" android:visibility="gone" android:text="@string/antispam_miui_setting_title" style="@style/MyWidget.SettingsGroupTitle" />
+        <LinearLayout android:id="@id/miui_setting" android:visibility="gone" style="@style/MyWidget.SettingsGroup">
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_minu_spam_sms" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_miui_setting_spam_sms" app:type="normal" />
+            <include layout="@layout/common_divider_settings" />
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_minu_floating_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_miui_setting_show_floating_view" app:type="normal" />
+        </LinearLayout>
+        <TextView android:text="@string/antispam_settings_personal" style="@style/MyWidget.SettingsGroupTitle" />
+        <LinearLayout style="@style/MyWidget.SettingsGroup">
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_black_list" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_black_list" app:type="normal" />
+            <include layout="@layout/common_divider_settings" />
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_white_list" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_white_list" app:type="normal" />
+            <include layout="@layout/common_divider_settings" />
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_sms_keywords" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_sms_keywords" app:type="normal" />
+        </LinearLayout>
+        <TextView android:text="@string/antispam_settings_general" style="@style/MyWidget.SettingsGroupTitle" />
+        <LinearLayout style="@style/MyWidget.SettingsGroup">
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_antispam_on" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_antispam_on" app:type="switch" />
+            <include layout="@layout/common_divider_settings" />
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_antispam_notify_on" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_antispam_notify_on" app:summary="@string/antispam_pref_antispam_notify_on_sum" app:type="switch" />
+            <include layout="@layout/common_divider_settings" />
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_mode" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_mode" app:type="normal" />
+            <include layout="@layout/common_divider_settings" />
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_schedule" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_schedule" app:type="normal" />
+            <include layout="@layout/common_divider_settings" />
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_response" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_response" app:type="triangle" />
+            <include layout="@layout/common_divider_settings" />
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_data" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_data" app:type="normal" />
+        </LinearLayout>
+        <TextView android:text="@string/antispam_settings_calling" style="@style/MyWidget.SettingsGroupTitle" />
+        <LinearLayout style="@style/MyWidget.SettingsGroup">
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_floatwin" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_floatwin" app:summary="@string/antispam_pref_floatwin_sum" app:type="switch" />
+            <include layout="@layout/common_divider_settings" />
+            <com.dianxinos.common.ui.view.DxPreference android:id="@id/pref_reportwin" android:layout_width="fill_parent" android:layout_height="wrap_content" app:name="@string/antispam_pref_reportwin" app:summary="@string/antispam_pref_reportwin_sum" app:type="switch" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

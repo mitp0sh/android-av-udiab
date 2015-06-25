@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.dianxinos.optimizer.ui.DXEmptyView android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ScrollView android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/banner_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/netflowmgr_cjsw_banner" android:scaleType="centerCrop" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/common_dark" android:id="@id/tipstc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12.0dip" />
+            <com.dianxinos.optimizer.module.netflowmgr.views.CJSWGridView android:gravity="center" android:id="@id/cjswGridView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:listSelector="@drawable/netflow_cjsw_tc_bg_selector" android:horizontalSpacing="20.0dip" android:verticalSpacing="20.0dip" android:stretchMode="columnWidth" android:numColumns="2" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/common_dark" android:id="@id/wxtsTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="@string/netflow_cjsw_wx_tips_title" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/common_grey" android:autoLink="phone" android:id="@id/wxts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

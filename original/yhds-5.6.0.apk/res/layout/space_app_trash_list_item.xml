@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="@dimen/common_list_card_margin_horizontal" android:paddingTop="4.0dip" android:paddingRight="@dimen/common_list_card_margin_horizontal" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/common_settings_group_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/app_mgr_name" android:layout_marginLeft="10.0dip" style="@style/MyWidget.ListViewItemTextTop" />
+        <include android:id="@id/btn_panel_divider" layout="@layout/common_divider_horizontal_with_margin" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_trash_item_layout_margin" android:layout_marginTop="@dimen/app_trash_item_layout_margin" android:layout_marginBottom="@dimen/app_trash_item_layout_margin" android:baselineAligned="false">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <FrameLayout android:orientation="horizontal" android:id="@id/app_layout" android:background="@drawable/common_list_item_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_grey" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/space_app_fileSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableLeft="@drawable/app_trash_user_icon" />
+                    <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_red" android:layout_gravity="center|right" android:id="@id/space_app_comments" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/space_tidy_warn" android:singleLine="true" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/trash_layout" android:background="@drawable/common_list_item_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_grey" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/space_trash_fileSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableLeft="@drawable/app_trash_rubbish_icon" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/checkbox_panel" android:background="@drawable/dx_action_white_bkg" android:paddingLeft="10.0dip" android:layout_marginRight="10.0dip" style="@style/MyWidget.ListActionPanel">
+                <com.dianxinos.common.ui.view.DontPressWithParentLayout android:id="@id/app_checkBox_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <CheckBox android:id="@id/app_checkbox" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/dx_checkbox_btn" android:layout_centerInParent="true" />
+                    <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_green" android:id="@id/space_app_file_cleaned" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/space_cache_item_cleaned" android:singleLine="true" android:layout_centerInParent="true" />
+                </com.dianxinos.common.ui.view.DontPressWithParentLayout>
+                <com.dianxinos.common.ui.view.DontPressWithParentLayout android:id="@id/trash_checkBox_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <CheckBox android:id="@id/trash_checkbox" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/dx_checkbox_btn" android:layout_centerInParent="true" />
+                    <TextView android:textSize="@dimen/common_text_size_small" android:textColor="@color/common_green" android:id="@id/space_trash_file_cleaned" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/space_cache_item_cleaned" android:singleLine="true" android:layout_centerInParent="true" />
+                </com.dianxinos.common.ui.view.DontPressWithParentLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

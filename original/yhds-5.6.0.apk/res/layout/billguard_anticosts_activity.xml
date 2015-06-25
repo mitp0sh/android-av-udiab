@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <FrameLayout android:orientation="vertical" android:id="@id/page_header" android:background="@color/common_titlebar_bkg_color" android:layout_width="fill_parent" android:layout_height="175.0dip" android:layout_below="@id/titlebar">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/header_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/billguard_header_inage" />
+        </RelativeLayout>
+        <View android:background="#ff0099cc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="65.0dip" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="#900c71a9" android:layout_width="fill_parent" android:layout_height="110.0dip" android:baselineAligned="false">
+            <RelativeLayout android:id="@id/billinfo_hf_layout" android:background="@drawable/my_app_mgr_count_text_bg" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5">
+                <TextView android:textSize="16.0sp" android:textColor="#90ffffff" android:id="@id/billinfo_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/billinfo_anticos_txt" android:layout_centerHorizontal="true" />
+                <RelativeLayout android:gravity="center_vertical" android:id="@id/billinfo_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/billinfo_title" android:layout_centerHorizontal="true">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/billinfo_temp_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="50.0dip" android:id="@id/billinfo_remainder" style="@style/MyWidget.HeaderTextViewShadow" />
+                        <TextView android:textSize="13.0dip" android:id="@id/billinfo_hf_unit" android:text="@string/billinfo_hf_unit" style="@style/MyWidget.HeaderTextViewShadow" />
+                    </LinearLayout>
+                    <TextView android:textSize="13.0sp" android:id="@id/billinfo_suggest_charge" android:visibility="gone" android:text="@string/billinfo_suggest_charge" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/MyWidget.HeaderTextViewShadow" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/billinfo_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/billinfo_title" android:layout_centerHorizontal="true">
+                    <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/billguard_header_billinfo_progress" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/billinfo_no_query_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/billinfo_title" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="20.0sp" android:text="@string/billinfo_no_query" style="@style/MyWidget.HeaderTextViewShadow" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:layout_gravity="center_vertical" android:id="@id/app_mgr_sep11" android:background="#ff0099cc" android:layout_width="1.0px" android:layout_height="52.0dip" />
+            <RelativeLayout android:id="@id/flowinfo_hf_layout" android:background="@drawable/my_app_mgr_count_text_bg" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5">
+                <TextView android:textSize="16.0sp" android:textColor="#90ffffff" android:id="@id/flowinfo_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/netmonitor_detail_title" android:layout_centerHorizontal="true" />
+                <RelativeLayout android:gravity="center_vertical" android:id="@id/flowinfo_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/flowinfo_title" android:layout_centerHorizontal="true">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/flowinfo_temp_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="50.0dip" android:id="@id/flowinfo_remainder" style="@style/MyWidget.HeaderTextViewShadow" />
+                        <TextView android:textSize="13.0dip" android:id="@id/flowinfo_unit" android:text="@string/netmonitor_unit_mb" style="@style/MyWidget.HeaderTextViewShadow" />
+                    </LinearLayout>
+                    <TextView android:textSize="13.0sp" android:id="@id/flowinfo_suggest_charge" android:visibility="gone" android:layout_marginBottom="3.0dip" android:text="@string/netflow_overlay_suggest" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/MyWidget.HeaderTextViewShadow" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/flowinfo_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/flowinfo_title" android:layout_centerHorizontal="true">
+                    <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/billguard_header_billinfo_progress" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/flowinfo_no_query_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/flowinfo_title" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="20.0sp" android:textColor="@color/common_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/billinfo_no_query" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <ScrollView android:background="@drawable/dx_main_screen_bkg_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/page_header" style="@style/MyWidget.ScrollView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/anticost_app" layout="@layout/billguard_anticosts_list_item" />
+            <include layout="@layout/common_divider_horizontal" />
+            <include android:id="@id/antiflow_cost" layout="@layout/billguard_anticosts_list_item" />
+            <include layout="@layout/common_divider_horizontal" />
+            <include android:id="@id/bill_charge_money" layout="@layout/billguard_anticosts_list_item" />
+            <include layout="@layout/common_divider_horizontal" />
+            <include android:id="@id/business_unsubscribe" layout="@layout/billguard_anticosts_list_item" />
+            <include layout="@layout/common_divider_horizontal" />
+            <include android:id="@id/intelligent_fraud" layout="@layout/billguard_anticosts_list_item" />
+            <include layout="@layout/common_divider_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

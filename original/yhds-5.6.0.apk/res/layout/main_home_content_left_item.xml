@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/home_menu_selector" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/home_menu_bg_selected" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/home_main_content_margin" />
+    <TextView android:gravity="center_vertical" android:id="@id/menu_layout_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/home_menu_minwidth" android:layout_centerInParent="true" style="@style/HomeIconDescStyle" />
+    <View android:id="@id/menu_layout_tips" android:visibility="gone" android:layout_marginLeft="@dimen/home_main_tips_left_margin" android:layout_alignLeft="@id/menu_layout_textview" android:layout_alignTop="@id/menu_layout_textview" style="@style/MyWidget.DotTips" />
+</RelativeLayout>

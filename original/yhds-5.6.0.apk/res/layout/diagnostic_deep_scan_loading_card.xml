@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dianxinos.optimizer.ui.DxPointProgress android:id="@id/progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" app:count="3" app:time="500" />
+    <View android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/common_page_bottom_button_height" android:layout_marginBottom="@dimen/common_list_card_margin_vertical" style="@style/MyWidget.PageBottomButtonLayout" />
+</LinearLayout>

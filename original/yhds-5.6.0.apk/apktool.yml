@@ -1,0 +1,19 @@
+version: 2.0.0-RC4
+apkFileName: yhds-5.6.0-665c31c3ec352fda756431e60825a478d21408a6.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '8'
+  targetSdkVersion: '8'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '2049'
+  versionName: 5.6.0
+compressionType: true
+unknownFiles:
+  apkdownloader-1.0.4: '0'
+  qb-lib: '0'
+  com/dianxinos/compat/bouncycastle/x509/CertPathReviewerMessages.properties: '8'

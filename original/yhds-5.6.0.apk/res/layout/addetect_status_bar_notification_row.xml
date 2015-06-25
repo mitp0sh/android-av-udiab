@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="65.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/large_icon" android:clickable="true" android:layout_width="64.0dip" android:layout_height="64.0dip" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <com.dianxinos.optimizer.module.addetect.widget.LatestItemView android:id="@id/content" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_toRightOf="@id/large_icon" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

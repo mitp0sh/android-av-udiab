@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/paysecurity_protect_window_body" android:background="@color/paysecurity_status_bg_dark_alpha_30" android:layout_width="fill_parent" android:layout_height="@dimen/paysecurity_status_window_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianxinos.optimizer.module.paysecurity.PaySecurityRedBlueLight android:id="@id/status_light" android:layout_width="36.0dip" android:layout_height="10.0dip" android:layout_centerInParent="true" />
+    <ImageView android:background="@drawable/paysecurity_reb_blue_light_fg" android:layout_width="36.0dip" android:layout_height="12.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

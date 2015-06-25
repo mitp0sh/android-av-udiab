@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/antilost_common_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/antilost_image_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@id/antilost_waveimg_imageview" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/antilost_openbluetooth_wave" />
+        <ImageView android:layout_gravity="center" android:id="@id/antilost_openbluetooth_imageview" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/antilost_bluetooth_needopen" />
+    </FrameLayout>
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/antilost_opentips_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-35.0dip" android:text="@string/antilost_openbluetooth_tips" android:layout_below="@id/antilost_image_layout" android:layout_centerInParent="true" style="@style/Antilost_TextView_Show_Tips_Style" />
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/antilost_runtips_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/antilost_needopenbluetooth" android:layout_below="@id/antilost_opentips_textview" android:layout_centerInParent="true" style="@style/Antilost_TextView_Running_Tips_Style" />
+</RelativeLayout>

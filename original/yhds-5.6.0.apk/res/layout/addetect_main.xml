@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/page_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/titlebar" layout="@layout/main_titlebar" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/scananim_and_showresult_ll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/page_bottom_btn" android:layout_below="@id/scan_result_tips_ll">
+        <RelativeLayout android:id="@id/showresult_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ExpandableListView android:id="@id/lv_all_apps" android:layout_width="fill_parent" android:layout_height="fill_parent" android:groupIndicator="@null" style="@style/MyWidget.ExpandableListView.ForAdDetect" />
+            <include android:id="@id/group_float_view" android:visibility="gone" layout="@layout/addetect_scan_result_list_group" />
+        </RelativeLayout>
+        <com.dianxinos.optimizer.module.addetect.widget.CircleProgressBarLayout android:id="@id/scan_animation_ll" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/scan_result_tips_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/titlebar">
+        <com.dianxinos.optimizer.ui.DxPageTips android:id="@id/open_controller_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:message="@string/service_not_open_text" app:isImageButton="false" app:buttonText="@string/open_controller_now" />
+        <com.dianxinos.optimizer.module.addetect.widget.ScanResultTips android:id="@id/scan_result_tips" android:layout_width="fill_parent" android:layout_height="66.0dip" />
+    </LinearLayout>
+    <include android:id="@id/show_noad_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/page_bottom_btn" android:layout_below="@id/titlebar" layout="@layout/addetect_no_ad_page" />
+    <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/page_bottom_btn" android:layout_alignParentBottom="true" style="@style/MyWidget.PageBottomButtonLayout" />
+</RelativeLayout>

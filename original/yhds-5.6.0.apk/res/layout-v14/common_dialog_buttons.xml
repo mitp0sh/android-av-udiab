@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/cancel_btn" android:visibility="gone" android:layout_width="0.0dip" android:layout_marginRight="0.0dip" android:text="@string/common_cancel" android:singleLine="true" android:layout_weight="1.0" style="@style/MyWidget.BottomButton.LeftCorner" />
+    <include android:id="@id/cancel_btn_divider" android:visibility="gone" layout="@layout/common_divider_vertical" />
+    <Button android:id="@id/mid_btn" android:visibility="gone" android:layout_width="0.0dip" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:text="@string/common_apply" android:singleLine="true" android:layout_weight="1.0" style="@style/MyWidget.BottomButton.NoCorner" />
+    <include android:id="@id/mid_btn_divider" android:visibility="gone" layout="@layout/common_divider_vertical" />
+    <Button android:textColor="@color/common_blue" android:id="@id/ok_btn" android:visibility="gone" android:layout_width="0.0dip" android:layout_marginLeft="0.0dip" android:text="@string/common_ok" android:singleLine="true" android:layout_weight="1.0" style="@style/MyWidget.BottomButton.RightCorner" />
+</merge>

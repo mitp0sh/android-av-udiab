@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/process_body" android:layout_height="wrap_content" style="@style/MyWidget.ListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/checkbox_panel" android:layout_alignParentRight="true" style="@style/MyWidget.ListActionPanel">
+        <com.dianxinos.optimizer.ui.DxActionButton android:id="@id/delete" style="@style/MyWidget.ActionButton" />
+    </LinearLayout>
+    <TextView android:ellipsize="end" android:id="@id/tv_keywords" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/MyWidget.ListViewItemTextCenter" />
+</RelativeLayout>

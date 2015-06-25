@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:drawable="@color/notify_notifycationbar_progressbar_bg_color">
+        <clip>
+            <shape>
+                <corners android:radius="0.0dip" />
+                <gradient android:startColor="#ffe6f3fb" android:endColor="#ffe6f3fb" />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="0.0dip" />
+                <gradient android:startColor="@color/notify_notifycationbar_progressbar_progress_color" android:endColor="@color/notify_notifycationbar_progressbar_progress_color" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

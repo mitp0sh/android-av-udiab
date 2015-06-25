@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_dialog_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="@dimen/common_dialog_list_item_height" android:layout_marginLeft="6.0dip" android:text="@string/checkUp_CPU_Title" style="@style/MyWidget.CommonDialogListText" />
+    <com.dianxinos.optimizer.module.deviceinfo.ui.CpuMonitor android:layout_width="wrap_content" android:layout_height="100.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" />
+    <TextView android:id="@id/cpu_frequency_interval" android:layout_width="wrap_content" android:layout_height="@dimen/common_dialog_list_item_height" android:layout_marginLeft="6.0dip" style="@style/MyWidget.CommonDialogListText" />
+    <TextView android:id="@id/cpu_number" android:layout_width="wrap_content" android:layout_height="@dimen/common_dialog_list_item_height" android:layout_marginLeft="6.0dip" style="@style/MyWidget.CommonDialogListText" />
+    <TextView android:id="@id/cpu_model" android:layout_width="wrap_content" android:layout_height="@dimen/common_dialog_list_item_height" android:layout_marginLeft="6.0dip" style="@style/MyWidget.CommonDialogListText" />
+    <TextView android:id="@id/cpu_now_frequency" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="6.0dip" style="@style/MyWidget.CommonDialogListText" />
+    <ProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_margin="5.0dip" style="@style/MyWidget.ProgressBarMain" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/main_titlebar" />
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/loading" android:background="@drawable/dx_main_screen_bkg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/cover_layout" android:background="@drawable/common_list_header_bkg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/ll_prevent_cheate_status" android:background="@color/common_titlebar_bkg_color" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="66.0dip">
+            <TextView android:textSize="38.0sp" android:textColor="@color/common_white" android:id="@id/tv_intercept_cheat_sms_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-6.0dip" android:layout_marginRight="2.0dip" android:singleLine="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="@dimen/common_text_size_middle" android:textColor="@color/common_white" android:id="@id/tv_intercept_cheat_sms_tips" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/billguard_prevent_cheat_sms_count" android:singleLine="true" android:layout_toRightOf="@id/tv_intercept_cheat_sms_count" android:layout_alignBaseline="@id/tv_intercept_cheat_sms_count" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/common_text_size_small_3" android:textColor="@color/common_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/billguard_prevent_cheat_intercept_sms_tips" android:singleLine="true" android:layout_alignParentBottom="true" />
+            <Button android:textSize="14.0sp" android:layout_gravity="center" android:id="@id/btn_onkey_clear_cheat_sms" android:layout_width="88.0dip" android:layout_height="32.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" style="@style/MyWidget.SmallButton" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/notify_sms" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/image" android:layout_width="120.0dip" android:layout_height="120.0dip" android:src="@drawable/billguard_prevent_cheat_empty_view_icon" />
+            <TextView android:textSize="@dimen/common_text_size_large" android:textColor="@color/common_dark" android:gravity="center_horizontal" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+            <TextView android:textSize="@dimen/common_text_size_middle_2" android:textColor="@color/common_dark" android:gravity="center_horizontal" android:id="@id/secondary_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/billguard_prevent_cheat_empty_tips2" />
+        </LinearLayout>
+        <ListView android:id="@id/sms_listview" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_height="fill_parent" android:layout_marginTop="-2.0dip" android:layout_marginBottom="-6.0dip" android:layout_weight="1.0" style="@style/MyWidget.ListView" />
+        <com.dianxinos.optimizer.ui.DXPageBottomButton android:id="@id/btn_report_cheat_sms" style="@style/MyWidget.PageBottomButtonLayout" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_prevent_cheat_scan" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_prevent_cheat_scan_status" android:background="@color/common_titlebar_bkg_color" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="66.0dip">
+            <TextView android:textSize="44.0sp" android:textColor="@color/common_white" android:gravity="center" android:id="@id/tv_scan_cheat_sms_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:singleLine="true" />
+            <TextView android:textSize="@dimen/common_text_size_middle" android:textColor="@color/common_white" android:gravity="center" android:id="@id/tv_scan_cheat_sms_count_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/billguard_prevent_cheat_sms_count" android:singleLine="true" />
+        </LinearLayout>
+        <com.dianxinos.optimizer.module.billguard.view.PreventCheatCircleProgressBarLayout android:id="@id/scan_animation_ll" android:background="@color/page_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

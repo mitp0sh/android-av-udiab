@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingTop="12.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nodisturb_timesetting_detail" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="@color/common_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_start" />
+        <com.dianxinos.optimizer.module.billguard.view.TimePickerView android:id="@id/start_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/common_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/common_end" />
+        <com.dianxinos.optimizer.module.billguard.view.TimePickerView android:id="@id/end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" />
+    </LinearLayout>
+</LinearLayout>

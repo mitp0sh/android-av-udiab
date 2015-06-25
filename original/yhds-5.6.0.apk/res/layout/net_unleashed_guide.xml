@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/common_screen_bkg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/net_unleashed_imageview" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="7.0" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_grey" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/netmonitor_warning_msg1" android:layout_weight="0.7" />
+    <TextView android:textSize="21.0sp" android:textColor="@color/appmanager_appssearch_typelow_color" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/netmonitor_warning_msg2" android:layout_weight="3.0" />
+</LinearLayout>

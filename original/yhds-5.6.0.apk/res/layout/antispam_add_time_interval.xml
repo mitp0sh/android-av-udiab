@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/common_dark" android:gravity="center" android:id="@id/label_start" android:layout_width="110.0dip" android:layout_height="wrap_content" android:text="@string/antispam_add_time_interval_start" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/common_dark" android:gravity="center" android:id="@id/label_end" android:layout_width="110.0dip" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:text="@string/antispam_add_time_interval_end" android:layout_toRightOf="@id/label_start" />
+    <com.dianxinos.optimizer.module.billguard.view.TimePickerView android:id="@id/start_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/label_start" />
+    <com.dianxinos.optimizer.module.billguard.view.TimePickerView android:id="@id/end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/label_end" android:layout_alignLeft="@id/label_end" />
+</RelativeLayout>

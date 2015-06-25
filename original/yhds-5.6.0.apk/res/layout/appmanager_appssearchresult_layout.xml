@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/searchresult_layoutid" android:background="@drawable/dx_main_screen_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dianxinos.optimizer.ui.DXLoadingInside android:id="@id/searchresult_loading" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <include android:id="@id/searchresult_nonetwork" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/appssearch_nonetwork" />
+    <include android:id="@id/searchresult_noresult" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/appssearch_noresult" />
+    <ListView android:id="@id/searchresult_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:dividerHeight="1.0dip" android:layout_weight="1.0" style="@style/MyWidget.ListView" />
+</LinearLayout>
